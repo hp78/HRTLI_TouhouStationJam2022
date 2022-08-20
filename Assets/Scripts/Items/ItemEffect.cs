@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ItemEffect : MonoBehaviour
 {
     [System.Serializable]
     public struct ItemStat
     {
+        [Space(5)]
         public float effectValue;
         public float effectCooldown;
         public float effectChance;
@@ -18,13 +20,16 @@ public class ItemEffect : MonoBehaviour
         public float passiveHp;
 
         [Space(5)]
+        [Multiline]
         public string itemDesc;
     }
 
+    public Sprite itemPic;
     public bool isOffensiveSkill = true;
     public float currTimer = 0f;
 
     [Space(5)]
+    [Multiline]
     public string itemFlavorText;
 
     [Space(5)]

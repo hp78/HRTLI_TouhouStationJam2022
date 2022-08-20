@@ -186,9 +186,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f40863fe8c0b62e4292fed5ee4d982f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemPic: {fileID: 21300000, guid: 14c3e60f06b6ca94a9ae5562c726ab2c, type: 3}
   isOffensiveSkill: 1
   currTimer: 0
-  itemDesc: 
   itemFlavorText: 
   currLevel: 0
   itemStatsAtLevel:
@@ -199,6 +199,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
+    itemDesc: 
   - effectValue: 1
     effectCooldown: 3
     effectChance: 0
@@ -206,6 +207,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
+    itemDesc: 
   - effectValue: 0
     effectCooldown: 0
     effectChance: 0
@@ -213,6 +215,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
+    itemDesc: 
   - effectValue: 0
     effectCooldown: 0
     effectChance: 0
@@ -220,6 +223,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
+    itemDesc: 
   - effectValue: 0
     effectCooldown: 0
     effectChance: 0
@@ -227,6 +231,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
+    itemDesc: 
   - effectValue: 0
     effectCooldown: 0
     effectChance: 0
@@ -234,6 +239,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
+    itemDesc: 
   knifeProjectilePrefab: {fileID: 0}
 --- !u!1 &4751523106673649661
 GameObject:
@@ -295,7 +301,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -363,9 +369,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55828d6cbabdd4d41857db8714ec8678, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemPic: {fileID: 21300000, guid: affe5be2fb53fbf4783fba9362c4195b, type: 3}
   isOffensiveSkill: 1
   currTimer: 0
-  itemDesc: 
   itemFlavorText: 
   currLevel: 0
   itemStatsAtLevel:
@@ -376,6 +382,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
+    itemDesc: 
   - effectValue: 0
     effectCooldown: 0
     effectChance: 0
@@ -383,6 +390,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
+    itemDesc: 
   - effectValue: 0
     effectCooldown: 0
     effectChance: 0
@@ -390,6 +398,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
+    itemDesc: 
   - effectValue: 0
     effectCooldown: 0
     effectChance: 0
@@ -397,6 +406,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
+    itemDesc: 
   - effectValue: 0
     effectCooldown: 0
     effectChance: 0
@@ -404,6 +414,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
+    itemDesc: 
   - effectValue: 0
     effectCooldown: 0
     effectChance: 0
@@ -411,7 +422,9 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
+    itemDesc: 
   playerTf: {fileID: 0}
+  BookProjectilePrefab: {fileID: 0}
 --- !u!1 &4751523106704466963
 GameObject:
   m_ObjectHideFlags: 0
@@ -456,9 +469,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88aff59c076fad419b5739b90b23383, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemPic: {fileID: 21300000, guid: ca1b56cca9fa1b44080e86ecdc549fbd, type: 3}
   isOffensiveSkill: 1
   currTimer: 0
-  itemDesc: 
   itemFlavorText: 
   currLevel: 0
   itemStatsAtLevel:
@@ -469,6 +482,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
+    itemDesc: 
   - effectValue: 0
     effectCooldown: 0
     effectChance: 0
@@ -476,6 +490,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
+    itemDesc: 
   - effectValue: 0
     effectCooldown: 0
     effectChance: 0
@@ -483,6 +498,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
+    itemDesc: 
   - effectValue: 0
     effectCooldown: 0
     effectChance: 0
@@ -490,6 +506,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
+    itemDesc: 
   - effectValue: 0
     effectCooldown: 0
     effectChance: 0
@@ -497,6 +514,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
+    itemDesc: 
   - effectValue: 0
     effectCooldown: 0
     effectChance: 0
@@ -504,6 +522,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
+    itemDesc: 
   playerTf: {fileID: 0}
 --- !u!1 &4751523106907817127
 GameObject:
@@ -633,9 +652,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66d1e09e97b5ef8498f50e1faffd19f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemPic: {fileID: 21300000, guid: 13cb2d25732fc4a49866df5a3134d4e8, type: 3}
   isOffensiveSkill: 1
   currTimer: 0
-  itemDesc: 
   itemFlavorText: '"Seriously?! Pad jokes in 2022?"'
   currLevel: 0
   itemStatsAtLevel:
@@ -646,6 +665,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
+    itemDesc: 
   - effectValue: 0
     effectCooldown: 0
     effectChance: 0
@@ -653,6 +673,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
+    itemDesc: 
   - effectValue: 0
     effectCooldown: 0
     effectChance: 0
@@ -660,6 +681,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
+    itemDesc: 
   - effectValue: 0
     effectCooldown: 0
     effectChance: 0
@@ -667,6 +689,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
+    itemDesc: 
   - effectValue: 0
     effectCooldown: 0
     effectChance: 0
@@ -674,6 +697,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
+    itemDesc: 
   - effectValue: 0
     effectCooldown: 0
     effectChance: 0
@@ -681,6 +705,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
+    itemDesc: 
   playerTf: {fileID: 0}
 --- !u!1 &4751523107256472016
 GameObject:
@@ -779,9 +804,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6597de3d01dab648b40615ce7417791, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemPic: {fileID: 21300000, guid: 7ee251a5f73d8db43ba06aff0e9c98bb, type: 3}
   isOffensiveSkill: 1
   currTimer: 0
-  itemDesc: 
   itemFlavorText: 
   currLevel: 0
   itemStatsAtLevel:
@@ -792,6 +817,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
+    itemDesc: 
   - effectValue: 0
     effectCooldown: 0
     effectChance: 0
@@ -799,6 +825,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
+    itemDesc: 
   - effectValue: 0
     effectCooldown: 0
     effectChance: 0
@@ -806,6 +833,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
+    itemDesc: 
   - effectValue: 0
     effectCooldown: 0
     effectChance: 0
@@ -813,6 +841,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
+    itemDesc: 
   - effectValue: 0
     effectCooldown: 0
     effectChance: 0
@@ -820,6 +849,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
+    itemDesc: 
   - effectValue: 0
     effectCooldown: 0
     effectChance: 0
@@ -827,7 +857,9 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
+    itemDesc: 
   playerTf: {fileID: 0}
+  StarProjectilePrefab: {fileID: 0}
 --- !u!1 &4751523107608367198
 GameObject:
   m_ObjectHideFlags: 0
@@ -988,6 +1020,11 @@ MonoBehaviour:
     passiveHp: 0
   effects:
   - {fileID: 4751523105828042593}
+  - {fileID: 4751523107342915583}
+  - {fileID: 4751523106692315475}
+  - {fileID: 4751523106704466965}
+  - {fileID: 4751523107677182868}
+  - {fileID: 4751523107102822884}
 --- !u!61 &4751523107610154257
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1117,9 +1154,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24dd7025e63c02f418dc583944054525, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemPic: {fileID: 21300000, guid: 15392f58f9696e14d9dcf8032062c19f, type: 3}
   isOffensiveSkill: 1
   currTimer: 0
-  itemDesc: 
   itemFlavorText: '"This isn''t a public library." -Patchouli'
   currLevel: 0
   itemStatsAtLevel:
@@ -1130,6 +1167,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
+    itemDesc: 
   - effectValue: 0
     effectCooldown: 0
     effectChance: 0
@@ -1137,6 +1175,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
+    itemDesc: 
   - effectValue: 0
     effectCooldown: 0
     effectChance: 0
@@ -1144,6 +1183,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
+    itemDesc: 
   - effectValue: 0
     effectCooldown: 0
     effectChance: 0
@@ -1151,6 +1191,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
+    itemDesc: 
   - effectValue: 0
     effectCooldown: 0
     effectChance: 0
@@ -1158,6 +1199,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
+    itemDesc: 
   - effectValue: 0
     effectCooldown: 0
     effectChance: 0
@@ -1165,4 +1207,5 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
+    itemDesc: 
   playerTf: {fileID: 0}

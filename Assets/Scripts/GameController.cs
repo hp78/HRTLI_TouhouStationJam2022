@@ -7,6 +7,7 @@ public class GameController : MonoBehaviour
     public static GameController instance;
     public PlayerController playerController;
     public GameObject pauseMenu;
+    public LevelUpMenuController lvlUpMenu;
 
     [Space(5)]
     public float timeElapsed;
@@ -40,5 +41,12 @@ public class GameController : MonoBehaviour
                 Time.timeScale = 1f;
             }
         }
+    }
+
+    public void ShowLevelUpMenu()
+    {
+        Time.timeScale = 0f;
+        lvlUpMenu.gameObject.SetActive(true);
+        lvlUpMenu.RefreshItems();
     }
 }

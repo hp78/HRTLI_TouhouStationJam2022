@@ -91,13 +91,14 @@ GameObject:
   - component: {fileID: 1235867624877481917}
   - component: {fileID: 1235867624877481915}
   - component: {fileID: 1235867624877481916}
+  - component: {fileID: 2901514200494507031}
   m_Layer: 5
   m_Name: LevelUpMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1235867624877481917
 RectTransform:
   m_ObjectHideFlags: 0
@@ -157,6 +158,34 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2901514200494507031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235867624877481918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06d1acbc89133fd4e9421f6235babe68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemPic:
+  - {fileID: 3486900245475819305}
+  - {fileID: 3486900245975067139}
+  - {fileID: 3486900246682201275}
+  itemName:
+  - {fileID: 3486900245881475722}
+  - {fileID: 3486900246302933118}
+  - {fileID: 3486900247181463067}
+  descText:
+  - {fileID: 3486900247131130954}
+  - {fileID: 3486900245508551356}
+  - {fileID: 3486900245535479065}
+  flavText:
+  - {fileID: 3486900246052769923}
+  - {fileID: 3486900245936221269}
+  - {fileID: 3486900246516590669}
 --- !u!1 &1235867625933517213
 GameObject:
   m_ObjectHideFlags: 0
