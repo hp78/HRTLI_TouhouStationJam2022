@@ -17,6 +17,8 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D rb2d;
 
     public SpriteRenderer spriteRenderer;
+    public Animator playerFacingAnimator;
+    public Transform playerFacing;
 
     [Space(5)]
     public bool isAlive = true;
@@ -81,8 +83,19 @@ public class PlayerController : MonoBehaviour
 
         if (moveDir != Vector2.zero)
         {
-            spriteRenderer.flipX = (moveDir.x > 0);
-            moveDir = moveDir.normalized;     
+            if(Input.GetKey(KeyCode.LeftShift))
+            {
+
+            }
+            else
+            {
+                playerFacingAnimator.SetFloat("X", moveDir.x);
+                playerFacingAnimator.SetFloat("Y", moveDir.y);
+
+                spriteRenderer.flipX = (moveDir.x > 0);
+            }
+
+            moveDir = moveDir.normalized;
         }
 
         rb2d.velocity = (moveDir * Time.deltaTime * speed * (1 + bonusStatModifier.passiveSpd));
