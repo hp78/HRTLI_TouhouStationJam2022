@@ -165,4 +165,24 @@ public class PlayerController : MonoBehaviour
     {
 
     }
+
+    public void LevelUpItem(int itemEffectIndex)
+    {
+        effects[itemEffectIndex].LevelUpItem();
+    }
+
+    public void HealPlayer(float val)
+    {
+        currHealth = Mathf.Clamp(currHealth + val, 0, currMaxHealth);
+    }
+
+    public void HealPlayerMax()
+    {
+        currHealth = currMaxHealth;
+    }
+
+    public void SpawnHead()
+    {
+
+    }
 }

@@ -170,6 +170,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06d1acbc89133fd4e9421f6235babe68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playerController: {fileID: 0}
+  selectionBtns: []
   itemPic:
   - {fileID: 3486900245475819305}
   - {fileID: 3486900245975067139}
@@ -186,6 +188,10 @@ MonoBehaviour:
   - {fileID: 3486900246052769923}
   - {fileID: 3486900245936221269}
   - {fileID: 3486900246516590669}
+  miscSprites:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &1235867625933517213
 GameObject:
   m_ObjectHideFlags: 0
@@ -1279,7 +1285,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3486900246106867545}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2901514200494507031}
+        m_TargetAssemblyTypeName: LevelUpMenuController, Assembly-CSharp
+        m_MethodName: ButtonSelectUpgrade
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3486900246302933116
 GameObject:
   m_ObjectHideFlags: 0
@@ -1983,7 +2001,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3486900246926414429}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2901514200494507031}
+        m_TargetAssemblyTypeName: LevelUpMenuController, Assembly-CSharp
+        m_MethodName: ButtonSelectUpgrade
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3486900247027318193
 GameObject:
   m_ObjectHideFlags: 0
@@ -2107,7 +2137,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3486900247027318194}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2901514200494507031}
+        m_TargetAssemblyTypeName: LevelUpMenuController, Assembly-CSharp
+        m_MethodName: ButtonSelectUpgrade
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3486900247131130952
 GameObject:
   m_ObjectHideFlags: 0

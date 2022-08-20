@@ -24,6 +24,11 @@ public class GameController : MonoBehaviour
         timeElapsed += Time.deltaTime * Time.timeScale;
 
         UpdatePauseKey();
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            ShowLevelUpMenu();
+        }
     }
 
     void UpdatePauseKey()
