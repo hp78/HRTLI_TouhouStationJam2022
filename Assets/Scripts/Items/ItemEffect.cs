@@ -19,8 +19,16 @@ public class ItemEffect : MonoBehaviour
 
     public bool isOffensiveSkill = true;
     public float currTimer = 0f;
+
+    [Space(5)]
+    public string itemDesc;
+    public string itemFlavorText;
+
+    [Space(5)]
     public int currLevel = 0;
     public ItemStat[] itemStatsAtLevel;
+
+
 
     public bool TickTimer(float deltaTime)
     {
