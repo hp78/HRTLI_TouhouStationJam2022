@@ -166,14 +166,23 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void LevelUpItem(int itemEffectIndex)
+    {
+        effects[itemEffectIndex].LevelUpItem();
+    }
+
+    public void HealPlayer(float val)
+    {
+        currHealth = Mathf.Clamp(currHealth + val, 0, currMaxHealth);
+    }
+
+    public void HealPlayerMax()
+    {
+        currHealth = currMaxHealth;
+    }
+
+    public void SpawnHead()
     {
 
-        if (collision.collider.CompareTag("Enemy"))
-        {
-            Debug.Log("TAKING DMG");
-
-            OnPlayerHit(1f);
-        }
     }
 }

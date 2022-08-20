@@ -28,6 +28,7 @@ public class ItemEffect : MonoBehaviour
         public string itemDesc;
     }
 
+    public string itemName;
     public Sprite itemPic;
     public bool isOffensiveSkill = true;
     public float currTimer = 0f;
