@@ -874,6 +874,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerController: {fileID: 874697977}
+  pauseMenu: {fileID: 1921668761}
   timeElapsed: 0
 --- !u!4 &1271222279
 Transform:
@@ -1253,7 +1254,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1280, y: 1080}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1518,6 +1519,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1921668761 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4676755207829414063, guid: ef6c79f6f21fe2b419abd470432ab131, type: 3}
+  m_PrefabInstance: {fileID: 4676755207603566134}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1921668762 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4676755207829414060, guid: ef6c79f6f21fe2b419abd470432ab131, type: 3}
@@ -1970,7 +1976,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1235867624877481918, guid: 948536b5c79b2444cb5cf75400343647, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 948536b5c79b2444cb5cf75400343647, type: 3}

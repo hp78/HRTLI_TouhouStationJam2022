@@ -256,7 +256,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4676755206911783390}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7727340727306926606}
+        m_TargetAssemblyTypeName: PauseMenuController, Assembly-CSharp
+        m_MethodName: ButtonResume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4676755206995571899
 GameObject:
   m_ObjectHideFlags: 0
@@ -403,6 +415,7 @@ GameObject:
   - component: {fileID: 4676755207829414060}
   - component: {fileID: 4676755207829414058}
   - component: {fileID: 4676755207829414061}
+  - component: {fileID: 7727340727306926606}
   m_Layer: 5
   m_Name: PauseMenu
   m_TagString: Untagged
@@ -469,6 +482,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7727340727306926606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4676755207829414063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9379e4dea51272c46b02c6a17a17b48f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4676755207928831010
 GameObject:
   m_ObjectHideFlags: 0
@@ -482,7 +507,7 @@ GameObject:
   - component: {fileID: 4676755207928831009}
   - component: {fileID: 4676755207928831008}
   m_Layer: 5
-  m_Name: ReturnToMenuButton_1
+  m_Name: QuitButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -590,7 +615,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4676755207928831009}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7727340727306926606}
+        m_TargetAssemblyTypeName: PauseMenuController, Assembly-CSharp
+        m_MethodName: ButtonQuit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4676755208046760918
 GameObject:
   m_ObjectHideFlags: 0
@@ -1062,4 +1099,16 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4676755208344972150}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7727340727306926606}
+        m_TargetAssemblyTypeName: PauseMenuController, Assembly-CSharp
+        m_MethodName: ButtonMainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
