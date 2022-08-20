@@ -50,7 +50,7 @@ MonoBehaviour:
   col: {fileID: 193563677848990671}
   direction: {x: 0, y: 0}
   speed: 0
-  lifeDuration: 0.22
+  lifeDuration: 0.15
   dmg: 0
   hp: 0
   player: {fileID: 0}
