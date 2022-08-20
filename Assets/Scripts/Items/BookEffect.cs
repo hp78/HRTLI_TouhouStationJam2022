@@ -5,6 +5,7 @@ using UnityEngine;
 public class BookEffect : ItemEffect
 {
     public Transform playerTf;
+    public GameObject BookProjectilePrefab;
 
     // Start is called before the first frame update
     void Start()
@@ -21,10 +22,16 @@ public class BookEffect : ItemEffect
     public override void TimedEffect()
     {
         Debug.Log("Book Attack");
+        FireBook();
     }
 
     public override void PlayerHitEffect()
     {
 
+    }
+    void FireBook()
+    {
+        GameObject obj = Instantiate(BookProjectilePrefab, this.transform.position, Quaternion.identity);
+        obj.GetComponent<BookProjectile>().Setduration(itemStatsAtLevel[currLevel].effectValue);
     }
 }

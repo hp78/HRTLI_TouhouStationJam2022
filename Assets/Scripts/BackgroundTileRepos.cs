@@ -6,6 +6,10 @@ public class BackgroundTileRepos : MonoBehaviour
 {
     public Transform playerTf;
 
+    void Start()
+    {
+        playerTf = GameObject.FindGameObjectWithTag("Player").transform;
+    }
     // Update is called once per frame
     void Update()
     {

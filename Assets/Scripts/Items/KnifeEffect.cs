@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class KnifeEffect : ItemEffect
 {
-    public Transform playerTf;
-
+    public GameObject knifeProjectilePrefab;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,10 +20,20 @@ public class KnifeEffect : ItemEffect
     public override void TimedEffect()
     {
         Debug.Log("Knife Attack");
+        FireKnife();
     }
 
     public override void PlayerHitEffect()
     {
 
+    }
+
+    public void FireKnife()
+    {
+       for(int amt = 0; amt < itemStatsAtLevel[currLevel].effectValue; ++amt)
+        {
+            GameObject obj = Instantiate(knifeProjectilePrefab, this.transform.position, Quaternion.identity);
+            obj.GetComponent<BaseProjectile>().SetStats(itemStatsAtLevel[currLevel]);
+        }
     }
 }
