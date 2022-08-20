@@ -18,11 +18,24 @@ public class PlayerController : MonoBehaviour
 
     public SpriteRenderer spriteRenderer;
 
+    [Space(5)]
+    public bool isAlive = true;
+    public bool isInvul = false;
+    public float invulDura = 0f;
+
     [Space(15)]
     public float currHealth;
     public float currMaxHealth;
     public float baseMaxHealth = 50;
     public float speed = 300f;
+
+    [Space(10)]
+    public int currLevel = 0;
+    public float currXP = 0;
+    public float nextXP;
+    public float nextXPInterval = 100f;
+
+    [Space(10)]
     public BonusStat bonusStatModifier;
 
     [Space(15)]
@@ -119,5 +132,24 @@ public class PlayerController : MonoBehaviour
         {
             ie.PlayerHitEffect();
         }
+    }
+
+    public void AddXP(float val)
+    {
+        currXP += val;
+
+        // if level up
+        if(currXP > nextXP)
+        {
+            currLevel++;
+            nextXP += currLevel * nextXPInterval;
+
+            LevelUp();
+        }
+    }
+
+    void LevelUp()
+    {
+
     }
 }

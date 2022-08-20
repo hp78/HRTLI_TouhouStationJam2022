@@ -10,6 +10,7 @@ public class ItemEffect : MonoBehaviour
         public float effectValue;
         public float effectCooldown;
         public float effectChance;
+
         [Space(5)]
         public float passiveAtk;
         public float passiveDef;
@@ -27,7 +28,6 @@ public class ItemEffect : MonoBehaviour
     [Space(5)]
     public int currLevel = 0;
     public ItemStat[] itemStatsAtLevel;
-
 
 
     public bool TickTimer(float deltaTime)

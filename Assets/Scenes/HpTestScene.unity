@@ -529,7 +529,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 874697978}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &257758033
 GameObject:
@@ -871,12 +871,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 507905358}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.05, y: -1.2, z: 0.1}
+  m_LocalPosition: {x: 0, y: -0.45000005, z: 0.1}
   m_LocalScale: {x: 5.5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1218057015}
-  m_RootOrder: 0
+  m_Father: {fileID: 874697978}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &507905360
 SpriteRenderer:
@@ -1379,10 +1379,17 @@ MonoBehaviour:
   animator: {fileID: 1218057016}
   rb2d: {fileID: 874697975}
   spriteRenderer: {fileID: 1218057017}
+  isAlive: 1
+  isInvul: 0
+  invulDura: 0
   currHealth: 0
   currMaxHealth: 0
   baseMaxHealth: 0
   speed: 300
+  currLevel: 0
+  currXP: 0
+  nextXP: 0
+  nextXPInterval: 100
   bonusStatModifier:
     passiveAtk: 0
     passiveDef: 0
@@ -1403,6 +1410,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1218057015}
+  - {fileID: 507905359}
   - {fileID: 207414807}
   - {fileID: 1131465711}
   m_Father: {fileID: 0}
@@ -1651,7 +1659,7 @@ Transform:
   - {fileID: 807639676}
   - {fileID: 333942796}
   m_Father: {fileID: 874697978}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1194597438
 GameObject:
@@ -1776,8 +1784,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0.75, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 507905359}
+  m_Children: []
   m_Father: {fileID: 874697978}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1882,6 +1889,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d917328acdba4e43a37e0ca99276251, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerController: {fileID: 874697977}
+  timeElapsed: 0
 --- !u!4 &1271222279
 Transform:
   m_ObjectHideFlags: 0
@@ -2255,7 +2264,7 @@ MonoBehaviour:
   currTimer: 0
   itemDesc: 
   itemFlavorText: 
-  currLevel: 1
+  currLevel: 0
   itemStatsAtLevel:
   - effectValue: 0
     effectCooldown: 0
