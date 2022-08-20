@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/SplashScreen.unity
+    guid: 59abc9c4756a1204b992146d7d3e8f1c
+  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: ab2e877821808634fb58dede3b4e9fa4
   - enabled: 1
@@ -14,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RozTestScene.unity
     guid: 20229f88a3bcd0b4ebb634875ddd3646
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: 39321dafe6a38984b9d6c209ae5e1310
   m_configObjects: {}
