@@ -193,15 +193,23 @@ MonoBehaviour:
   itemFlavorText: 
   currLevel: 0
   itemStatsAtLevel:
-  - effectValue: 0
-    effectCooldown: 0
+  - effectValue: 1
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
+    effectCooldown: 1
     effectChance: 0
-    passiveAtk: 0
+    passiveAtk: 1
     passiveDef: 0
-    passiveSpd: 0
-    passiveHp: 0
+    passiveSpd: 5
+    passiveHp: 1
     itemDesc: 
   - effectValue: 1
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
     effectCooldown: 3
     effectChance: 0
     passiveAtk: 0
@@ -210,6 +218,10 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: 
   - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
     effectCooldown: 0
     effectChance: 0
     passiveAtk: 0
@@ -218,6 +230,10 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: 
   - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
     effectCooldown: 0
     effectChance: 0
     passiveAtk: 0
@@ -226,6 +242,10 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: 
   - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
     effectCooldown: 0
     effectChance: 0
     passiveAtk: 0
@@ -234,6 +254,10 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: 
   - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
     effectCooldown: 0
     effectChance: 0
     passiveAtk: 0
@@ -241,7 +265,7 @@ MonoBehaviour:
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
-  knifeProjectilePrefab: {fileID: 0}
+  knifeProjectilePrefab: {fileID: 208155274731519886, guid: 476053d59e719de4a95f313f2bdb191e, type: 3}
 --- !u!1 &4751523106673649661
 GameObject:
   m_ObjectHideFlags: 0
@@ -377,7 +401,23 @@ MonoBehaviour:
   itemFlavorText: 
   currLevel: 0
   itemStatsAtLevel:
+  - effectValue: 1.25
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
+    effectCooldown: 10
+    effectChance: 0
+    passiveAtk: 0.25
+    passiveDef: 0
+    passiveSpd: 0
+    passiveHp: 0
+    itemDesc: 
   - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
     effectCooldown: 0
     effectChance: 0
     passiveAtk: 0
@@ -386,6 +426,10 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: 
   - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
     effectCooldown: 0
     effectChance: 0
     passiveAtk: 0
@@ -394,6 +438,10 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: 
   - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
     effectCooldown: 0
     effectChance: 0
     passiveAtk: 0
@@ -402,6 +450,10 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: 
   - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
     effectCooldown: 0
     effectChance: 0
     passiveAtk: 0
@@ -410,6 +462,10 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: 
   - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
     effectCooldown: 0
     effectChance: 0
     passiveAtk: 0
@@ -417,16 +473,8 @@ MonoBehaviour:
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
-  - effectValue: 0
-    effectCooldown: 0
-    effectChance: 0
-    passiveAtk: 0
-    passiveDef: 0
-    passiveSpd: 0
-    passiveHp: 0
-    itemDesc: 
-  playerTf: {fileID: 0}
-  BookProjectilePrefab: {fileID: 0}
+  playerTf: {fileID: 4751523107610154259}
+  BookProjectilePrefab: {fileID: 2857349555026318264, guid: fa0e53732fa4bbb43af4e0becee7e5d1, type: 3}
 --- !u!1 &4751523106704466963
 GameObject:
   m_ObjectHideFlags: 0
@@ -479,6 +527,22 @@ MonoBehaviour:
   currLevel: 0
   itemStatsAtLevel:
   - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
+    effectCooldown: 5
+    effectChance: 0
+    passiveAtk: 0.2
+    passiveDef: 0
+    passiveSpd: 4
+    passiveHp: 0
+    itemDesc: 
+  - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
     effectCooldown: 0
     effectChance: 0
     passiveAtk: 0
@@ -487,6 +551,10 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: 
   - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
     effectCooldown: 0
     effectChance: 0
     passiveAtk: 0
@@ -495,6 +563,10 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: 
   - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
     effectCooldown: 0
     effectChance: 0
     passiveAtk: 0
@@ -503,6 +575,10 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: 
   - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
     effectCooldown: 0
     effectChance: 0
     passiveAtk: 0
@@ -511,6 +587,10 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: 
   - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
     effectCooldown: 0
     effectChance: 0
     passiveAtk: 0
@@ -518,15 +598,8 @@ MonoBehaviour:
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
-  - effectValue: 0
-    effectCooldown: 0
-    effectChance: 0
-    passiveAtk: 0
-    passiveDef: 0
-    passiveSpd: 0
-    passiveHp: 0
-    itemDesc: 
-  playerTf: {fileID: 0}
+  playerTf: {fileID: 4751523107610154259}
+  ShroomProjectilePrefab: {fileID: 7712340179314774028, guid: 27aec4af3ca9bce4cbc4177659c73463, type: 3}
 --- !u!1 &4751523106907817127
 GameObject:
   m_ObjectHideFlags: 0
@@ -663,6 +736,22 @@ MonoBehaviour:
   currLevel: 0
   itemStatsAtLevel:
   - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
+    effectCooldown: 0
+    effectChance: 50
+    passiveAtk: 0
+    passiveDef: 0
+    passiveSpd: 0
+    passiveHp: 0
+    itemDesc: 
+  - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
     effectCooldown: 0
     effectChance: 0
     passiveAtk: 0
@@ -671,6 +760,10 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: 
   - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
     effectCooldown: 0
     effectChance: 0
     passiveAtk: 0
@@ -679,6 +772,10 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: 
   - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
     effectCooldown: 0
     effectChance: 0
     passiveAtk: 0
@@ -687,6 +784,10 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: 
   - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
     effectCooldown: 0
     effectChance: 0
     passiveAtk: 0
@@ -695,14 +796,10 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: 
   - effectValue: 0
-    effectCooldown: 0
-    effectChance: 0
-    passiveAtk: 0
-    passiveDef: 0
-    passiveSpd: 0
-    passiveHp: 0
-    itemDesc: 
-  - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
     effectCooldown: 0
     effectChance: 0
     passiveAtk: 0
@@ -711,6 +808,7 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: 
   playerTf: {fileID: 0}
+  padProjectilePrefab: {fileID: 193563677279889981, guid: 7dd6d55b0acf72b489aab19e321b8a4a, type: 3}
 --- !u!1 &4751523107256472016
 GameObject:
   m_ObjectHideFlags: 0
@@ -815,7 +913,23 @@ MonoBehaviour:
   itemFlavorText: 
   currLevel: 0
   itemStatsAtLevel:
+  - effectValue: 1
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
+    effectCooldown: 15
+    effectChance: 0
+    passiveAtk: 1
+    passiveDef: 0
+    passiveSpd: 2.5
+    passiveHp: 0
+    itemDesc: 
   - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
     effectCooldown: 0
     effectChance: 0
     passiveAtk: 0
@@ -824,6 +938,10 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: 
   - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
     effectCooldown: 0
     effectChance: 0
     passiveAtk: 0
@@ -832,6 +950,10 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: 
   - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
     effectCooldown: 0
     effectChance: 0
     passiveAtk: 0
@@ -840,6 +962,10 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: 
   - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
     effectCooldown: 0
     effectChance: 0
     passiveAtk: 0
@@ -848,6 +974,10 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: 
   - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
     effectCooldown: 0
     effectChance: 0
     passiveAtk: 0
@@ -855,16 +985,8 @@ MonoBehaviour:
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
-  - effectValue: 0
-    effectCooldown: 0
-    effectChance: 0
-    passiveAtk: 0
-    passiveDef: 0
-    passiveSpd: 0
-    passiveHp: 0
-    itemDesc: 
-  playerTf: {fileID: 0}
-  StarProjectilePrefab: {fileID: 0}
+  playerTf: {fileID: 4751523107610154259}
+  StarProjectilePrefab: {fileID: 3555816526015937264, guid: c23ce9b72da344d47bce9dbef7303731, type: 3}
 --- !u!1 &4751523107608367198
 GameObject:
   m_ObjectHideFlags: 0
@@ -1167,6 +1289,22 @@ MonoBehaviour:
   currLevel: 0
   itemStatsAtLevel:
   - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
+    effectCooldown: 2
+    effectChance: 0
+    passiveAtk: 5
+    passiveDef: 0
+    passiveSpd: 0
+    passiveHp: 0
+    itemDesc: 
+  - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
     effectCooldown: 0
     effectChance: 0
     passiveAtk: 0
@@ -1175,6 +1313,10 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: 
   - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
     effectCooldown: 0
     effectChance: 0
     passiveAtk: 0
@@ -1183,6 +1325,10 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: 
   - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
     effectCooldown: 0
     effectChance: 0
     passiveAtk: 0
@@ -1191,6 +1337,10 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: 
   - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
     effectCooldown: 0
     effectChance: 0
     passiveAtk: 0
@@ -1199,14 +1349,10 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: 
   - effectValue: 0
-    effectCooldown: 0
-    effectChance: 0
-    passiveAtk: 0
-    passiveDef: 0
-    passiveSpd: 0
-    passiveHp: 0
-    itemDesc: 
-  - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
     effectCooldown: 0
     effectChance: 0
     passiveAtk: 0
@@ -1215,3 +1361,5 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: 
   playerTf: {fileID: 0}
+  CardProjectilePrefab: {fileID: 2708215233966847339, guid: 062feecffee18f94a99296c3733a8000, type: 3}
+  targetArrow: {fileID: 4751523107256472019}

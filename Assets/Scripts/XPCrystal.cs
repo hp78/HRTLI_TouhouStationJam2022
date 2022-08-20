@@ -35,7 +35,9 @@ public class XPCrystal : MonoBehaviour
     {
         while(elapsedTime < 1)
         {
-            transform.position = Vector3.Lerp(transform.position, GameController.instance.playerController.transform.position, elapsedTime * 0.1f);
+            transform.position = Vector3.Lerp(transform.position, 
+                GameController.instance.playerController.transform.position, 
+                elapsedTime * 0.075f);
             yield return new WaitForEndOfFrame();
         }
         yield return new WaitForEndOfFrame();
