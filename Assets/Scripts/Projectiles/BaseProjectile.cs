@@ -32,15 +32,26 @@ public class BaseProjectile : MonoBehaviour
 
     public void SetStats(ItemEffect.ItemStat itemStat)
     {
-        dmg = itemStat.passiveAtk;
-        hp = itemStat.passiveHp;
-        speed = itemStat.passiveSpd;
+        dmg = itemStat.effectValue;
+        hp = itemStat.effectHitLife;
+        speed = itemStat.effectSpeed;
+        lifeDuration = itemStat.effectLife;
     }
 
     protected void SetDie()
     {
-        spriteRenderer.enabled = false;
+        StartCoroutine(FadeAway());
         col.enabled = false;
-        Destroy(this.gameObject, 1f);
+        Destroy(this.gameObject, 1.2f);
+    }
+
+    protected IEnumerator FadeAway()
+    {
+        while(spriteRenderer.color.a >0f)
+        {
+            spriteRenderer.color -= new Color(0.0f, 0.0f, 0.0f, 2.5f * Time.deltaTime);
+            yield return new WaitForEndOfFrame();
+        }
+        yield return 0;
     }
 }

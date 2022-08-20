@@ -5,6 +5,7 @@ using UnityEngine;
 public class ShroomEffect : ItemEffect
 {
     public Transform playerTf;
+    public GameObject ShroomProjectilePrefab;
 
     // Start is called before the first frame update
     void Start()
@@ -21,10 +22,19 @@ public class ShroomEffect : ItemEffect
     public override void TimedEffect()
     {
         Debug.Log("Shroom Attack");
+        FireShroom();
     }
 
     public override void PlayerHitEffect()
     {
+
+    }
+
+    void FireShroom()
+    {
+        //for (int i = 0; i < itemStatsAtLevel[currLevel].effectValue; ++i)
+        GameObject obj = Instantiate(ShroomProjectilePrefab, this.transform.position, Quaternion.identity);
+        obj.GetComponent<BaseProjectile>().SetStats(itemStatsAtLevel[currLevel]);
 
     }
 }

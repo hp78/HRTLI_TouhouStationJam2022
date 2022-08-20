@@ -5,7 +5,7 @@ using UnityEngine;
 public class PadEffect : ItemEffect
 {
     public Transform playerTf;
-
+    public GameObject padProjectilePrefab;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,9 +21,20 @@ public class PadEffect : ItemEffect
     public override void TimedEffect()
     {
         Debug.Log("Pad Attack");
+        FirePad();
     }
 
     public override void PlayerHitEffect()
+    {
+        float rand = Random.Range(0f, 100f);
+        if (rand <= itemStatsAtLevel[currLevel].effectChance)
+        {
+            GameObject obj = Instantiate(padProjectilePrefab, this.transform.position, Quaternion.identity);
+        }
+
+    }
+
+    void FirePad()
     {
 
     }

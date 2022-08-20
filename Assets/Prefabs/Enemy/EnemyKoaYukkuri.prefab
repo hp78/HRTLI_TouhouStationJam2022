@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3736753547254381419}
   - component: {fileID: 3736753547254381416}
   - component: {fileID: 3736753547254381417}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemyKoaYukkuri
   m_TagString: Enemy
   m_Icon: {fileID: 0}

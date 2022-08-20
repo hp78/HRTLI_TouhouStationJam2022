@@ -34,7 +34,7 @@ public class ChinaStarEffect : ItemEffect
 
     IEnumerator FireStar()
     {
-        for (int i = 0; i < itemStatsAtLevel[currLevel].effectValue; ++i)
+        for (int i = 0; i < itemStatsAtLevel[currLevel].effectCount; ++i)
         {
             GameObject obj = Instantiate(StarProjectilePrefab, this.transform.position+ new Vector3(Random.Range(-2f, 2f), Random.Range(-2f, 2f), this.transform.position.z), Quaternion.identity);
             obj.GetComponent<BaseProjectile>().SetStats(itemStatsAtLevel[currLevel]);

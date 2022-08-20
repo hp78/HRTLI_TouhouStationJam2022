@@ -165,4 +165,15 @@ public class PlayerController : MonoBehaviour
     {
 
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+
+        if (collision.collider.CompareTag("Enemy"))
+        {
+            Debug.Log("TAKING DMG");
+
+            OnPlayerHit(1f);
+        }
+    }
 }

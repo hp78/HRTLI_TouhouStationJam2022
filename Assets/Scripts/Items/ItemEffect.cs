@@ -10,6 +10,10 @@ public class ItemEffect : MonoBehaviour
     {
         [Space(5)]
         public float effectValue;
+        public float effectCount;
+        public float effectHitLife;
+        public float effectLife;
+        public float effectSpeed;
         public float effectCooldown;
         public float effectChance;
 

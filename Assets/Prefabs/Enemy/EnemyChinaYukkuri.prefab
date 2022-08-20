@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 6067162178067063303}
   - component: {fileID: 6067162178067063300}
   - component: {fileID: 6067162178067063301}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemyChinaYukkuri
   m_TagString: Enemy
   m_Icon: {fileID: 0}

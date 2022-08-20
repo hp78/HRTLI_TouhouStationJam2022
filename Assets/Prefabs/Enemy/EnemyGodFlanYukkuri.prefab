@@ -235,7 +235,7 @@ GameObject:
   - component: {fileID: 2662430388291418478}
   - component: {fileID: 2662430388291418477}
   - component: {fileID: 2662430388291418476}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemyGodFlanYukkuri
   m_TagString: Enemy
   m_Icon: {fileID: 0}

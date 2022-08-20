@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 3827427018914259324}
   - component: {fileID: 3827427018914259327}
   - component: {fileID: 3827427018914259326}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemyReimuYukkuri
   m_TagString: Enemy
   m_Icon: {fileID: 0}

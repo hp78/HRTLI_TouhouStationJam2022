@@ -67,7 +67,7 @@ GameObject:
   - component: {fileID: 4224277392293468294}
   - component: {fileID: 4224277392293468293}
   - component: {fileID: 4224277392293468292}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemySakuyaYukkuri
   m_TagString: Enemy
   m_Icon: {fileID: 0}
