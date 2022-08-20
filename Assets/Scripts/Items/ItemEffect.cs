@@ -16,13 +16,15 @@ public class ItemEffect : MonoBehaviour
         public float passiveDef;
         public float passiveSpd;
         public float passiveHp;
+
+        [Space(5)]
+        public string itemDesc;
     }
 
     public bool isOffensiveSkill = true;
     public float currTimer = 0f;
 
     [Space(5)]
-    public string itemDesc;
     public string itemFlavorText;
 
     [Space(5)]
