@@ -186,6 +186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f40863fe8c0b62e4292fed5ee4d982f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemName: 
   itemPic: {fileID: 21300000, guid: 14c3e60f06b6ca94a9ae5562c726ab2c, type: 3}
   isOffensiveSkill: 1
   currTimer: 0
@@ -267,7 +268,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4751523106673649661}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 0.5, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -369,6 +370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55828d6cbabdd4d41857db8714ec8678, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemName: 
   itemPic: {fileID: 21300000, guid: affe5be2fb53fbf4783fba9362c4195b, type: 3}
   isOffensiveSkill: 1
   currTimer: 0
@@ -469,6 +471,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88aff59c076fad419b5739b90b23383, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemName: 
   itemPic: {fileID: 21300000, guid: ca1b56cca9fa1b44080e86ecdc549fbd, type: 3}
   isOffensiveSkill: 1
   currTimer: 0
@@ -652,6 +655,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66d1e09e97b5ef8498f50e1faffd19f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemName: 
   itemPic: {fileID: 21300000, guid: 13cb2d25732fc4a49866df5a3134d4e8, type: 3}
   isOffensiveSkill: 1
   currTimer: 0
@@ -804,6 +808,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6597de3d01dab648b40615ce7417791, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemName: 
   itemPic: {fileID: 21300000, guid: 7ee251a5f73d8db43ba06aff0e9c98bb, type: 3}
   isOffensiveSkill: 1
   currTimer: 0
@@ -1154,6 +1159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24dd7025e63c02f418dc583944054525, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemName: 
   itemPic: {fileID: 21300000, guid: 15392f58f9696e14d9dcf8032062c19f, type: 3}
   isOffensiveSkill: 1
   currTimer: 0
