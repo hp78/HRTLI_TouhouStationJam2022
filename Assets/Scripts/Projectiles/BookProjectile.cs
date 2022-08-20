@@ -8,7 +8,7 @@ public class BookProjectile : BaseProjectile
     public Transform player;
     public Transform flareBall;
     public float growspeedMod;
-   float flickerDmgCDOn;
+    float flickerDmgCDOn;
     float flickerDmgCDOff;
     // Start is called before the first frame update
     void Start()
