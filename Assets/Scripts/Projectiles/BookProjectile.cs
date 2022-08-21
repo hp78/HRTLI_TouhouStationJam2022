@@ -15,7 +15,7 @@ public class BookProjectile : BaseProjectile
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        growspeedMod = speed * Time.deltaTime;
+        growspeedMod = speed;
     }
 
     // Update is called once per frame
@@ -42,8 +42,8 @@ public class BookProjectile : BaseProjectile
     {
         //flareBall.transform.localScale *= growspeedMod;
         flareBall.transform.localScale = new Vector3(
-          flareBall.transform.localScale.x + growspeedMod,
-          flareBall.transform.localScale.y + growspeedMod,
+          flareBall.transform.localScale.x + growspeedMod * Time.deltaTime,
+          flareBall.transform.localScale.y + growspeedMod * Time.deltaTime,
           flareBall.transform.localScale.z);
         if(flickerDmgCDOn < 0.0f)
         {

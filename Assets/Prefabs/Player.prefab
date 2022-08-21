@@ -662,9 +662,9 @@ MonoBehaviour:
   - effectValue: 0.25
     effectCount: 1
     effectHitLife: 0
-    effectLife: 1.25
-    effectSpeed: 120
-    effectCooldown: 10
+    effectLife: 1
+    effectSpeed: 80
+    effectCooldown: 20
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
@@ -675,9 +675,9 @@ MonoBehaviour:
   - effectValue: 0.5
     effectCount: 1
     effectHitLife: 0
-    effectLife: 1.25
-    effectSpeed: 120
-    effectCooldown: 10
+    effectLife: 1
+    effectSpeed: 80
+    effectCooldown: 20
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
@@ -688,9 +688,9 @@ MonoBehaviour:
   - effectValue: 0.75
     effectCount: 1
     effectHitLife: 0
-    effectLife: 1.25
-    effectSpeed: 120
-    effectCooldown: 10
+    effectLife: 1
+    effectSpeed: 80
+    effectCooldown: 20
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
@@ -701,9 +701,9 @@ MonoBehaviour:
   - effectValue: 1
     effectCount: 0
     effectHitLife: 0
-    effectLife: 1.25
-    effectSpeed: 120
-    effectCooldown: 10
+    effectLife: 1
+    effectSpeed: 80
+    effectCooldown: 20
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
@@ -714,9 +714,9 @@ MonoBehaviour:
   - effectValue: 2
     effectCount: 0
     effectHitLife: 0
-    effectLife: 1.25
-    effectSpeed: 120
-    effectCooldown: 10
+    effectLife: 1
+    effectSpeed: 80
+    effectCooldown: 20
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0

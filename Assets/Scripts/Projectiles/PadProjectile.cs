@@ -11,7 +11,7 @@ public class PadProjectile : BaseProjectile
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        growspeedMod = growspeedMod * Time.deltaTime;
+        growspeedMod = speed;
         StartCoroutine(FadeAway());
     }
 
@@ -31,8 +31,8 @@ public class PadProjectile : BaseProjectile
     void KnockBack()
     {
         pad.transform.localScale = new Vector3(
-          pad.transform.localScale.x + growspeedMod,
-          pad.transform.localScale.y + growspeedMod,
+          pad.transform.localScale.x + growspeedMod * Time.deltaTime,
+          pad.transform.localScale.y + growspeedMod * Time.deltaTime,
           pad.transform.localScale.z);
     }
 }
