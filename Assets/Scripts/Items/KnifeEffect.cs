@@ -30,7 +30,7 @@ public class KnifeEffect : ItemEffect
 
     public void FireKnife()
     {
-       for(int amt = 0; amt < itemStatsAtLevel[currLevel].effectValue; ++amt)
+       for(int amt = 0; amt < itemStatsAtLevel[currLevel].effectCount; ++amt)
         {
             GameObject obj = Instantiate(knifeProjectilePrefab, this.transform.position, Quaternion.identity);
             obj.GetComponent<BaseProjectile>().SetStats(itemStatsAtLevel[currLevel]);
