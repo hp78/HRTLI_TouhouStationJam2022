@@ -139,6 +139,7 @@ Transform:
   - {fileID: 4751523106704466962}
   - {fileID: 4751523107677182869}
   - {fileID: 4751523107102822885}
+  - {fileID: 2431153193821806833}
   m_Father: {fileID: 4751523107610154259}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1363,3 +1364,55 @@ MonoBehaviour:
   playerTf: {fileID: 0}
   CardProjectilePrefab: {fileID: 2708215233966847339, guid: 062feecffee18f94a99296c3733a8000, type: 3}
   targetArrow: {fileID: 4751523107256472019}
+--- !u!1 &8802339349490485190
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2431153193821806833}
+  - component: {fileID: 5428438206830460306}
+  m_Layer: 0
+  m_Name: 6 GungnirEffect
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2431153193821806833
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8802339349490485190}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4751523105753254406}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5428438206830460306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8802339349490485190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02d40006e1be0b488806bdb9a1dcebe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  itemPic: {fileID: 0}
+  isOffensiveSkill: 1
+  currTimer: 0
+  itemFlavorText: 
+  currLevel: 0
+  itemStatsAtLevel: []
+  GungnirProjectilePrefab: {fileID: 0}
