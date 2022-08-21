@@ -136,6 +136,8 @@ public class PlayerController : MonoBehaviour
         // invul frams
         // vfx
 
+
+
         foreach(ItemEffect ie in effects)
         {
             ie.PlayerHitEffect();
@@ -158,7 +160,12 @@ public class PlayerController : MonoBehaviour
     {
         if(collision.collider.CompareTag("Enemy"))
         {
-            OnPlayerHit(1);
+            float dmg = collision.gameObject.GetComponent<EnemyController>().enemyStats.damage;
+            float truedmg = dmg - bonusStatModifier.passiveDef;
+            if (truedmg <= 0.0f)
+                OnPlayerHit(1f);
+            else
+                OnPlayerHit(truedmg);
         }
     }
 
@@ -176,6 +183,7 @@ public class PlayerController : MonoBehaviour
     {
         effects[itemEffectIndex].LevelUpItem();
         GameController.instance.hudControl.UpdateItemSlot(itemEffectIndex, ref effects[itemEffectIndex]);
+        RecalculateBonusStats();
     }
 
     public void HealPlayer(float val)

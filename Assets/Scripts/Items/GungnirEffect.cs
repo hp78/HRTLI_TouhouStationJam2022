@@ -6,7 +6,7 @@ public class GungnirEffect : ItemEffect
 {
 
     public GameObject GungnirProjectilePrefab;
-
+    public PlayerController player;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +28,11 @@ public class GungnirEffect : ItemEffect
 
     public override void PlayerHitEffect()
     {
-
+        float rand = Random.Range(0f, 100f);
+        if (rand <= itemStatsAtLevel[currLevel].effectChance)
+        {
+            player.HealPlayer(currLevel * 2f);
+        }
     }
 
     IEnumerator FireGungnir()
