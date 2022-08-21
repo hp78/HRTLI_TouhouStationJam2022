@@ -26,6 +26,8 @@ public class ItemEffect : MonoBehaviour
         [Space(5)]
         [Multiline]
         public string itemDesc;
+        [Multiline]
+        public string itemPassiveDesc;
     }
 
     public string itemName;
