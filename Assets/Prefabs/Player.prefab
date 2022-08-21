@@ -413,12 +413,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f40863fe8c0b62e4292fed5ee4d982f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: 
+  itemName: Stiletto
   itemPic: {fileID: 21300000, guid: 14c3e60f06b6ca94a9ae5562c726ab2c, type: 3}
   isOffensiveSkill: 1
   currTimer: 0
-  itemFlavorText: 'Aim pointy edge towards foe... '
-  currLevel: 0
+  itemFlavorText: A weapon made for straight thrusts... not slashes
+  currLevel: 1
   itemStatsAtLevel:
   - effectValue: 0
     effectCount: 0
@@ -436,7 +436,7 @@ MonoBehaviour:
   - effectValue: 2.5
     effectCount: 1
     effectHitLife: 1
-    effectLife: 5
+    effectLife: 2
     effectSpeed: 1000
     effectCooldown: 3
     effectChance: 0
@@ -449,7 +449,7 @@ MonoBehaviour:
   - effectValue: 2.5
     effectCount: 2
     effectHitLife: 2
-    effectLife: 5
+    effectLife: 1
     effectSpeed: 2000
     effectCooldown: 2.8
     effectChance: 0
@@ -465,7 +465,7 @@ MonoBehaviour:
   - effectValue: 5
     effectCount: 3
     effectHitLife: 3
-    effectLife: 5
+    effectLife: 1
     effectSpeed: 3000
     effectCooldown: 2.6
     effectChance: 0
@@ -481,7 +481,7 @@ MonoBehaviour:
   - effectValue: 5
     effectCount: 4
     effectHitLife: 4
-    effectLife: 5
+    effectLife: 1
     effectSpeed: 4000
     effectCooldown: 2.4
     effectChance: 0
@@ -497,7 +497,7 @@ MonoBehaviour:
   - effectValue: 7.5
     effectCount: 5
     effectHitLife: 10
-    effectLife: 5
+    effectLife: 1
     effectSpeed: 5000
     effectCooldown: 2
     effectChance: 0
@@ -985,12 +985,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66d1e09e97b5ef8498f50e1faffd19f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: 
+  itemName: Cheif Padding
   itemPic: {fileID: 21300000, guid: 13cb2d25732fc4a49866df5a3134d4e8, type: 3}
   isOffensiveSkill: 1
   currTimer: 0
   itemFlavorText: '"Seriously?! Pad jokes in 2022?"'
-  currLevel: 0
+  currLevel: 1
   itemStatsAtLevel:
   - effectValue: 0
     effectCount: 0
@@ -1008,8 +1008,8 @@ MonoBehaviour:
   - effectValue: 0
     effectCount: 0
     effectHitLife: 0
-    effectLife: 0
-    effectSpeed: 0
+    effectLife: 0.15
+    effectSpeed: 50
     effectCooldown: 0
     effectChance: 25
     passiveAtk: 0
@@ -1021,8 +1021,8 @@ MonoBehaviour:
   - effectValue: 0
     effectCount: 0
     effectHitLife: 0
-    effectLife: 0
-    effectSpeed: 0
+    effectLife: 0.15
+    effectSpeed: 50
     effectCooldown: 0
     effectChance: 30
     passiveAtk: 0
@@ -1034,8 +1034,8 @@ MonoBehaviour:
   - effectValue: 0
     effectCount: 0
     effectHitLife: 0
-    effectLife: 0
-    effectSpeed: 0
+    effectLife: 0.15
+    effectSpeed: 50
     effectCooldown: 0
     effectChance: 35
     passiveAtk: 0
@@ -1047,8 +1047,8 @@ MonoBehaviour:
   - effectValue: 0
     effectCount: 0
     effectHitLife: 0
-    effectLife: 0
-    effectSpeed: 0
+    effectLife: 0.15
+    effectSpeed: 50
     effectCooldown: 0
     effectChance: 40
     passiveAtk: 0
@@ -1060,8 +1060,8 @@ MonoBehaviour:
   - effectValue: 0
     effectCount: 0
     effectHitLife: 0
-    effectLife: 0
-    effectSpeed: 0
+    effectLife: 0.15
+    effectSpeed: 50
     effectCooldown: 0
     effectChance: 50
     passiveAtk: 0
@@ -1739,11 +1739,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c130d8b097aa25b45b653d0eaff58773, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: 
-  itemPic: {fileID: 0}
+  itemName: "L\xE6vateinn"
+  itemPic: {fileID: 21300000, guid: 0fb2506aaeda2b746b2acffe75fac1af, type: 3}
   isOffensiveSkill: 1
   currTimer: 0
-  itemFlavorText: 
+  itemFlavorText: Uhh... run
   currLevel: 0
   itemStatsAtLevel:
   - effectValue: 0
