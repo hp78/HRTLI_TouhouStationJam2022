@@ -15,8 +15,8 @@ public class ShroomProjectile : BaseProjectile
     // Start is called before the first frame update
     void Start()
     {
-        target = new Vector3(this.transform.position.x + Random.Range(-3f, 3f),
-                                this.transform.position.y + Random.Range(-3f, 3f),
+        target = new Vector3(this.transform.position.x + Random.Range(-5f, 5f),
+                                this.transform.position.y + Random.Range(-5f, 5f),
                                     this.transform.position.z);
     }
 

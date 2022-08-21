@@ -790,7 +790,7 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: 
     itemPassiveDesc: 
-  - effectValue: 0.4
+  - effectValue: 0.5
     effectCount: 1
     effectHitLife: 0
     effectLife: 5
@@ -803,7 +803,7 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: Throw 1 damaging circle that deals 2.5 damage per second.
     itemPassiveDesc: 
-  - effectValue: 0.8
+  - effectValue: 1
     effectCount: 1
     effectHitLife: 0
     effectLife: 5
@@ -816,7 +816,7 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: Throw 1 damaging circle that deals 5 damage per second.
     itemPassiveDesc: 
-  - effectValue: 1.2
+  - effectValue: 1.25
     effectCount: 2
     effectHitLife: 0
     effectLife: 5
@@ -1774,7 +1774,7 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: Shoots a horizontal beam in front dealing 20 damage.
     itemPassiveDesc: 
-  - effectValue: 40
+  - effectValue: 25
     effectCount: 1
     effectHitLife: 0
     effectLife: 0.15
@@ -1787,7 +1787,7 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: Shoots a horizontal beam in front dealing 40 damage.
     itemPassiveDesc: 
-  - effectValue: 60
+  - effectValue: 30
     effectCount: 0
     effectHitLife: 0
     effectLife: 0.15
@@ -1800,7 +1800,7 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: Shoots a horizontal beam in front dealing 60 damage.
     itemPassiveDesc: 
-  - effectValue: 80
+  - effectValue: 35
     effectCount: 0
     effectHitLife: 0
     effectLife: 0.15
@@ -1813,7 +1813,7 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: Shoots a horizontal beam in front dealing 80 damage.
     itemPassiveDesc: 
-  - effectValue: 100
+  - effectValue: 40
     effectCount: 0
     effectHitLife: 0
     effectLife: 0.15
