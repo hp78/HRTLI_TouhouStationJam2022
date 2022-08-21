@@ -1989,4 +1989,4 @@ MonoBehaviour:
     itemDesc: Rain down 10 spear on an enemy, dealing 5 damage.
     itemPassiveDesc: 20% Chance on hit to gain 10 health
   GungnirProjectilePrefab: {fileID: 6762410172342543651, guid: 70775c65367e0ff44ad5be0ee91e26f4, type: 3}
-  player: {fileID: 0}
+  player: {fileID: 4751523107610154256}
