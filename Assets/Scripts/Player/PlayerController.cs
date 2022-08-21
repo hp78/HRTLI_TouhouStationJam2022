@@ -107,7 +107,7 @@ public class PlayerController : MonoBehaviour
             moveDir = moveDir.normalized;
         }
 
-        rb2d.velocity = (moveDir * Time.deltaTime * speed * (1 + bonusStatModifier.passiveSpd));
+        rb2d.velocity = (moveDir * speed * (1 + bonusStatModifier.passiveSpd));
 
         animator.SetFloat("Speed", moveDir.sqrMagnitude);
     }

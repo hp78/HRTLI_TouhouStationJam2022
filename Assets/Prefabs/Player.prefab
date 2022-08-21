@@ -639,11 +639,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55828d6cbabdd4d41857db8714ec8678, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: Magical Tome
+  itemName: 
   itemPic: {fileID: 21300000, guid: affe5be2fb53fbf4783fba9362c4195b, type: 3}
   isOffensiveSkill: 1
   currTimer: 0
-  itemFlavorText: Do you even read?
+  itemFlavorText: 
   currLevel: 0
   itemStatsAtLevel:
   - effectValue: 0
@@ -770,11 +770,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88aff59c076fad419b5739b90b23383, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: Toxic Shroom
+  itemName: 
   itemPic: {fileID: 21300000, guid: ca1b56cca9fa1b44080e86ecdc549fbd, type: 3}
   isOffensiveSkill: 1
   currTimer: 0
-  itemFlavorText: These sadly, do not give a trip
+  itemFlavorText: 
   currLevel: 0
   itemStatsAtLevel:
   - effectValue: 0
@@ -1169,11 +1169,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6597de3d01dab648b40615ce7417791, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: Dragon Stars
+  itemName: 
   itemPic: {fileID: 21300000, guid: 7ee251a5f73d8db43ba06aff0e9c98bb, type: 3}
   isOffensiveSkill: 1
   currTimer: 0
-  itemFlavorText: J A A A O O O O O
+  itemFlavorText: 
   currLevel: 0
   itemStatsAtLevel:
   - effectValue: 0
@@ -1423,8 +1423,8 @@ MonoBehaviour:
   currMaxHealth: 0
   baseMaxHealth: 0
   speed: 500
-  bankiHeadPrefab: {fileID: 6114344851043820608, guid: a1dbd28de80c4ec458b0e593541da4e8, type: 3}
-  playerCoin: {fileID: 11400000, guid: 0830bc2178bfcb74889b5ad083662455, type: 2}
+  bankiHeadPrefab: {fileID: 0}
+  playerCoin: {fileID: 0}
   currLevel: 1
   currXP: 0
   nextXP: 10
@@ -1572,11 +1572,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24dd7025e63c02f418dc583944054525, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: Library Card
+  itemName: 
   itemPic: {fileID: 21300000, guid: 15392f58f9696e14d9dcf8032062c19f, type: 3}
   isOffensiveSkill: 1
   currTimer: 0
-  itemFlavorText: '"This isn''t a public library."   -Patchouli'
+  itemFlavorText: '"This isn''t a public library." -Patchouli'
   currLevel: 0
   itemStatsAtLevel:
   - effectValue: 0
@@ -1904,11 +1904,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f02d40006e1be0b488806bdb9a1dcebe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: Gungnir
+  itemName: 
   itemPic: {fileID: 21300000, guid: 1ed8d4866e2170345b2e6ca0ad11a2b1, type: 3}
   isOffensiveSkill: 1
   currTimer: 0
-  itemFlavorText: Can't believe she just leaves this lying around
+  itemFlavorText: 
   currLevel: 0
   itemStatsAtLevel:
   - effectValue: 0
