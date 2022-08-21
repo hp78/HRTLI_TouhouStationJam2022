@@ -98,7 +98,7 @@ MonoBehaviour:
   rigidbody2d: {fileID: 208155274731519884}
   col: {fileID: 208155274731519887}
   direction: {x: 0, y: 0}
-  speed: 1
+  speed: 500
   lifeDuration: 3
   dmg: 0
   hp: 0

@@ -171,7 +171,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerController: {fileID: 0}
-  selectionBtns: []
+  selectionBtns:
+  - {fileID: 3486900247027318195}
+  - {fileID: 3486900246106867550}
+  - {fileID: 3486900246926414370}
   itemPic:
   - {fileID: 3486900245475819305}
   - {fileID: 3486900245975067139}
@@ -191,7 +194,7 @@ MonoBehaviour:
   miscSprites:
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 6c067463e6417d3439609d8986c0e331, type: 3}
 --- !u!1 &1235867625933517213
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
+    [Header("Hard References")]
     public static GameController instance;
     public PlayerController playerController;
-    public GameObject pauseMenu;
+
+    [Header("UI Elements")]
+    public HUDController hudControl;
+    public PauseMenuController pauseMenu;
     public LevelUpMenuController lvlUpMenu;
 
     [Space(5)]
@@ -37,12 +41,12 @@ public class GameController : MonoBehaviour
         {
             if(Time.timeScale == 1)
             {
-                pauseMenu.SetActive(true);
+                pauseMenu.gameObject.SetActive(true);
                 Time.timeScale = 0f;
             }
             else
             {
-                pauseMenu.SetActive(false);
+                pauseMenu.gameObject.SetActive(false);
                 Time.timeScale = 1f;
             }
         }
