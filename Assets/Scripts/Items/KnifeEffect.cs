@@ -34,6 +34,7 @@ public class KnifeEffect : ItemEffect
         {
             GameObject obj = Instantiate(knifeProjectilePrefab, this.transform.position, Quaternion.identity);
             obj.GetComponent<BaseProjectile>().SetStats(itemStatsAtLevel[currLevel]);
+
         }
     }
 }

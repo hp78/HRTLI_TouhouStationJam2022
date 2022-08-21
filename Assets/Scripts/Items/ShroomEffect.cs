@@ -32,9 +32,11 @@ public class ShroomEffect : ItemEffect
 
     void FireShroom()
     {
-        //for (int i = 0; i < itemStatsAtLevel[currLevel].effectValue; ++i)
-        GameObject obj = Instantiate(ShroomProjectilePrefab, this.transform.position, Quaternion.identity);
-        obj.GetComponent<BaseProjectile>().SetStats(itemStatsAtLevel[currLevel]);
+        for (int i = 0; i < itemStatsAtLevel[currLevel].effectCount; ++i)
+        {
+            GameObject obj = Instantiate(ShroomProjectilePrefab, this.transform.position, Quaternion.identity);
+            obj.GetComponent<BaseProjectile>().SetStats(itemStatsAtLevel[currLevel]);
+        }
 
     }
 }

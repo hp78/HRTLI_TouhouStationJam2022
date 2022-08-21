@@ -195,23 +195,23 @@ MonoBehaviour:
   itemFlavorText: 'Aim pointy edge towards foe... '
   currLevel: 0
   itemStatsAtLevel:
-  - effectValue: 1
+  - effectValue: 0
     effectCount: 0
     effectHitLife: 0
     effectLife: 0
     effectSpeed: 0
-    effectCooldown: 1
+    effectCooldown: 0
     effectChance: 0
-    passiveAtk: 1
+    passiveAtk: 0
     passiveDef: 0
-    passiveSpd: 5
-    passiveHp: 1
+    passiveSpd: 0
+    passiveHp: 0
     itemDesc: 
-  - effectValue: 1
-    effectCount: 0
+  - effectValue: 2
+    effectCount: 1
     effectHitLife: 1
     effectLife: 5
-    effectSpeed: 800
+    effectSpeed: 1000
     effectCooldown: 3
     effectChance: 0
     passiveAtk: 0
@@ -220,10 +220,10 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: 
   - effectValue: 2
-    effectCount: 0
-    effectHitLife: 0
+    effectCount: 2
+    effectHitLife: 2
     effectLife: 5
-    effectSpeed: 1000
+    effectSpeed: 2000
     effectCooldown: 2.8
     effectChance: 0
     passiveAtk: 0
@@ -231,11 +231,11 @@ MonoBehaviour:
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
-  - effectValue: 0
-    effectCount: 0
-    effectHitLife: 2
+  - effectValue: 3
+    effectCount: 3
+    effectHitLife: 3
     effectLife: 5
-    effectSpeed: 1200
+    effectSpeed: 3000
     effectCooldown: 2.6
     effectChance: 0
     passiveAtk: 0
@@ -243,23 +243,23 @@ MonoBehaviour:
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
-  - effectValue: 0
-    effectCount: 0
-    effectHitLife: 2
-    effectLife: 1400
-    effectSpeed: 2.4
-    effectCooldown: 0
+  - effectValue: 4
+    effectCount: 4
+    effectHitLife: 4
+    effectLife: 5
+    effectSpeed: 4000
+    effectCooldown: 2.4
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
-  - effectValue: 0
-    effectCount: 0
-    effectHitLife: 3
+  - effectValue: 5
+    effectCount: 5
+    effectHitLife: 10
     effectLife: 5
-    effectSpeed: 1750
+    effectSpeed: 5000
     effectCooldown: 2
     effectChance: 0
     passiveAtk: 0
@@ -403,72 +403,72 @@ MonoBehaviour:
   itemFlavorText: 
   currLevel: 0
   itemStatsAtLevel:
-  - effectValue: 1.25
+  - effectValue: 0
     effectCount: 0
     effectHitLife: 0
     effectLife: 0
     effectSpeed: 0
+    effectCooldown: 0
+    effectChance: 0
+    passiveAtk: 0
+    passiveDef: 0
+    passiveSpd: 0
+    passiveHp: 0
+    itemDesc: 
+  - effectValue: 0.25
+    effectCount: 1
+    effectHitLife: 0
+    effectLife: 1.25
+    effectSpeed: 120
     effectCooldown: 10
     effectChance: 0
-    passiveAtk: 0.25
+    passiveAtk: 0
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
-  - effectValue: 0
-    effectCount: 0
+  - effectValue: 0.5
+    effectCount: 1
     effectHitLife: 0
-    effectLife: 0
-    effectSpeed: 0
-    effectCooldown: 0
+    effectLife: 1.25
+    effectSpeed: 120
+    effectCooldown: 10
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
-  - effectValue: 0
-    effectCount: 0
+  - effectValue: 0.75
+    effectCount: 1
     effectHitLife: 0
-    effectLife: 0
-    effectSpeed: 0
-    effectCooldown: 0
+    effectLife: 1.25
+    effectSpeed: 120
+    effectCooldown: 10
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
-  - effectValue: 0
+  - effectValue: 1
     effectCount: 0
     effectHitLife: 0
-    effectLife: 0
-    effectSpeed: 0
-    effectCooldown: 0
+    effectLife: 1.25
+    effectSpeed: 120
+    effectCooldown: 10
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
-  - effectValue: 0
+  - effectValue: 2
     effectCount: 0
     effectHitLife: 0
-    effectLife: 0
-    effectSpeed: 0
-    effectCooldown: 0
-    effectChance: 0
-    passiveAtk: 0
-    passiveDef: 0
-    passiveSpd: 0
-    passiveHp: 0
-    itemDesc: 
-  - effectValue: 0
-    effectCount: 0
-    effectHitLife: 0
-    effectLife: 0
-    effectSpeed: 0
-    effectCooldown: 0
+    effectLife: 1.25
+    effectSpeed: 120
+    effectCooldown: 10
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
@@ -533,67 +533,67 @@ MonoBehaviour:
     effectHitLife: 0
     effectLife: 0
     effectSpeed: 0
+    effectCooldown: 0
+    effectChance: 0
+    passiveAtk: 0
+    passiveDef: 0
+    passiveSpd: 0
+    passiveHp: 0
+    itemDesc: 
+  - effectValue: 0.15
+    effectCount: 1
+    effectHitLife: 0
+    effectLife: 5
+    effectSpeed: 5
     effectCooldown: 5
     effectChance: 0
-    passiveAtk: 0.2
+    passiveAtk: 0
     passiveDef: 0
-    passiveSpd: 4
+    passiveSpd: 0
     passiveHp: 0
     itemDesc: 
-  - effectValue: 0
-    effectCount: 0
+  - effectValue: 0.3
+    effectCount: 1
     effectHitLife: 0
-    effectLife: 0
-    effectSpeed: 0
-    effectCooldown: 0
+    effectLife: 5
+    effectSpeed: 5
+    effectCooldown: 5
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
-  - effectValue: 0
-    effectCount: 0
+  - effectValue: 0.45
+    effectCount: 2
     effectHitLife: 0
-    effectLife: 0
-    effectSpeed: 0
-    effectCooldown: 0
+    effectLife: 5
+    effectSpeed: 5
+    effectCooldown: 5
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
-  - effectValue: 0
-    effectCount: 0
+  - effectValue: 0.6
+    effectCount: 2
     effectHitLife: 0
-    effectLife: 0
-    effectSpeed: 0
-    effectCooldown: 0
+    effectLife: 5
+    effectSpeed: 5
+    effectCooldown: 5
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
-  - effectValue: 0
-    effectCount: 0
+  - effectValue: 0.5
+    effectCount: 5
     effectHitLife: 0
-    effectLife: 0
-    effectSpeed: 0
-    effectCooldown: 0
-    effectChance: 0
-    passiveAtk: 0
-    passiveDef: 0
-    passiveSpd: 0
-    passiveHp: 0
-    itemDesc: 
-  - effectValue: 0
-    effectCount: 0
-    effectHitLife: 0
-    effectLife: 0
-    effectSpeed: 0
-    effectCooldown: 0
+    effectLife: 5
+    effectSpeed: 5
+    effectCooldown: 5
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
@@ -743,67 +743,67 @@ MonoBehaviour:
     effectLife: 0
     effectSpeed: 0
     effectCooldown: 0
+    effectChance: 0
+    passiveAtk: 0
+    passiveDef: 0
+    passiveSpd: 0
+    passiveHp: 0
+    itemDesc: 
+  - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
+    effectCooldown: 0
+    effectChance: 25
+    passiveAtk: 0
+    passiveDef: 0
+    passiveSpd: 0
+    passiveHp: 0
+    itemDesc: 
+  - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
+    effectCooldown: 0
+    effectChance: 30
+    passiveAtk: 0
+    passiveDef: 0
+    passiveSpd: 0
+    passiveHp: 0
+    itemDesc: 
+  - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
+    effectCooldown: 0
+    effectChance: 35
+    passiveAtk: 0
+    passiveDef: 0
+    passiveSpd: 0
+    passiveHp: 0
+    itemDesc: 
+  - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
+    effectCooldown: 0
+    effectChance: 40
+    passiveAtk: 0
+    passiveDef: 0
+    passiveSpd: 0
+    passiveHp: 0
+    itemDesc: 
+  - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
+    effectCooldown: 0
     effectChance: 50
-    passiveAtk: 0
-    passiveDef: 0
-    passiveSpd: 0
-    passiveHp: 0
-    itemDesc: 
-  - effectValue: 0
-    effectCount: 0
-    effectHitLife: 0
-    effectLife: 0
-    effectSpeed: 0
-    effectCooldown: 0
-    effectChance: 0
-    passiveAtk: 0
-    passiveDef: 0
-    passiveSpd: 0
-    passiveHp: 0
-    itemDesc: 
-  - effectValue: 0
-    effectCount: 0
-    effectHitLife: 0
-    effectLife: 0
-    effectSpeed: 0
-    effectCooldown: 0
-    effectChance: 0
-    passiveAtk: 0
-    passiveDef: 0
-    passiveSpd: 0
-    passiveHp: 0
-    itemDesc: 
-  - effectValue: 0
-    effectCount: 0
-    effectHitLife: 0
-    effectLife: 0
-    effectSpeed: 0
-    effectCooldown: 0
-    effectChance: 0
-    passiveAtk: 0
-    passiveDef: 0
-    passiveSpd: 0
-    passiveHp: 0
-    itemDesc: 
-  - effectValue: 0
-    effectCount: 0
-    effectHitLife: 0
-    effectLife: 0
-    effectSpeed: 0
-    effectCooldown: 0
-    effectChance: 0
-    passiveAtk: 0
-    passiveDef: 0
-    passiveSpd: 0
-    passiveHp: 0
-    itemDesc: 
-  - effectValue: 0
-    effectCount: 0
-    effectHitLife: 0
-    effectLife: 0
-    effectSpeed: 0
-    effectCooldown: 0
-    effectChance: 0
     passiveAtk: 0
     passiveDef: 0
     passiveSpd: 0
@@ -915,18 +915,6 @@ MonoBehaviour:
   itemFlavorText: 
   currLevel: 0
   itemStatsAtLevel:
-  - effectValue: 1
-    effectCount: 0
-    effectHitLife: 0
-    effectLife: 0
-    effectSpeed: 0
-    effectCooldown: 15
-    effectChance: 0
-    passiveAtk: 1
-    passiveDef: 0
-    passiveSpd: 2.5
-    passiveHp: 0
-    itemDesc: 
   - effectValue: 0
     effectCount: 0
     effectHitLife: 0
@@ -939,48 +927,60 @@ MonoBehaviour:
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
-  - effectValue: 0
-    effectCount: 0
-    effectHitLife: 0
-    effectLife: 0
-    effectSpeed: 0
-    effectCooldown: 0
+  - effectValue: 2
+    effectCount: 1
+    effectHitLife: 5
+    effectLife: 10
+    effectSpeed: 3
+    effectCooldown: 12
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
-  - effectValue: 0
-    effectCount: 0
-    effectHitLife: 0
-    effectLife: 0
-    effectSpeed: 0
-    effectCooldown: 0
+  - effectValue: 4
+    effectCount: 1
+    effectHitLife: 7
+    effectLife: 10
+    effectSpeed: 3
+    effectCooldown: 11
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
-  - effectValue: 0
-    effectCount: 0
-    effectHitLife: 0
-    effectLife: 0
-    effectSpeed: 0
-    effectCooldown: 0
+  - effectValue: 5
+    effectCount: 2
+    effectHitLife: 9
+    effectLife: 10
+    effectSpeed: 3
+    effectCooldown: 10
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
-  - effectValue: 0
-    effectCount: 0
-    effectHitLife: 0
-    effectLife: 0
-    effectSpeed: 0
-    effectCooldown: 0
+  - effectValue: 6
+    effectCount: 2
+    effectHitLife: 11
+    effectLife: 10
+    effectSpeed: 3
+    effectCooldown: 8
+    effectChance: 0
+    passiveAtk: 0
+    passiveDef: 0
+    passiveSpd: 0
+    passiveHp: 0
+    itemDesc: 
+  - effectValue: 8
+    effectCount: 3
+    effectHitLife: 50
+    effectLife: 10
+    effectSpeed: 5
+    effectCooldown: 5
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
@@ -1154,6 +1154,8 @@ MonoBehaviour:
   - {fileID: 4751523106704466965}
   - {fileID: 4751523107677182868}
   - {fileID: 4751523107102822884}
+  - {fileID: 5428438206830460306}
+  - {fileID: 1242223653812111617}
 --- !u!61 &4751523107610154257
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1295,18 +1297,6 @@ MonoBehaviour:
     effectHitLife: 0
     effectLife: 0
     effectSpeed: 0
-    effectCooldown: 2
-    effectChance: 0
-    passiveAtk: 5
-    passiveDef: 0
-    passiveSpd: 0
-    passiveHp: 0
-    itemDesc: 
-  - effectValue: 0
-    effectCount: 0
-    effectHitLife: 0
-    effectLife: 0
-    effectSpeed: 0
     effectCooldown: 0
     effectChance: 0
     passiveAtk: 0
@@ -1314,48 +1304,60 @@ MonoBehaviour:
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
-  - effectValue: 0
-    effectCount: 0
+  - effectValue: 5
+    effectCount: 1
     effectHitLife: 0
     effectLife: 0
     effectSpeed: 0
-    effectCooldown: 0
+    effectCooldown: 1.5
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
-  - effectValue: 0
-    effectCount: 0
+  - effectValue: 7.5
+    effectCount: 1
     effectHitLife: 0
     effectLife: 0
     effectSpeed: 0
-    effectCooldown: 0
+    effectCooldown: 1.5
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
-  - effectValue: 0
+  - effectValue: 10
     effectCount: 0
     effectHitLife: 0
     effectLife: 0
     effectSpeed: 0
-    effectCooldown: 0
+    effectCooldown: 1.5
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
-  - effectValue: 0
+  - effectValue: 10
     effectCount: 0
     effectHitLife: 0
     effectLife: 0
     effectSpeed: 0
-    effectCooldown: 0
+    effectCooldown: 1
+    effectChance: 0
+    passiveAtk: 0
+    passiveDef: 0
+    passiveSpd: 0
+    passiveHp: 0
+    itemDesc: 
+  - effectValue: 10
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
+    effectCooldown: 0.5
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
@@ -1416,11 +1418,23 @@ MonoBehaviour:
   itemFlavorText: 
   currLevel: 0
   itemStatsAtLevel:
-  - effectValue: 10
+  - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
+    effectCooldown: 0
+    effectChance: 0
+    passiveAtk: 0
+    passiveDef: 0
+    passiveSpd: 0
+    passiveHp: 0
+    itemDesc: 
+  - effectValue: 20
     effectCount: 1
     effectHitLife: 0
     effectLife: 0.15
-    effectSpeed: 25000
+    effectSpeed: 17500
     effectCooldown: 5
     effectChance: 0
     passiveAtk: 0
@@ -1428,60 +1442,48 @@ MonoBehaviour:
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
-  - effectValue: 0
-    effectCount: 0
+  - effectValue: 40
+    effectCount: 1
     effectHitLife: 0
-    effectLife: 0
-    effectSpeed: 0
-    effectCooldown: 0
+    effectLife: 0.15
+    effectSpeed: 17500
+    effectCooldown: 5
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
-  - effectValue: 0
+  - effectValue: 60
     effectCount: 0
     effectHitLife: 0
-    effectLife: 0
-    effectSpeed: 0
-    effectCooldown: 0
+    effectLife: 0.15
+    effectSpeed: 17500
+    effectCooldown: 5
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
-  - effectValue: 0
+  - effectValue: 80
     effectCount: 0
     effectHitLife: 0
-    effectLife: 0
-    effectSpeed: 0
-    effectCooldown: 0
+    effectLife: 0.15
+    effectSpeed: 17500
+    effectCooldown: 5
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
-  - effectValue: 0
+  - effectValue: 100
     effectCount: 0
     effectHitLife: 0
-    effectLife: 0
-    effectSpeed: 0
-    effectCooldown: 0
-    effectChance: 0
-    passiveAtk: 0
-    passiveDef: 0
-    passiveSpd: 0
-    passiveHp: 0
-    itemDesc: 
-  - effectValue: 0
-    effectCount: 0
-    effectHitLife: 0
-    effectLife: 0
-    effectSpeed: 0
-    effectCooldown: 0
+    effectLife: 0.15
+    effectSpeed: 17500
+    effectCooldown: 5
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
@@ -1540,72 +1542,72 @@ MonoBehaviour:
   itemFlavorText: 
   currLevel: 0
   itemStatsAtLevel:
-  - effectValue: 5
+  - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
+    effectCooldown: 0
+    effectChance: 0
+    passiveAtk: 0
+    passiveDef: 0
+    passiveSpd: 0
+    passiveHp: 0
+    itemDesc: 
+  - effectValue: 10
     effectCount: 1
     effectHitLife: 0
     effectLife: 0
     effectSpeed: 0
-    effectCooldown: 3
+    effectCooldown: 1.5
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
-  - effectValue: 0
-    effectCount: 0
+  - effectValue: 10
+    effectCount: 2
     effectHitLife: 0
     effectLife: 0
     effectSpeed: 0
-    effectCooldown: 0
+    effectCooldown: 1.5
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
-  - effectValue: 0
-    effectCount: 0
+  - effectValue: 10
+    effectCount: 3
     effectHitLife: 0
     effectLife: 0
     effectSpeed: 0
-    effectCooldown: 0
+    effectCooldown: 1.5
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
-  - effectValue: 0
-    effectCount: 0
+  - effectValue: 10
+    effectCount: 4
     effectHitLife: 0
     effectLife: 0
     effectSpeed: 0
-    effectCooldown: 0
+    effectCooldown: 1.5
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
-  - effectValue: 0
-    effectCount: 0
+  - effectValue: 5
+    effectCount: 10
     effectHitLife: 0
     effectLife: 0
     effectSpeed: 0
-    effectCooldown: 0
-    effectChance: 0
-    passiveAtk: 0
-    passiveDef: 0
-    passiveSpd: 0
-    passiveHp: 0
-    itemDesc: 
-  - effectValue: 0
-    effectCount: 0
-    effectHitLife: 0
-    effectLife: 0
-    effectSpeed: 0
-    effectCooldown: 0
+    effectCooldown: 2.5
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0

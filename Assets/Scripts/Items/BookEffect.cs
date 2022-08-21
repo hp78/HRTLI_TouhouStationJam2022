@@ -33,6 +33,5 @@ public class BookEffect : ItemEffect
     {
         GameObject obj = Instantiate(BookProjectilePrefab, this.transform.position, Quaternion.identity);
         obj.GetComponent<BaseProjectile>().SetStats(itemStatsAtLevel[currLevel]);
-        obj.GetComponent<BookProjectile>().Setduration(itemStatsAtLevel[currLevel].effectLife);
     }
 }

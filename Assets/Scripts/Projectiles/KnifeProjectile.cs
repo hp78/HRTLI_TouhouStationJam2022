@@ -9,7 +9,7 @@ public class KnifeProjectile : BaseProjectile
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Target").transform;
-        direction = (target.position - this.transform.position).normalized;
+        direction = ((target.position + new Vector3(Random.Range(-.5f, .5f), Random.Range(-.5f, .5f),0f)) - this.transform.position).normalized;
     }
 
     // Update is called once per frame

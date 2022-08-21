@@ -6,6 +6,7 @@ public class LaeveProjectile : BaseProjectile
 {
     SpriteRenderer playerSprite;
     public TrailRenderer trail;
+    public bool fireOppo;
 
     // Start is called before the first frame update
     void Start()
@@ -14,9 +15,13 @@ public class LaeveProjectile : BaseProjectile
 
         if (playerSprite.flipX == false)
         {
-            speed *= -1f;
-            spriteRenderer.flipX = true;
+            if (!fireOppo)
+            {
+                speed *= -1f;
+                spriteRenderer.flipX = true;
+            }
         }
+        
     }
 
     // Update is called once per frame

@@ -7,6 +7,7 @@ public class BookProjectile : BaseProjectile
 
     public Transform player;
     public Transform flareBall;
+    public SpriteRenderer flaresprite;
     public float growspeedMod;
     float flickerDmgCDOn;
     float flickerDmgCDOff;
@@ -14,8 +15,7 @@ public class BookProjectile : BaseProjectile
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        growspeedMod = growspeedMod * Time.deltaTime;
-       
+        growspeedMod = speed * Time.deltaTime;
     }
 
     // Update is called once per frame
@@ -24,7 +24,13 @@ public class BookProjectile : BaseProjectile
         Duration();
         Movement();
         Flare();
-
+        if(lifeDuration<0.0f)
+        {
+            if (flaresprite.color.a > 0f)
+            {
+                flaresprite.color -= new Color(0.0f, 0.0f, 0.0f, 1.5f * Time.deltaTime);
+            }
+        }
     }
 
     override protected void Movement()
@@ -55,10 +61,6 @@ public class BookProjectile : BaseProjectile
             flickerDmgCDOn -= Time.deltaTime;
         }
 
-    }
-    public void Setduration(float val)
-    {
-        lifeDuration = val;
     }
 
   

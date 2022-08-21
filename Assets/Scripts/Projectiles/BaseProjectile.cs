@@ -45,11 +45,11 @@ public class BaseProjectile : MonoBehaviour
         Destroy(this.gameObject, 1.2f);
     }
 
-    protected IEnumerator FadeAway()
+    protected IEnumerator FadeAway(float val = 2.5f)
     {
         while(spriteRenderer.color.a >0f)
         {
-            spriteRenderer.color -= new Color(0.0f, 0.0f, 0.0f, 2.5f * Time.deltaTime);
+            spriteRenderer.color -= new Color(0.0f, 0.0f, 0.0f, val * Time.deltaTime);
             yield return new WaitForEndOfFrame();
         }
         yield return 0;
