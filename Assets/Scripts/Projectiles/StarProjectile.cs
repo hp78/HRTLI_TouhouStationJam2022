@@ -45,16 +45,5 @@ public class StarProjectile : BaseProjectile
         transform.position = Vector3.MoveTowards(transform.position, desiredPosition, Time.deltaTime * radiusSpeed);
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Enemy"))
-        {
-            hp--;
-            if (hp <= 0f)
-            {
-                SetDie();
-            }
-        }
-
-    }
+ 
 }

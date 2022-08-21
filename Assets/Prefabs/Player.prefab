@@ -438,7 +438,7 @@ MonoBehaviour:
     effectHitLife: 1
     effectLife: 2
     effectSpeed: 1000
-    effectCooldown: 3
+    effectCooldown: 2
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
@@ -451,7 +451,7 @@ MonoBehaviour:
     effectHitLife: 2
     effectLife: 1
     effectSpeed: 2000
-    effectCooldown: 2.8
+    effectCooldown: 1.8
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
@@ -467,7 +467,7 @@ MonoBehaviour:
     effectHitLife: 3
     effectLife: 1
     effectSpeed: 3000
-    effectCooldown: 2.6
+    effectCooldown: 1.6
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
@@ -483,7 +483,7 @@ MonoBehaviour:
     effectHitLife: 4
     effectLife: 1
     effectSpeed: 4000
-    effectCooldown: 2.4
+    effectCooldown: 1.5
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
@@ -499,7 +499,7 @@ MonoBehaviour:
     effectHitLife: 10
     effectLife: 1
     effectSpeed: 5000
-    effectCooldown: 2
+    effectCooldown: 1.25
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
@@ -790,7 +790,7 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: 
     itemPassiveDesc: 
-  - effectValue: 0.15
+  - effectValue: 0.25
     effectCount: 1
     effectHitLife: 0
     effectLife: 5
@@ -801,48 +801,48 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
-    itemDesc: Throw 1 damaging circle that deals 1.5 damage per second.
-    itemPassiveDesc: 
-  - effectValue: 0.3
-    effectCount: 1
-    effectHitLife: 0
-    effectLife: 5
-    effectSpeed: 5
-    effectCooldown: 5
-    effectChance: 0
-    passiveAtk: 0
-    passiveDef: 0
-    passiveSpd: 0
-    passiveHp: 0
-    itemDesc: Throw 1 damaging circle that deals 3 damage per second.
-    itemPassiveDesc: 
-  - effectValue: 0.45
-    effectCount: 2
-    effectHitLife: 0
-    effectLife: 5
-    effectSpeed: 5
-    effectCooldown: 5
-    effectChance: 0
-    passiveAtk: 0
-    passiveDef: 0
-    passiveSpd: 0
-    passiveHp: 0
-    itemDesc: Throw 2 damaging circle that deals 4.5 damage per second.
-    itemPassiveDesc: 
-  - effectValue: 0.6
-    effectCount: 2
-    effectHitLife: 0
-    effectLife: 5
-    effectSpeed: 5
-    effectCooldown: 5
-    effectChance: 0
-    passiveAtk: 0
-    passiveDef: 0
-    passiveSpd: 0
-    passiveHp: 0
-    itemDesc: Throw 2 damaging circle that deals 6 damage per second.
+    itemDesc: Throw 1 damaging circle that deals 2.5 damage per second.
     itemPassiveDesc: 
   - effectValue: 0.5
+    effectCount: 1
+    effectHitLife: 0
+    effectLife: 5
+    effectSpeed: 5
+    effectCooldown: 5
+    effectChance: 0
+    passiveAtk: 0
+    passiveDef: 0
+    passiveSpd: 0
+    passiveHp: 0
+    itemDesc: Throw 1 damaging circle that deals 5 damage per second.
+    itemPassiveDesc: 
+  - effectValue: 0.75
+    effectCount: 2
+    effectHitLife: 0
+    effectLife: 5
+    effectSpeed: 5
+    effectCooldown: 5
+    effectChance: 0
+    passiveAtk: 0
+    passiveDef: 0
+    passiveSpd: 0
+    passiveHp: 0
+    itemDesc: Throw 2 damaging circle that deals 7.5 damage per second.
+    itemPassiveDesc: 
+  - effectValue: 1
+    effectCount: 2
+    effectHitLife: 0
+    effectLife: 5
+    effectSpeed: 5
+    effectCooldown: 5
+    effectChance: 0
+    passiveAtk: 0
+    passiveDef: 0
+    passiveSpd: 0
+    passiveHp: 0
+    itemDesc: Throw 2 damaging circle that deals 10 damage per second.
+    itemPassiveDesc: 
+  - effectValue: 1
     effectCount: 5
     effectHitLife: 0
     effectLife: 5
@@ -853,7 +853,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
-    itemDesc: Throw 5 damaging circle that deals 5 damage per second.
+    itemDesc: Throw 5 damaging circle that deals 10 damage per second.
     itemPassiveDesc: 
   playerTf: {fileID: 4751523107610154259}
   ShroomProjectilePrefab: {fileID: 7712340179314774028, guid: 27aec4af3ca9bce4cbc4177659c73463, type: 3}
@@ -1169,11 +1169,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6597de3d01dab648b40615ce7417791, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: 
+  itemName: Dragon Stars
   itemPic: {fileID: 21300000, guid: 7ee251a5f73d8db43ba06aff0e9c98bb, type: 3}
   isOffensiveSkill: 1
   currTimer: 0
-  itemFlavorText: 
+  itemFlavorText: J A A A O O O O O
   currLevel: 0
   itemStatsAtLevel:
   - effectValue: 0
@@ -1194,7 +1194,7 @@ MonoBehaviour:
     effectHitLife: 10
     effectLife: 10
     effectSpeed: 3
-    effectCooldown: 12
+    effectCooldown: 15
     effectChance: 0
     passiveAtk: 0
     passiveDef: 2
@@ -1205,68 +1205,68 @@ MonoBehaviour:
 
 '
     itemPassiveDesc: Increases block 2 damage from enemies.
-  - effectValue: 4
+  - effectValue: 3
     effectCount: 1
     effectHitLife: 10
     effectLife: 10
     effectSpeed: 3
-    effectCooldown: 11
+    effectCooldown: 14
     effectChance: 0
     passiveAtk: 0
     passiveDef: 4
     passiveSpd: 0
     passiveHp: 0
-    itemDesc: 'Spawns 2 spinning projectiles that orbit the player dealing 4 damage
+    itemDesc: 'Spawns 2 spinning projectiles that orbit the player dealing 3 damage
       per hit.
 
       Increased spawn rate.
 
 '
     itemPassiveDesc: Increases block 4 damage from enemies.
+  - effectValue: 4
+    effectCount: 2
+    effectHitLife: 15
+    effectLife: 10
+    effectSpeed: 3
+    effectCooldown: 13
+    effectChance: 0
+    passiveAtk: 0
+    passiveDef: 6
+    passiveSpd: 0
+    passiveHp: 0
+    itemDesc: 'Spawns 4 spinning projectiles that orbit the player dealing 4 damage
+      per hit.
+
+      Increased spawn rate and pierce.'
+    itemPassiveDesc: Increases block 6 damage from enemies.
   - effectValue: 5
     effectCount: 2
     effectHitLife: 15
     effectLife: 10
     effectSpeed: 3
-    effectCooldown: 10
+    effectCooldown: 11.5
     effectChance: 0
     passiveAtk: 0
-    passiveDef: 6
+    passiveDef: 8
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 'Spawns 4 spinning projectiles that orbit the player dealing 5 damage
       per hit.
 
       Increased spawn rate and pierce.'
-    itemPassiveDesc: Increases block 6 damage from enemies.
-  - effectValue: 6
-    effectCount: 2
-    effectHitLife: 15
-    effectLife: 10
-    effectSpeed: 3
-    effectCooldown: 8
-    effectChance: 0
-    passiveAtk: 0
-    passiveDef: 8
-    passiveSpd: 0
-    passiveHp: 0
-    itemDesc: 'Spawns 4 spinning projectiles that orbit the player dealing 6 damage
-      per hit.
-
-      Increased spawn rate and pierce.'
     itemPassiveDesc: Increases block 8 damage from enemies.
-  - effectValue: 8
+  - effectValue: 5
     effectCount: 3
     effectHitLife: 50
     effectLife: 10
     effectSpeed: 5
-    effectCooldown: 5
+    effectCooldown: 10
     effectChance: 0
     passiveAtk: 0
     passiveDef: 10
     passiveSpd: 0
     passiveHp: 0
-    itemDesc: 'Spawns 6 spinning projectiles that orbit the player dealing 8 damage
+    itemDesc: 'Spawns 6 spinning projectiles that orbit the player dealing 5 damage
       per hit.
 
       Increased spawn rate greatly and high pierce.'
