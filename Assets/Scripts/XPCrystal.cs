@@ -10,10 +10,21 @@ public class XPCrystal : MonoBehaviour
 
     bool isMoving = false;
     float elapsedTime = 0f;
+    float collectTime = 1f;
 
     // Start is called before the first frame update
     void Start()
     {
+    }
+
+    private void OnEnable()
+    {
+        EventManager.Subscribe("XPSucc", OnCollect);
+    }
+
+    private void OnDisable()
+    {
+        EventManager.UnSubscribe("XPSucc", OnCollect);
     }
 
     // Update is called once per frame
@@ -33,11 +44,11 @@ public class XPCrystal : MonoBehaviour
 
     IEnumerator MoveToPlayer()
     {
-        while(elapsedTime < 1)
+        while(elapsedTime < collectTime)
         {
             transform.position = Vector3.Lerp(transform.position, 
                 GameController.instance.playerController.transform.position, 
-                elapsedTime * 0.075f);
+                elapsedTime * 0.075f * collectTime);
             yield return new WaitForEndOfFrame();
         }
         yield return new WaitForEndOfFrame();
@@ -49,6 +60,7 @@ public class XPCrystal : MonoBehaviour
     {
         cCollider2d.enabled = false;
         isMoving = true;
+        collectTime = Random.Range(0.5f, 1.5f);
         StartCoroutine(MoveToPlayer());
     }
 }
