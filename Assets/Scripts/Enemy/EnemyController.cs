@@ -21,7 +21,12 @@ public class EnemyController : MonoBehaviour
 
     public bool isDead = false;
 
+
     public EnemyStats enemyStats;
+
+    public GameObject expDrop;
+    public GameObject expSucc;
+    public int dropCount;
 
     /////////////////////////////////////////
 
@@ -83,6 +88,22 @@ public class EnemyController : MonoBehaviour
         isDead = true;
         spriteHolder.SetActive(false);
         col.enabled = false;
+
+        float rand = Random.Range(0f, 100f);
+
+        if(rand <=2f)
+        {
+            Instantiate(expSucc, new Vector3(this.transform.position.x + Random.Range(-transform.localScale.x / 2f, transform.localScale.x / 2f),
+                                this.transform.position.y + Random.Range(-transform.localScale.x / 2f, transform.localScale.x / 2f),
+                                    this.transform.position.z), Quaternion.identity);
+        }
+
+        for(int i = 0;  i<dropCount; ++i)
+        {
+            Instantiate(expDrop,new Vector3( this.transform.position.x + Random.Range(-transform.localScale.x/2f, transform.localScale.x / 2f),
+                                this.transform.position.y + Random.Range(-transform.localScale.x / 2f, transform.localScale.x / 2f),
+                                    this.transform.position.z), Quaternion.identity);
+        }
         StopAllCoroutines();
         Destroy(this.gameObject, 1f);
     }
