@@ -3,7 +3,13 @@ guid: 4480a2e7dd0432647b992cb560da0800
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - animator: {instanceID: 0}
+  - rb2d: {instanceID: 0}
+  - spriteRenderer: {instanceID: 0}
+  - playerFacingAnimator: {instanceID: 0}
+  - playerFacing: {instanceID: 0}
+  - playerCoin: {fileID: 11400000, guid: 0830bc2178bfcb74889b5ad083662455, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

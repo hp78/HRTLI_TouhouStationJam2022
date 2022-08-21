@@ -13,9 +13,11 @@ public class PlayerController : MonoBehaviour
         public float passiveHp;
     }
 
+    [Space(5)]
     public Animator animator;
     public Rigidbody2D rb2d;
 
+    [Space(5)]
     public SpriteRenderer spriteRenderer;
     public Animator playerFacingAnimator;
     public Transform playerFacing;
@@ -30,6 +32,9 @@ public class PlayerController : MonoBehaviour
     public float currMaxHealth;
     public float baseMaxHealth = 50;
     public float speed = 300f;
+
+    [Space(5)]
+    public IntVal playerCoin;
 
     [Space(10)]
     public int currLevel = 1;

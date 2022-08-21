@@ -13,6 +13,7 @@ public class LevelUpMenuController : MonoBehaviour
     public Image[] itemPic;
     public TMP_Text[] itemName;
     public TMP_Text[] descText;
+    public TMP_Text[] passiveText;
     public TMP_Text[] flavText;
     int[] selectionIndexes = new int[3];
 
@@ -56,28 +57,32 @@ public class LevelUpMenuController : MonoBehaviour
             itemPic[selectionIndex].sprite = ie.itemPic;
             itemName[selectionIndex].text = ie.itemName;
             descText[selectionIndex].text = ie.itemStatsAtLevel[ie.currLevel + 1].itemDesc;
+            passiveText[selectionIndex].text = ie.itemStatsAtLevel[ie.currLevel + 1].itemPassiveDesc;
             flavText[selectionIndex].text = ie.itemFlavorText;
         }
         else if (selectionIndexes[selectionIndex] == 6)
         {
             itemPic[selectionIndex].sprite = miscSprites[0];
             itemName[selectionIndex].text = "Food";
-            descText[selectionIndex].text = "Heal HP";
-            flavText[selectionIndex].text = "";
+            descText[selectionIndex].text = "Fully recover health";
+            passiveText[selectionIndex].text = "";
+            flavText[selectionIndex].text = "Before your eyes - a person - stuffing their face with food in the heat combat";
         }
         else if (selectionIndexes[selectionIndex] == 7)
         {
             itemPic[selectionIndex].sprite = miscSprites[1];
             itemName[selectionIndex].text = "Coin";
-            descText[selectionIndex].text = "bling bling";
-            flavText[selectionIndex].text = "";
+            descText[selectionIndex].text = "Gain 100 coins to be used in the shop";
+            passiveText[selectionIndex].text = "";
+            flavText[selectionIndex].text = "Bee-t-ko-in? What's that? A vegetable?";
         }
         else 
         {
             itemPic[selectionIndex].sprite = miscSprites[2];
-            itemName[selectionIndex].text = "More Heads";
-            descText[selectionIndex].text = "IDK";
-            flavText[selectionIndex].text = "";
+            itemName[selectionIndex].text = "Sekibanki Head";
+            descText[selectionIndex].text = "Gain an additional head. Each head has a 1% chance of replicating a triggered effect from an item";
+            passiveText[selectionIndex].text = "Will pick up EXP and coins in close proximity";
+            flavText[selectionIndex].text = "Heads up!";
         }
     }
 
