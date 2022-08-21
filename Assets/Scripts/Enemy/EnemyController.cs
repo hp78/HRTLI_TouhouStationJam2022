@@ -73,8 +73,9 @@ public class EnemyController : MonoBehaviour
     void TakeDamage(float val)
     {
         enemyStats.health-= val;
-        if(enemyStats.health<=0.0f)
+        if(enemyStats.health<=0.0f && !isDead)
         {
+            isDead = true;
             PrepareToDie();
         }
         else
@@ -85,13 +86,12 @@ public class EnemyController : MonoBehaviour
 
     void PrepareToDie()
     {
-        isDead = true;
         spriteHolder.SetActive(false);
         col.enabled = false;
 
         float rand = Random.Range(0f, 100f);
 
-        if(rand <=2f)
+        if(rand <=1f)
         {
             Instantiate(expSucc, new Vector3(this.transform.position.x + Random.Range(-transform.localScale.x / 2f, transform.localScale.x / 2f),
                                 this.transform.position.y + Random.Range(-transform.localScale.x / 2f, transform.localScale.x / 2f),

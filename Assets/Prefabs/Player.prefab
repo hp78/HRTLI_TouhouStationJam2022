@@ -432,7 +432,8 @@ MonoBehaviour:
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
-  - effectValue: 2
+    itemPassiveDesc: 
+  - effectValue: 2.5
     effectCount: 1
     effectHitLife: 1
     effectLife: 5
@@ -443,8 +444,9 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
-    itemDesc: 
-  - effectValue: 2
+    itemDesc: Shoots 1 projectile to the front dealing 2.5 damage.
+    itemPassiveDesc: 
+  - effectValue: 2.5
     effectCount: 2
     effectHitLife: 2
     effectLife: 5
@@ -453,10 +455,14 @@ MonoBehaviour:
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
-    passiveSpd: 0
+    passiveSpd: 0.25
     passiveHp: 0
-    itemDesc: 
-  - effectValue: 3
+    itemDesc: 'Shoots 2 projectile to the front dealing 2.5 damage.
+
+      Increased
+      fire rate,projectile speed and pierce.'
+    itemPassiveDesc: Increases movement speed by 25%
+  - effectValue: 5
     effectCount: 3
     effectHitLife: 3
     effectLife: 5
@@ -465,10 +471,14 @@ MonoBehaviour:
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
-    passiveSpd: 0
+    passiveSpd: 0.5
     passiveHp: 0
-    itemDesc: 
-  - effectValue: 4
+    itemDesc: 'Shoots 3 projectile to the front dealing 5 damage.
+
+      Increased
+      fire rate,projectile speed and pierce.'
+    itemPassiveDesc: Increases movement speed by 50%
+  - effectValue: 5
     effectCount: 4
     effectHitLife: 4
     effectLife: 5
@@ -477,10 +487,14 @@ MonoBehaviour:
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
-    passiveSpd: 0
+    passiveSpd: 0.75
     passiveHp: 0
-    itemDesc: 
-  - effectValue: 5
+    itemDesc: 'Shoots 4 projectile to the front dealing 5 damage.
+
+      Increased
+      fire rate,projectile speed and pierce.'
+    itemPassiveDesc: Increases movement speed by 75%
+  - effectValue: 7.5
     effectCount: 5
     effectHitLife: 10
     effectLife: 5
@@ -489,9 +503,13 @@ MonoBehaviour:
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
-    passiveSpd: 0
+    passiveSpd: 1
     passiveHp: 0
-    itemDesc: 
+    itemDesc: 'Shoots 5 projectile to the front dealing 7.5 damage.
+
+      Increased
+      fire rate,projectile speed and high pierce.'
+    itemPassiveDesc: Increases movement speed by 100%
   knifeProjectilePrefab: {fileID: 208155274731519886, guid: 476053d59e719de4a95f313f2bdb191e, type: 3}
 --- !u!1 &4751523106673649661
 GameObject:
@@ -640,6 +658,7 @@ MonoBehaviour:
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
+    itemPassiveDesc: 
   - effectValue: 0.25
     effectCount: 1
     effectHitLife: 0
@@ -650,8 +669,9 @@ MonoBehaviour:
     passiveAtk: 0
     passiveDef: 0
     passiveSpd: 0
-    passiveHp: 0
+    passiveHp: 5
     itemDesc: 
+    itemPassiveDesc: 
   - effectValue: 0.5
     effectCount: 1
     effectHitLife: 0
@@ -662,8 +682,9 @@ MonoBehaviour:
     passiveAtk: 0
     passiveDef: 0
     passiveSpd: 0
-    passiveHp: 0
+    passiveHp: 10
     itemDesc: 
+    itemPassiveDesc: 
   - effectValue: 0.75
     effectCount: 1
     effectHitLife: 0
@@ -674,8 +695,9 @@ MonoBehaviour:
     passiveAtk: 0
     passiveDef: 0
     passiveSpd: 0
-    passiveHp: 0
+    passiveHp: 15
     itemDesc: 
+    itemPassiveDesc: 
   - effectValue: 1
     effectCount: 0
     effectHitLife: 0
@@ -686,8 +708,9 @@ MonoBehaviour:
     passiveAtk: 0
     passiveDef: 0
     passiveSpd: 0
-    passiveHp: 0
+    passiveHp: 20
     itemDesc: 
+    itemPassiveDesc: 
   - effectValue: 2
     effectCount: 0
     effectHitLife: 0
@@ -698,8 +721,9 @@ MonoBehaviour:
     passiveAtk: 0
     passiveDef: 0
     passiveSpd: 0
-    passiveHp: 0
+    passiveHp: 25
     itemDesc: 
+    itemPassiveDesc: 
   playerTf: {fileID: 4751523107610154259}
   BookProjectilePrefab: {fileID: 2857349555026318264, guid: fa0e53732fa4bbb43af4e0becee7e5d1, type: 3}
 --- !u!1 &4751523106704466963
@@ -765,6 +789,7 @@ MonoBehaviour:
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
+    itemPassiveDesc: 
   - effectValue: 0.15
     effectCount: 1
     effectHitLife: 0
@@ -777,6 +802,7 @@ MonoBehaviour:
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
+    itemPassiveDesc: 
   - effectValue: 0.3
     effectCount: 1
     effectHitLife: 0
@@ -789,6 +815,7 @@ MonoBehaviour:
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
+    itemPassiveDesc: 
   - effectValue: 0.45
     effectCount: 2
     effectHitLife: 0
@@ -801,6 +828,7 @@ MonoBehaviour:
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
+    itemPassiveDesc: 
   - effectValue: 0.6
     effectCount: 2
     effectHitLife: 0
@@ -813,6 +841,7 @@ MonoBehaviour:
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
+    itemPassiveDesc: 
   - effectValue: 0.5
     effectCount: 5
     effectHitLife: 0
@@ -825,6 +854,7 @@ MonoBehaviour:
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
+    itemPassiveDesc: 
   playerTf: {fileID: 4751523107610154259}
   ShroomProjectilePrefab: {fileID: 7712340179314774028, guid: 27aec4af3ca9bce4cbc4177659c73463, type: 3}
 --- !u!1 &4751523106907817127
@@ -974,6 +1004,7 @@ MonoBehaviour:
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
+    itemPassiveDesc: 
   - effectValue: 0
     effectCount: 0
     effectHitLife: 0
@@ -984,8 +1015,9 @@ MonoBehaviour:
     passiveAtk: 0
     passiveDef: 0
     passiveSpd: 0
-    passiveHp: 0
+    passiveHp: 5
     itemDesc: 
+    itemPassiveDesc: 
   - effectValue: 0
     effectCount: 0
     effectHitLife: 0
@@ -996,8 +1028,9 @@ MonoBehaviour:
     passiveAtk: 0
     passiveDef: 0
     passiveSpd: 0
-    passiveHp: 0
+    passiveHp: 10
     itemDesc: 
+    itemPassiveDesc: 
   - effectValue: 0
     effectCount: 0
     effectHitLife: 0
@@ -1008,8 +1041,9 @@ MonoBehaviour:
     passiveAtk: 0
     passiveDef: 0
     passiveSpd: 0
-    passiveHp: 0
+    passiveHp: 15
     itemDesc: 
+    itemPassiveDesc: 
   - effectValue: 0
     effectCount: 0
     effectHitLife: 0
@@ -1020,8 +1054,9 @@ MonoBehaviour:
     passiveAtk: 0
     passiveDef: 0
     passiveSpd: 0
-    passiveHp: 0
+    passiveHp: 20
     itemDesc: 
+    itemPassiveDesc: 
   - effectValue: 0
     effectCount: 0
     effectHitLife: 0
@@ -1032,8 +1067,9 @@ MonoBehaviour:
     passiveAtk: 0
     passiveDef: 0
     passiveSpd: 0
-    passiveHp: 0
+    passiveHp: 25
     itemDesc: 
+    itemPassiveDesc: 
   playerTf: {fileID: 0}
   padProjectilePrefab: {fileID: 193563677279889981, guid: 7dd6d55b0acf72b489aab19e321b8a4a, type: 3}
 --- !u!1 &4751523107256472016
@@ -1152,54 +1188,59 @@ MonoBehaviour:
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
+    itemPassiveDesc: 
   - effectValue: 2
     effectCount: 1
-    effectHitLife: 5
+    effectHitLife: 10
     effectLife: 10
     effectSpeed: 3
     effectCooldown: 12
     effectChance: 0
     passiveAtk: 0
-    passiveDef: 0
+    passiveDef: 2
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
+    itemPassiveDesc: 
   - effectValue: 4
     effectCount: 1
-    effectHitLife: 7
+    effectHitLife: 10
     effectLife: 10
     effectSpeed: 3
     effectCooldown: 11
     effectChance: 0
     passiveAtk: 0
-    passiveDef: 0
+    passiveDef: 4
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
+    itemPassiveDesc: 
   - effectValue: 5
     effectCount: 2
-    effectHitLife: 9
+    effectHitLife: 15
     effectLife: 10
     effectSpeed: 3
     effectCooldown: 10
     effectChance: 0
     passiveAtk: 0
-    passiveDef: 0
+    passiveDef: 6
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
+    itemPassiveDesc: 
   - effectValue: 6
     effectCount: 2
-    effectHitLife: 11
+    effectHitLife: 15
     effectLife: 10
     effectSpeed: 3
     effectCooldown: 8
     effectChance: 0
     passiveAtk: 0
-    passiveDef: 0
+    passiveDef: 8
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
+    itemPassiveDesc: 
   - effectValue: 8
     effectCount: 3
     effectHitLife: 50
@@ -1208,10 +1249,11 @@ MonoBehaviour:
     effectCooldown: 5
     effectChance: 0
     passiveAtk: 0
-    passiveDef: 0
+    passiveDef: 10
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
+    itemPassiveDesc: 
   playerTf: {fileID: 4751523107610154259}
   StarProjectilePrefab: {fileID: 3555816526015937264, guid: c23ce9b72da344d47bce9dbef7303731, type: 3}
 --- !u!1 &4751523107608367198
@@ -1530,6 +1572,7 @@ MonoBehaviour:
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
+    itemPassiveDesc: 
   - effectValue: 5
     effectCount: 1
     effectHitLife: 0
@@ -1542,6 +1585,7 @@ MonoBehaviour:
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
+    itemPassiveDesc: 
   - effectValue: 7.5
     effectCount: 1
     effectHitLife: 0
@@ -1551,9 +1595,10 @@ MonoBehaviour:
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
-    passiveSpd: 0
+    passiveSpd: 0.25
     passiveHp: 0
     itemDesc: 
+    itemPassiveDesc: 
   - effectValue: 10
     effectCount: 0
     effectHitLife: 0
@@ -1563,9 +1608,10 @@ MonoBehaviour:
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
-    passiveSpd: 0
+    passiveSpd: 0.5
     passiveHp: 0
     itemDesc: 
+    itemPassiveDesc: 
   - effectValue: 10
     effectCount: 0
     effectHitLife: 0
@@ -1575,9 +1621,10 @@ MonoBehaviour:
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
-    passiveSpd: 0
+    passiveSpd: 0.75
     passiveHp: 0
     itemDesc: 
+    itemPassiveDesc: 
   - effectValue: 10
     effectCount: 0
     effectHitLife: 0
@@ -1587,9 +1634,10 @@ MonoBehaviour:
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
-    passiveSpd: 0
+    passiveSpd: 1
     passiveHp: 0
     itemDesc: 
+    itemPassiveDesc: 
   playerTf: {fileID: 0}
   CardProjectilePrefab: {fileID: 2708215233966847339, guid: 062feecffee18f94a99296c3733a8000, type: 3}
   targetArrow: {fileID: 4751523107256472019}
@@ -1687,6 +1735,7 @@ MonoBehaviour:
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
+    itemPassiveDesc: 
   - effectValue: 20
     effectCount: 1
     effectHitLife: 0
@@ -1699,6 +1748,7 @@ MonoBehaviour:
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
+    itemPassiveDesc: 
   - effectValue: 40
     effectCount: 1
     effectHitLife: 0
@@ -1711,6 +1761,7 @@ MonoBehaviour:
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
+    itemPassiveDesc: 
   - effectValue: 60
     effectCount: 0
     effectHitLife: 0
@@ -1723,6 +1774,7 @@ MonoBehaviour:
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
+    itemPassiveDesc: 
   - effectValue: 80
     effectCount: 0
     effectHitLife: 0
@@ -1735,6 +1787,7 @@ MonoBehaviour:
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
+    itemPassiveDesc: 
   - effectValue: 100
     effectCount: 0
     effectHitLife: 0
@@ -1747,6 +1800,7 @@ MonoBehaviour:
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
+    itemPassiveDesc: 
   LaevaProjectilePrefab: {fileID: 3112475980303405692, guid: 75fe3c2be25e1b24599888193aa60101, type: 3}
 --- !u!1 &7843094494425300552
 GameObject:
@@ -1842,64 +1896,71 @@ MonoBehaviour:
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
+    itemPassiveDesc: 
   - effectValue: 10
     effectCount: 1
     effectHitLife: 0
     effectLife: 0
     effectSpeed: 0
     effectCooldown: 1.5
-    effectChance: 0
+    effectChance: 20
     passiveAtk: 0
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
+    itemPassiveDesc: 
   - effectValue: 10
     effectCount: 2
     effectHitLife: 0
     effectLife: 0
     effectSpeed: 0
     effectCooldown: 1.5
-    effectChance: 0
+    effectChance: 20
     passiveAtk: 0
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
+    itemPassiveDesc: 
   - effectValue: 10
     effectCount: 3
     effectHitLife: 0
     effectLife: 0
     effectSpeed: 0
     effectCooldown: 1.5
-    effectChance: 0
+    effectChance: 20
     passiveAtk: 0
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
+    itemPassiveDesc: 
   - effectValue: 10
     effectCount: 4
     effectHitLife: 0
     effectLife: 0
     effectSpeed: 0
     effectCooldown: 1.5
-    effectChance: 0
+    effectChance: 20
     passiveAtk: 0
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
+    itemPassiveDesc: 
   - effectValue: 5
     effectCount: 10
     effectHitLife: 0
     effectLife: 0
     effectSpeed: 0
     effectCooldown: 2.5
-    effectChance: 0
+    effectChance: 20
     passiveAtk: 0
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 
+    itemPassiveDesc: 
   GungnirProjectilePrefab: {fileID: 6762410172342543651, guid: 70775c65367e0ff44ad5be0ee91e26f4, type: 3}
+  player: {fileID: 0}

@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 6067162178067063300}
   - component: {fileID: 6067162178067063301}
   m_Layer: 8
-  m_Name: EnemyChinaYukkuri
+  m_Name: Boss1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -151,9 +151,12 @@ MonoBehaviour:
   playertarget: {fileID: 0}
   isDead: 0
   enemyStats:
-    health: 25
-    speed: 0.2
+    health: 150
+    speed: 0.5
     damage: 0
+  expDrop: {fileID: 5498998777650264789, guid: d7d1b4c378e67c940a82dc9ff786143e, type: 3}
+  expSucc: {fileID: 8490488489538625480, guid: c9c9ece95196e8c4ea6cb0dfa01d5795, type: 3}
+  dropCount: 20
 --- !u!50 &6067162178067063300
 Rigidbody2D:
   serializedVersion: 4
