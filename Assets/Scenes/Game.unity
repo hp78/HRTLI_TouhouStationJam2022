@@ -3113,47 +3113,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 319886c1474b8c346bb4b95a9ebb640e, type: 3}
---- !u!1 &1271222277 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4582583102847463832, guid: c691c95ab43d7234586d43ca27a14487, type: 3}
-  m_PrefabInstance: {fileID: 4582583101609959837}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1271222281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1271222277}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f99ad8c2e37ef894da7b10e6f47041e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnPos:
-  - {fileID: 4751523106869936625}
-  - {fileID: 4751523106869936624}
-  - {fileID: 4751523106869936623}
-  - {fileID: 4751523106869936622}
-  - {fileID: 4751523106869936621}
-  - {fileID: 4751523106869936620}
-  - {fileID: 4751523106869936619}
-  - {fileID: 4751523106869936618}
-  mobTier1: {fileID: 6067162178067063298, guid: c8b909e2db7f3cb42ba589d83e8c9c49, type: 3}
-  mobTier2: {fileID: 3736753547254381422, guid: c82c3ae35d8d4d643ab3a10e89272df1, type: 3}
-  mobTier3: {fileID: 969373810755251026, guid: c25394dae9269c7498ceb0cdeb65ccde, type: 3}
-  mobTier4: {fileID: 3034215913390301555, guid: 7a3f424ea1b7d704daad1052722deca0, type: 3}
-  mobTier5: {fileID: 3827427018914259321, guid: f121cb670a27d5941b0724c77b72500c, type: 3}
-  mobTier6: {fileID: 4224277392293468291, guid: a24ffae2c6a245b419ba560dd61d3d3e, type: 3}
-  mobTier7: {fileID: 1896092523515254329, guid: da6f8437bb2953c4ca34861690efee32, type: 3}
-  boss1: {fileID: 2662430388291418467, guid: e4189c291b8951544a2b31981c8a2696, type: 3}
-  boss2: {fileID: 2662430388291418467, guid: e4189c291b8951544a2b31981c8a2696, type: 3}
-  boss3: {fileID: 2662430388291418467, guid: e4189c291b8951544a2b31981c8a2696, type: 3}
-  reaper: {fileID: 2662430388291418467, guid: e4189c291b8951544a2b31981c8a2696, type: 3}
-  timeElapsed: 0
-  currSpawnTimer: 0
-  spawnInterval: 1
-  spawnTimerMultiplier: 1
 --- !u!1001 &1298678346
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5342,6 +5301,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1271222281, guid: c691c95ab43d7234586d43ca27a14487, type: 3}
+      propertyPath: spawnPos.Array.data[0]
+      value: 
+      objectReference: {fileID: 4751523106869936625}
+    - target: {fileID: 1271222281, guid: c691c95ab43d7234586d43ca27a14487, type: 3}
+      propertyPath: spawnPos.Array.data[1]
+      value: 
+      objectReference: {fileID: 4751523106869936624}
+    - target: {fileID: 1271222281, guid: c691c95ab43d7234586d43ca27a14487, type: 3}
+      propertyPath: spawnPos.Array.data[2]
+      value: 
+      objectReference: {fileID: 4751523106869936623}
+    - target: {fileID: 1271222281, guid: c691c95ab43d7234586d43ca27a14487, type: 3}
+      propertyPath: spawnPos.Array.data[3]
+      value: 
+      objectReference: {fileID: 4751523106869936622}
+    - target: {fileID: 1271222281, guid: c691c95ab43d7234586d43ca27a14487, type: 3}
+      propertyPath: spawnPos.Array.data[4]
+      value: 
+      objectReference: {fileID: 4751523106869936621}
+    - target: {fileID: 1271222281, guid: c691c95ab43d7234586d43ca27a14487, type: 3}
+      propertyPath: spawnPos.Array.data[5]
+      value: 
+      objectReference: {fileID: 4751523106869936620}
+    - target: {fileID: 1271222281, guid: c691c95ab43d7234586d43ca27a14487, type: 3}
+      propertyPath: spawnPos.Array.data[6]
+      value: 
+      objectReference: {fileID: 4751523106869936619}
+    - target: {fileID: 1271222281, guid: c691c95ab43d7234586d43ca27a14487, type: 3}
+      propertyPath: spawnPos.Array.data[7]
+      value: 
+      objectReference: {fileID: 4751523106869936618}
     - target: {fileID: 2864097547101601559, guid: c691c95ab43d7234586d43ca27a14487, type: 3}
       propertyPath: _playerController
       value: 
