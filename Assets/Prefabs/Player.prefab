@@ -437,7 +437,7 @@ MonoBehaviour:
     effectCount: 1
     effectHitLife: 1
     effectLife: 2
-    effectSpeed: 1000
+    effectSpeed: 5
     effectCooldown: 2
     effectChance: 0
     passiveAtk: 0
@@ -450,7 +450,7 @@ MonoBehaviour:
     effectCount: 2
     effectHitLife: 2
     effectLife: 1
-    effectSpeed: 2000
+    effectSpeed: 5
     effectCooldown: 1.8
     effectChance: 0
     passiveAtk: 0
@@ -466,7 +466,7 @@ MonoBehaviour:
     effectCount: 3
     effectHitLife: 3
     effectLife: 1
-    effectSpeed: 3000
+    effectSpeed: 5
     effectCooldown: 1.6
     effectChance: 0
     passiveAtk: 0
@@ -482,7 +482,7 @@ MonoBehaviour:
     effectCount: 4
     effectHitLife: 4
     effectLife: 1
-    effectSpeed: 4000
+    effectSpeed: 5
     effectCooldown: 1.5
     effectChance: 0
     passiveAtk: 0
@@ -498,7 +498,7 @@ MonoBehaviour:
     effectCount: 5
     effectHitLife: 10
     effectLife: 1
-    effectSpeed: 5000
+    effectSpeed: 5
     effectCooldown: 1.25
     effectChance: 0
     passiveAtk: 0
@@ -1422,8 +1422,8 @@ MonoBehaviour:
   currHealth: 0
   currMaxHealth: 0
   baseMaxHealth: 0
-  speed: 500
-  bankiHeadPrefab: {fileID: 0}
+  speed: 3
+  bankiHeadPrefab: {fileID: 6114344851043820608, guid: a1dbd28de80c4ec458b0e593541da4e8, type: 3}
   playerCoin: {fileID: 0}
   currLevel: 1
   currXP: 0
@@ -1592,7 +1592,7 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: 
     itemPassiveDesc: 
-  - effectValue: 5
+  - effectValue: 10
     effectCount: 1
     effectHitLife: 0
     effectLife: 0
@@ -1605,7 +1605,7 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: Swipe in front of you, dealing 5 damage.
     itemPassiveDesc: 
-  - effectValue: 7.5
+  - effectValue: 12.5
     effectCount: 1
     effectHitLife: 0
     effectLife: 0
@@ -1618,7 +1618,7 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: Swipe in front of you, dealing 7.5 damage.
     itemPassiveDesc: Increases movement speed by 25%
-  - effectValue: 10
+  - effectValue: 15
     effectCount: 0
     effectHitLife: 0
     effectLife: 0
@@ -1631,7 +1631,7 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: Swipe in front of you, dealing 10 damage.
     itemPassiveDesc: Increases movement speed by 50%
-  - effectValue: 10
+  - effectValue: 15
     effectCount: 0
     effectHitLife: 0
     effectLife: 0
@@ -1646,7 +1646,7 @@ MonoBehaviour:
 
       Increases fire rate.'
     itemPassiveDesc: Increases movement speed by 75%
-  - effectValue: 10
+  - effectValue: 15
     effectCount: 0
     effectHitLife: 0
     effectLife: 0
@@ -1764,7 +1764,7 @@ MonoBehaviour:
     effectCount: 1
     effectHitLife: 0
     effectLife: 0.15
-    effectSpeed: 17500
+    effectSpeed: 50
     effectCooldown: 5
     effectChance: 0
     passiveAtk: 0
@@ -1777,7 +1777,7 @@ MonoBehaviour:
     effectCount: 1
     effectHitLife: 0
     effectLife: 0.15
-    effectSpeed: 17500
+    effectSpeed: 50
     effectCooldown: 5
     effectChance: 0
     passiveAtk: 0
@@ -1790,7 +1790,7 @@ MonoBehaviour:
     effectCount: 0
     effectHitLife: 0
     effectLife: 0.15
-    effectSpeed: 17500
+    effectSpeed: 50
     effectCooldown: 5
     effectChance: 0
     passiveAtk: 0
@@ -1803,7 +1803,7 @@ MonoBehaviour:
     effectCount: 0
     effectHitLife: 0
     effectLife: 0.15
-    effectSpeed: 17500
+    effectSpeed: 50
     effectCooldown: 5
     effectChance: 0
     passiveAtk: 0
@@ -1816,7 +1816,7 @@ MonoBehaviour:
     effectCount: 0
     effectHitLife: 0
     effectLife: 0.15
-    effectSpeed: 17500
+    effectSpeed: 50
     effectCooldown: 5
     effectChance: 0
     passiveAtk: 0

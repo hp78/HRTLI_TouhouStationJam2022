@@ -34,6 +34,6 @@ public class LaeveProjectile : BaseProjectile
     }
     override protected void Movement()
     {
-        rigidbody2d.velocity = direction * speed * Time.deltaTime;
+        rigidbody2d.velocity = direction * speed;
     }
 }

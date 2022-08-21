@@ -21,7 +21,7 @@ public class KnifeProjectile : BaseProjectile
 
     override protected void Movement()
     {
-        rigidbody2d.velocity = direction * speed * Time.deltaTime;
+        rigidbody2d.velocity = direction * speed;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
