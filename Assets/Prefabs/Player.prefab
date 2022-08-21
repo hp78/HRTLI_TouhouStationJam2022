@@ -433,7 +433,7 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: 
     itemPassiveDesc: 
-  - effectValue: 2.5
+  - effectValue: 4
     effectCount: 1
     effectHitLife: 1
     effectLife: 2
@@ -444,9 +444,9 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
-    itemDesc: Shoots 1 projectile to the front dealing 2.5 damage.
+    itemDesc: Shoots 1 projectile to the front dealing 4 damage.
     itemPassiveDesc: 
-  - effectValue: 2.5
+  - effectValue: 4
     effectCount: 2
     effectHitLife: 2
     effectLife: 1
@@ -457,12 +457,12 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0.25
     passiveHp: 0
-    itemDesc: 'Shoots 2 projectile to the front dealing 2.5 damage.
+    itemDesc: 'Shoots 2 projectile to the front dealing 4 damage.
 
       Increased
       fire rate,projectile speed and pierce.'
     itemPassiveDesc: Increases movement speed by 25%
-  - effectValue: 5
+  - effectValue: 6
     effectCount: 3
     effectHitLife: 3
     effectLife: 1
@@ -473,12 +473,12 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0.5
     passiveHp: 0
-    itemDesc: 'Shoots 3 projectile to the front dealing 5 damage.
+    itemDesc: 'Shoots 3 projectile to the front dealing 6 damage.
 
       Increased
       fire rate,projectile speed and pierce.'
     itemPassiveDesc: Increases movement speed by 50%
-  - effectValue: 5
+  - effectValue: 6
     effectCount: 4
     effectHitLife: 4
     effectLife: 1
@@ -489,7 +489,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0.75
     passiveHp: 0
-    itemDesc: 'Shoots 4 projectile to the front dealing 5 damage.
+    itemDesc: 'Shoots 4 projectile to the front dealing 6 damage.
 
       Increased
       fire rate,projectile speed and pierce.'
@@ -664,7 +664,7 @@ MonoBehaviour:
     effectHitLife: 0
     effectLife: 1
     effectSpeed: 80
-    effectCooldown: 20
+    effectCooldown: 30
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
@@ -677,7 +677,7 @@ MonoBehaviour:
     effectHitLife: 0
     effectLife: 1
     effectSpeed: 80
-    effectCooldown: 20
+    effectCooldown: 30
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
@@ -690,7 +690,7 @@ MonoBehaviour:
     effectHitLife: 0
     effectLife: 1
     effectSpeed: 80
-    effectCooldown: 20
+    effectCooldown: 30
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
@@ -703,7 +703,7 @@ MonoBehaviour:
     effectHitLife: 0
     effectLife: 1
     effectSpeed: 80
-    effectCooldown: 20
+    effectCooldown: 30
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
@@ -716,7 +716,7 @@ MonoBehaviour:
     effectHitLife: 0
     effectLife: 1
     effectSpeed: 80
-    effectCooldown: 20
+    effectCooldown: 30
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
