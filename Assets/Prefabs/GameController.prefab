@@ -158,11 +158,11 @@ MonoBehaviour:
   mobTier2: {fileID: 969373810755251026, guid: c25394dae9269c7498ceb0cdeb65ccde, type: 3}
   mobTier3: {fileID: 969373810755251026, guid: c25394dae9269c7498ceb0cdeb65ccde, type: 3}
   mobTier4: {fileID: 3034215913390301555, guid: 7a3f424ea1b7d704daad1052722deca0, type: 3}
-  mobTier5: {fileID: 3827427018914259321, guid: f121cb670a27d5941b0724c77b72500c, type: 3}
-  mobTier6: {fileID: 4224277392293468291, guid: a24ffae2c6a245b419ba560dd61d3d3e, type: 3}
+  mobTier5: {fileID: 3827427018914259321, guid: 5513c33c5594cd341b9fa596ea02febc, type: 3}
+  mobTier6: {fileID: 4224277392293468291, guid: f3069a9e1a7ecc84fb1436d81d8e24b5, type: 3}
   mobTier7: {fileID: 1896092523515254329, guid: da6f8437bb2953c4ca34861690efee32, type: 3}
-  boss1: {fileID: 2662430388291418467, guid: e4189c291b8951544a2b31981c8a2696, type: 3}
-  boss2: {fileID: 2662430388291418467, guid: e4189c291b8951544a2b31981c8a2696, type: 3}
+  boss1: {fileID: 6067162178067063298, guid: c8b909e2db7f3cb42ba589d83e8c9c49, type: 3}
+  boss2: {fileID: 4224277392293468291, guid: a24ffae2c6a245b419ba560dd61d3d3e, type: 3}
   boss3: {fileID: 2662430388291418467, guid: e4189c291b8951544a2b31981c8a2696, type: 3}
   reaper: {fileID: 2662430388291418467, guid: e4189c291b8951544a2b31981c8a2696, type: 3}
   timeElapsed: 0
