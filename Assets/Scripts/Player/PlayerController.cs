@@ -34,6 +34,7 @@ public class PlayerController : MonoBehaviour
     public float speed = 300f;
 
     [Space(5)]
+    public GameObject bankiHeadPrefab;
     public IntVal playerCoin;
 
     [Space(10)]
@@ -246,6 +247,7 @@ public class PlayerController : MonoBehaviour
 
     public void SpawnHead()
     {
-
+        GameObject go = Instantiate(bankiHeadPrefab, transform.position, Quaternion.identity);
+        go.GetComponent<FriendlyBanki>().Init(this);
     }
 }

@@ -20,12 +20,12 @@ public class XPCrystal : MonoBehaviour
 
     private void OnEnable()
     {
-        EventManager.Subscribe("XPSucc", OnCollect);
+        EventManager.Subscribe("XPSucc", OnAutoCollect);
     }
 
     private void OnDisable()
     {
-        EventManager.UnSubscribe("XPSucc", OnCollect);
+        EventManager.UnSubscribe("XPSucc", OnAutoCollect);
     }
 
     // Update is called once per frame
@@ -57,6 +57,11 @@ public class XPCrystal : MonoBehaviour
         Destroy(gameObject);
     }
 
+    void OnAutoCollect()
+    {
+        targetTF = GameController.instance.playerController.transform;
+        OnCollect();
+    }
     void OnCollect()
     {
         cCollider2d.enabled = false;

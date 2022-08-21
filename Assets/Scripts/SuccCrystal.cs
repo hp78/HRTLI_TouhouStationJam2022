@@ -40,6 +40,12 @@ public class SuccCrystal : MonoBehaviour
         Destroy(gameObject);
     }
 
+    void OnAutoCollect()
+    {
+        targetTF = GameController.instance.playerController.transform;
+        OnCollect();
+    }
+
     void OnCollect()
     {
         cCollider2d.enabled = false;
