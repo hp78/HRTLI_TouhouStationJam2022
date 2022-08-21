@@ -5,6 +5,7 @@ using UnityEngine;
 public class SuccCrystal : MonoBehaviour
 {
     public CircleCollider2D cCollider2d;
+    Transform targetTF;
 
     bool isMoving = false;
     float elapsedTime = 0f;
@@ -18,8 +19,9 @@ public class SuccCrystal : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") || collision.CompareTag("BankiHead"))
         {
+            targetTF = collision.transform;
             OnCollect();
         }
     }
@@ -28,8 +30,7 @@ public class SuccCrystal : MonoBehaviour
     {
         while (elapsedTime < 1)
         {
-            transform.position = Vector3.Lerp(transform.position,
-                GameController.instance.playerController.transform.position,
+            transform.position = Vector3.Lerp(transform.position, targetTF.position,
                 elapsedTime * 0.075f);
             yield return new WaitForEndOfFrame();
         }

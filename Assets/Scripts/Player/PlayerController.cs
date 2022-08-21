@@ -188,6 +188,7 @@ public class PlayerController : MonoBehaviour
 
         yield return new WaitForSeconds(1.0f);
         GameController.instance.deadMenu.SetActive(true);
+
         yield return null;
     }
 
