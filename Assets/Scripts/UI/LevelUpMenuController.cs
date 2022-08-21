@@ -12,6 +12,7 @@ public class LevelUpMenuController : MonoBehaviour
     public Button[] selectionBtns;
     public Image[] itemPic;
     public TMP_Text[] itemName;
+    public TMP_Text[] itemLvl;
     public TMP_Text[] descText;
     public TMP_Text[] passiveText;
     public TMP_Text[] flavText;
@@ -49,29 +50,32 @@ public class LevelUpMenuController : MonoBehaviour
 
     void RefreshItemDesc(int selectionIndex)
     {
-        if(selectionIndexes[selectionIndex] < 5)
+        if(selectionIndexes[selectionIndex] < _playerController.effects.Length)
         {
             int index = selectionIndexes[selectionIndex];
             ItemEffect ie = _playerController.effects[index];
 
             itemPic[selectionIndex].sprite = ie.itemPic;
             itemName[selectionIndex].text = ie.itemName;
+            itemLvl[selectionIndex].text = "" + (ie.currLevel + 1);
             descText[selectionIndex].text = ie.itemStatsAtLevel[ie.currLevel + 1].itemDesc;
             passiveText[selectionIndex].text = ie.itemStatsAtLevel[ie.currLevel + 1].itemPassiveDesc;
             flavText[selectionIndex].text = ie.itemFlavorText;
         }
-        else if (selectionIndexes[selectionIndex] == 6)
+        else if (selectionIndexes[selectionIndex] == _playerController.effects.Length)
         {
             itemPic[selectionIndex].sprite = miscSprites[0];
             itemName[selectionIndex].text = "Food";
+            itemLvl[selectionIndex].text = "";
             descText[selectionIndex].text = "Fully recover health";
             passiveText[selectionIndex].text = "";
             flavText[selectionIndex].text = "Before your eyes - a person - stuffing their face with food in the heat combat";
         }
-        else if (selectionIndexes[selectionIndex] == 7)
+        else if (selectionIndexes[selectionIndex] == (_playerController.effects.Length + 1))
         {
             itemPic[selectionIndex].sprite = miscSprites[1];
             itemName[selectionIndex].text = "Coin";
+            itemLvl[selectionIndex].text = "";
             descText[selectionIndex].text = "Gain 100 coins to be used in the shop";
             passiveText[selectionIndex].text = "";
             flavText[selectionIndex].text = "Bee-t-ko-in? What's that? A vegetable?";
@@ -80,6 +84,7 @@ public class LevelUpMenuController : MonoBehaviour
         {
             itemPic[selectionIndex].sprite = miscSprites[2];
             itemName[selectionIndex].text = "Sekibanki Head";
+            itemLvl[selectionIndex].text = "";
             descText[selectionIndex].text = "Gain an additional head. Each head has a 1% chance of replicating a triggered effect from an item";
             passiveText[selectionIndex].text = "Will pick up EXP and coins in close proximity";
             flavText[selectionIndex].text = "Heads up!";
@@ -92,8 +97,8 @@ public class LevelUpMenuController : MonoBehaviour
         int itemIndex = -1;
         while (!hasFound)
         {
-            itemIndex = Random.Range(0, 9);
-            if (itemIndex < itemCount)
+            itemIndex = Random.Range(0, (_playerController.effects.Length + 3));
+            if (itemIndex < _playerController.effects.Length)
             {
                 if (_playerController.effects[itemIndex].currLevel < 5)
                 {
@@ -110,10 +115,10 @@ public class LevelUpMenuController : MonoBehaviour
         int itemIndex = -1;
         while (!hasFound)
         {
-            itemIndex = Random.Range(0, 9);
-            if(selectionIndexes[0] != itemIndex)
+            itemIndex = Random.Range(0, (_playerController.effects.Length + 3));
+            if (selectionIndexes[0] != itemIndex)
             {
-                if (itemIndex < itemCount)
+                if (itemIndex < _playerController.effects.Length)
                 {
                     if (_playerController.effects[itemIndex].currLevel < 5)
                     {
@@ -135,10 +140,10 @@ public class LevelUpMenuController : MonoBehaviour
         int itemIndex = -1;
         while (!hasFound)
         {
-            itemIndex = Random.Range(0, 9);
+            itemIndex = Random.Range(0, (_playerController.effects.Length + 3));
             if (selectionIndexes[0] != itemIndex && selectionIndexes[1] != itemIndex)
             {
-                if (itemIndex < itemCount)
+                if (itemIndex < _playerController.effects.Length)
                 {
                     if (_playerController.effects[itemIndex].currLevel < 5)
                     {
@@ -157,19 +162,19 @@ public class LevelUpMenuController : MonoBehaviour
     public void ButtonSelectUpgrade(int selectionIndex)
     {
         int upgradeIndex = selectionIndexes[selectionIndex];
-        if(upgradeIndex < 5)
+        if(upgradeIndex < _playerController.effects.Length)
         {
             _playerController.LevelUpItem(upgradeIndex);
         }
-        else if (upgradeIndex == 6)
+        else if (upgradeIndex == _playerController.effects.Length)
         {
             _playerController.HealPlayerMax();
         }
-        else if (upgradeIndex == 7)
+        else if (upgradeIndex == (_playerController.effects.Length+1))
         {
             // add coin
         }
-        else if (upgradeIndex == 8)
+        else if (upgradeIndex == (_playerController.effects.Length+2))
         {
             _playerController.SpawnHead();
         }
