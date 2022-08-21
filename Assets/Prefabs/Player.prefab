@@ -1136,10 +1136,10 @@ MonoBehaviour:
   currHealth: 0
   currMaxHealth: 0
   baseMaxHealth: 0
-  speed: 300
-  currLevel: 0
+  speed: 500
+  currLevel: 1
   currXP: 0
-  nextXP: 0
+  nextXP: 10
   nextXPInterval: 100
   bonusStatModifier:
     passiveAtk: 0

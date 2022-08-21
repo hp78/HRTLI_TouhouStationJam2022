@@ -32,10 +32,10 @@ public class PlayerController : MonoBehaviour
     public float speed = 300f;
 
     [Space(10)]
-    public int currLevel = 0;
+    public int currLevel = 1;
     public float currXP = 0;
     public float nextXP;
-    public float nextXPInterval = 100f;
+    public float nextXPInterval = 10f;
 
     [Space(10)]
     public BonusStat bonusStatModifier;
@@ -131,11 +131,6 @@ public class PlayerController : MonoBehaviour
         currMaxHealth = baseMaxHealth + bonusStatModifier.passiveHp;
     }
 
-    void PickUpItem(int itemId)
-    {
-        effects[itemId].LevelUpItem();
-    }
-
     void OnPlayerHit(float damageTaken)
     {
         // invul frams
@@ -154,11 +149,9 @@ public class PlayerController : MonoBehaviour
         // if level up
         if(currXP > nextXP)
         {
-            currLevel++;
-            nextXP += currLevel * nextXPInterval;
-
             LevelUp();
         }
+        GameController.instance.hudControl.UpdateXPBar(currXP / nextXP);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -171,12 +164,18 @@ public class PlayerController : MonoBehaviour
 
     void LevelUp()
     {
+        currXP -= nextXP;
+        currLevel++;
+        nextXP = currLevel * nextXPInterval;
 
+        GameController.instance.ShowLevelUpMenu();
+        GameController.instance.hudControl.UpdateLevel(currLevel);
     }
 
     public void LevelUpItem(int itemEffectIndex)
     {
         effects[itemEffectIndex].LevelUpItem();
+        GameController.instance.hudControl.UpdateItemSlot(itemEffectIndex, ref effects[itemEffectIndex]);
     }
 
     public void HealPlayer(float val)
