@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Target
+  - PlayerBullet
+  - Enemy
+  - DistanceCircle
   layers:
   - Default
   - TransparentFX
@@ -15,7 +18,7 @@ TagManager:
   - Player
   - PlayerBullet
   - Enemy
-  - 
+  - DistanceCircle
   - 
   - 
   - 

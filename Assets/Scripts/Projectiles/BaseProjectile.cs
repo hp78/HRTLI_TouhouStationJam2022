@@ -38,7 +38,7 @@ public class BaseProjectile : MonoBehaviour
         lifeDuration = itemStat.effectLife;
     }
 
-    protected void SetDie()
+    public void SetDie()
     {
         StartCoroutine(FadeAway());
         col.enabled = false;
