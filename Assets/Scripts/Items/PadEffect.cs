@@ -30,6 +30,8 @@ public class PadEffect : ItemEffect
         if (rand <= itemStatsAtLevel[currLevel].effectChance)
         {
             GameObject obj = Instantiate(padProjectilePrefab, this.transform.position, Quaternion.identity);
+            obj.GetComponent<BaseProjectile>().SetStats(itemStatsAtLevel[currLevel]);
+
         }
 
     }

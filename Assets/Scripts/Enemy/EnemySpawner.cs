@@ -157,20 +157,20 @@ public class EnemySpawner : MonoBehaviour
         else if (timeElapsed < (11 * 60))
         {
             if (spawnRobin % 3 == 0)
-                Instantiate(mobTier1, spawnPos[spawnRobin].position, Quaternion.identity);
-            else if (spawnRobin % 3 == 1)
                 Instantiate(mobTier2, spawnPos[spawnRobin].position, Quaternion.identity);
-            else
+            else if (spawnRobin % 3 == 1)
                 Instantiate(mobTier3, spawnPos[spawnRobin].position, Quaternion.identity);
+            else
+                Instantiate(mobTier4, spawnPos[spawnRobin].position, Quaternion.identity);
         }
         else if (timeElapsed < (12 * 60))
         {
             if (spawnRobin % 3 == 0)
-                Instantiate(mobTier1, spawnPos[spawnRobin].position, Quaternion.identity);
-            else if (spawnRobin % 3 == 1)
                 Instantiate(mobTier2, spawnPos[spawnRobin].position, Quaternion.identity);
-            else
+            else if (spawnRobin % 3 == 1)
                 Instantiate(mobTier3, spawnPos[spawnRobin].position, Quaternion.identity);
+            else
+                Instantiate(mobTier4, spawnPos[spawnRobin].position, Quaternion.identity);
             spawnTimerMultiplier = 2.0f;
         }
         else if (timeElapsed < (13 * 60))

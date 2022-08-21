@@ -70,9 +70,9 @@ MonoBehaviour:
     health: 15
     speed: 1.75
     damage: 0
-  expDrop: {fileID: 0}
-  expSucc: {fileID: 0}
-  dropCount: 0
+  expDrop: {fileID: 6343292593987978452, guid: b1c258796f7f7834f89e4ddaaf1a9383, type: 3}
+  expSucc: {fileID: 8490488489538625480, guid: c9c9ece95196e8c4ea6cb0dfa01d5795, type: 3}
+  dropCount: 1
 --- !u!50 &1896092523515254331
 Rigidbody2D:
   serializedVersion: 4
