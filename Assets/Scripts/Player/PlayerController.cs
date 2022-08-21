@@ -123,7 +123,7 @@ public class PlayerController : MonoBehaviour
 
                 for(int i = 0; i < bankiCounter; ++i)
                 {
-                    if(Random.Range(0f,100f) < 1f)
+                    if(Random.Range(0f,100f) < 5f)
                     {
                         StartCoroutine(SupportBanki(i, ie));
                     }
@@ -267,5 +267,6 @@ public class PlayerController : MonoBehaviour
         GameObject go = Instantiate(bankiHeadPrefab, transform.position, Quaternion.identity);
         go.GetComponent<FriendlyBanki>().Init(this);
         ++bankiCounter;
+        GameController.instance.hudControl.bankiCount.text = "" + (bankiCounter + 1);
     }
 }

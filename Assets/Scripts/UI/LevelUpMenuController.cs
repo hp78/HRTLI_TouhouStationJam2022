@@ -12,14 +12,15 @@ public class LevelUpMenuController : MonoBehaviour
     public Button[] selectionBtns;
     public Image[] itemPic;
     public TMP_Text[] itemName;
+    public TMP_Text[] itemLvlLeftText;
     public TMP_Text[] itemLvl;
     public TMP_Text[] descText;
     public TMP_Text[] passiveText;
     public TMP_Text[] flavText;
     int[] selectionIndexes = new int[3];
 
-    const int itemCount = 6;
-    const int miscCount = 3;
+    //const int itemCount = 6;
+    //const int miscCount = 3;
     public Sprite[] miscSprites = new Sprite[3];
 
     // Start is called before the first frame update
@@ -57,6 +58,7 @@ public class LevelUpMenuController : MonoBehaviour
 
             itemPic[selectionIndex].sprite = ie.itemPic;
             itemName[selectionIndex].text = ie.itemName;
+            itemLvlLeftText[selectionIndex].text = "Lv";
             itemLvl[selectionIndex].text = "" + (ie.currLevel + 1);
             descText[selectionIndex].text = ie.itemStatsAtLevel[ie.currLevel + 1].itemDesc;
             passiveText[selectionIndex].text = ie.itemStatsAtLevel[ie.currLevel + 1].itemPassiveDesc;
@@ -66,6 +68,7 @@ public class LevelUpMenuController : MonoBehaviour
         {
             itemPic[selectionIndex].sprite = miscSprites[0];
             itemName[selectionIndex].text = "Food";
+            itemLvlLeftText[selectionIndex].text = "";
             itemLvl[selectionIndex].text = "";
             descText[selectionIndex].text = "Fully recover health";
             passiveText[selectionIndex].text = "";
@@ -75,6 +78,7 @@ public class LevelUpMenuController : MonoBehaviour
         {
             itemPic[selectionIndex].sprite = miscSprites[1];
             itemName[selectionIndex].text = "Coin";
+            itemLvlLeftText[selectionIndex].text = "";
             itemLvl[selectionIndex].text = "";
             descText[selectionIndex].text = "Gain 100 coins to be used in the shop";
             passiveText[selectionIndex].text = "";
@@ -84,8 +88,9 @@ public class LevelUpMenuController : MonoBehaviour
         {
             itemPic[selectionIndex].sprite = miscSprites[2];
             itemName[selectionIndex].text = "Sekibanki Head";
+            itemLvlLeftText[selectionIndex].text = "";
             itemLvl[selectionIndex].text = "";
-            descText[selectionIndex].text = "Gain an additional head. Each head has a 1% chance of replicating a triggered effect from an item";
+            descText[selectionIndex].text = "Gain an additional head. 5% chance of replicating a triggered effect from an item";
             passiveText[selectionIndex].text = "Will pick up EXP and coins in close proximity";
             flavText[selectionIndex].text = "Heads up!";
         }
@@ -165,6 +170,7 @@ public class LevelUpMenuController : MonoBehaviour
         if(upgradeIndex < _playerController.effects.Length)
         {
             _playerController.LevelUpItem(upgradeIndex);
+
         }
         else if (upgradeIndex == _playerController.effects.Length)
         {

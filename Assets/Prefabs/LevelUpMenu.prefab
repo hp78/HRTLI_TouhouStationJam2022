@@ -319,6 +319,10 @@ MonoBehaviour:
   - {fileID: 3486900245881475722}
   - {fileID: 937417160916729311}
   - {fileID: 5019296146963654333}
+  itemLvlLeftText:
+  - {fileID: 766139692367008914}
+  - {fileID: 1963196022324850603}
+  - {fileID: 6398474065751125899}
   itemLvl:
   - {fileID: 3248448020743026759}
   - {fileID: 6083693313572778754}
@@ -336,8 +340,8 @@ MonoBehaviour:
   - {fileID: 1306203170885692957}
   - {fileID: 945833392078839939}
   miscSprites:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 9d8430806f810794c8b28a946c9f1e51, type: 3}
+  - {fileID: 21300000, guid: 1ab6a793b93d4e14487307fc3ef07311, type: 3}
   - {fileID: 21300000, guid: 6c067463e6417d3439609d8986c0e331, type: 3}
 --- !u!1 &1235867625933517213
 GameObject:

@@ -14,6 +14,7 @@ public class HUDController : MonoBehaviour
     public GameObject[] itemGameObj;
     public Image[] itemImages;
     public TMP_Text[] itemLevels;
+    public TMP_Text bankiCount;
 
     // Start is called before the first frame update
     void Start()
@@ -39,7 +40,7 @@ public class HUDController : MonoBehaviour
 
     public void UpdateItemSlot(int itemEffectIndex, ref ItemEffect ieRef)
     {
-        if (itemEffectIndex >= 6) return;
+        if (itemEffectIndex >= 8) return;
 
         int i = 0;
         for (; i < itemSlotEffectIndex.Length; ++i)
