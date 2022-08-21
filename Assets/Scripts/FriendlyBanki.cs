@@ -10,7 +10,7 @@ public class FriendlyBanki : MonoBehaviour
     Vector3 direction = Vector3.zero;
     float currTaskDuration = 0f;
     float currTaskMaxTime = 3f;
-    public float speed = 600f;
+    public float speed = 5.25f;
     public void Init(PlayerController pc)
     {
         playerController = pc;
@@ -33,6 +33,6 @@ public class FriendlyBanki : MonoBehaviour
             spriteRender.flipX = (direction.x > 0);
         }
 
-        rb2d.velocity = direction * Time.deltaTime * Time.timeScale * speed;
+        rb2d.velocity = direction * Time.timeScale * speed;
     }
 }

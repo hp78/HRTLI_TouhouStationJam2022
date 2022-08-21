@@ -147,7 +147,7 @@ MonoBehaviour:
   playerController: {fileID: 0}
   rb2d: {fileID: 6114344851043820989}
   spriteRender: {fileID: 6114344851791820861}
-  speed: 525
+  speed: 5.25
 --- !u!58 &6114344851043820988
 CircleCollider2D:
   m_ObjectHideFlags: 0
