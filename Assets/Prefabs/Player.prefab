@@ -140,6 +140,7 @@ Transform:
   - {fileID: 4751523107677182869}
   - {fileID: 4751523107102822885}
   - {fileID: 2431153193821806833}
+  - {fileID: 197668028383221585}
   m_Father: {fileID: 4751523107610154259}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1364,6 +1365,130 @@ MonoBehaviour:
   playerTf: {fileID: 0}
   CardProjectilePrefab: {fileID: 2708215233966847339, guid: 062feecffee18f94a99296c3733a8000, type: 3}
   targetArrow: {fileID: 4751523107256472019}
+--- !u!1 &7572822814884268138
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 197668028383221585}
+  - component: {fileID: 1242223653812111617}
+  m_Layer: 0
+  m_Name: 7 LaevaEffect
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &197668028383221585
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7572822814884268138}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4751523105753254406}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1242223653812111617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7572822814884268138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c130d8b097aa25b45b653d0eaff58773, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  itemPic: {fileID: 0}
+  isOffensiveSkill: 1
+  currTimer: 0
+  itemFlavorText: 
+  currLevel: 0
+  itemStatsAtLevel:
+  - effectValue: 10
+    effectCount: 1
+    effectHitLife: 0
+    effectLife: 0.15
+    effectSpeed: 25000
+    effectCooldown: 5
+    effectChance: 0
+    passiveAtk: 0
+    passiveDef: 0
+    passiveSpd: 0
+    passiveHp: 0
+    itemDesc: 
+  - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
+    effectCooldown: 0
+    effectChance: 0
+    passiveAtk: 0
+    passiveDef: 0
+    passiveSpd: 0
+    passiveHp: 0
+    itemDesc: 
+  - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
+    effectCooldown: 0
+    effectChance: 0
+    passiveAtk: 0
+    passiveDef: 0
+    passiveSpd: 0
+    passiveHp: 0
+    itemDesc: 
+  - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
+    effectCooldown: 0
+    effectChance: 0
+    passiveAtk: 0
+    passiveDef: 0
+    passiveSpd: 0
+    passiveHp: 0
+    itemDesc: 
+  - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
+    effectCooldown: 0
+    effectChance: 0
+    passiveAtk: 0
+    passiveDef: 0
+    passiveSpd: 0
+    passiveHp: 0
+    itemDesc: 
+  - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
+    effectCooldown: 0
+    effectChance: 0
+    passiveAtk: 0
+    passiveDef: 0
+    passiveSpd: 0
+    passiveHp: 0
+    itemDesc: 
+  LaevaProjectilePrefab: {fileID: 3112475980303405692, guid: 75fe3c2be25e1b24599888193aa60101, type: 3}
 --- !u!1 &8802339349490485190
 GameObject:
   m_ObjectHideFlags: 0
@@ -1409,10 +1534,82 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: 
-  itemPic: {fileID: 0}
+  itemPic: {fileID: 21300000, guid: 1ed8d4866e2170345b2e6ca0ad11a2b1, type: 3}
   isOffensiveSkill: 1
   currTimer: 0
   itemFlavorText: 
   currLevel: 0
-  itemStatsAtLevel: []
-  GungnirProjectilePrefab: {fileID: 0}
+  itemStatsAtLevel:
+  - effectValue: 5
+    effectCount: 1
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
+    effectCooldown: 3
+    effectChance: 0
+    passiveAtk: 0
+    passiveDef: 0
+    passiveSpd: 0
+    passiveHp: 0
+    itemDesc: 
+  - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
+    effectCooldown: 0
+    effectChance: 0
+    passiveAtk: 0
+    passiveDef: 0
+    passiveSpd: 0
+    passiveHp: 0
+    itemDesc: 
+  - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
+    effectCooldown: 0
+    effectChance: 0
+    passiveAtk: 0
+    passiveDef: 0
+    passiveSpd: 0
+    passiveHp: 0
+    itemDesc: 
+  - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
+    effectCooldown: 0
+    effectChance: 0
+    passiveAtk: 0
+    passiveDef: 0
+    passiveSpd: 0
+    passiveHp: 0
+    itemDesc: 
+  - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
+    effectCooldown: 0
+    effectChance: 0
+    passiveAtk: 0
+    passiveDef: 0
+    passiveSpd: 0
+    passiveHp: 0
+    itemDesc: 
+  - effectValue: 0
+    effectCount: 0
+    effectHitLife: 0
+    effectLife: 0
+    effectSpeed: 0
+    effectCooldown: 0
+    effectChance: 0
+    passiveAtk: 0
+    passiveDef: 0
+    passiveSpd: 0
+    passiveHp: 0
+    itemDesc: 
+  GungnirProjectilePrefab: {fileID: 6762410172342543651, guid: 70775c65367e0ff44ad5be0ee91e26f4, type: 3}
