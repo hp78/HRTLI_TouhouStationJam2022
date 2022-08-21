@@ -12,6 +12,7 @@ public class GameController : MonoBehaviour
     public HUDController hudControl;
     public PauseMenuController pauseMenu;
     public LevelUpMenuController lvlUpMenu;
+    public GameObject deadMenu;
 
     [Space(5)]
     public float timeElapsed;

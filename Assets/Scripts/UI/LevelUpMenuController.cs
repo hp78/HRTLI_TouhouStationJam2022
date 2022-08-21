@@ -172,7 +172,7 @@ public class LevelUpMenuController : MonoBehaviour
         }
         else if (upgradeIndex == (_playerController.effects.Length+1))
         {
-            // add coin
+            _playerController.playerCoin.val += 100;
         }
         else if (upgradeIndex == (_playerController.effects.Length+2))
         {

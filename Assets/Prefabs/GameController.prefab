@@ -120,6 +120,7 @@ MonoBehaviour:
   hudControl: {fileID: 3001422067711136602}
   pauseMenu: {fileID: 1459923204205833637}
   lvlUpMenu: {fileID: 2864097547101601559}
+  deadMenu: {fileID: 4653414180450882848}
   timeElapsed: 0
 --- !u!114 &4582583102847463829
 MonoBehaviour:
@@ -306,5 +307,10 @@ MonoBehaviour:
 --- !u!224 &4582583102115567047 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3287080957133416306, guid: 6f1e1b02343f5664b970b0512b31a0d6, type: 3}
+  m_PrefabInstance: {fileID: 1298890176133411509}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4653414180450882848 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5950005186954487701, guid: 6f1e1b02343f5664b970b0512b31a0d6, type: 3}
   m_PrefabInstance: {fileID: 1298890176133411509}
   m_PrefabAsset: {fileID: 0}

@@ -58,8 +58,11 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        UpdateMoveInput();
-        UpdateItemEffects();
+        if(isAlive)
+        {
+            UpdateMoveInput();
+            UpdateItemEffects();
+        }
     }
 
     void UpdateMoveInput()
@@ -138,15 +141,54 @@ public class PlayerController : MonoBehaviour
 
     void OnPlayerHit(float damageTaken)
     {
-        // invul frams
-        // vfx
+        if (!isInvul)
+        {
+            currHealth -= damageTaken;
 
-
+            if(currHealth < 0)
+            {
+                StartCoroutine(Die());
+            }
+            else
+            {
+                isInvul = true;
+                StartCoroutine(Invul());
+            }
+        }
 
         foreach(ItemEffect ie in effects)
         {
             ie.PlayerHitEffect();
         }
+    }
+
+    IEnumerator Invul()
+    {
+        yield return new WaitForSeconds(0.1f);
+        spriteRenderer.color = Color.red;
+        yield return new WaitForSeconds(0.1f);
+        spriteRenderer.color = Color.black;
+        yield return new WaitForSeconds(0.1f);
+        spriteRenderer.color = Color.red;
+        yield return new WaitForSeconds(0.1f);
+        spriteRenderer.color = Color.black;
+        yield return new WaitForSeconds(0.1f);
+        spriteRenderer.color = Color.red;
+        yield return new WaitForSeconds(0.1f);
+        spriteRenderer.color = Color.white;
+
+        isInvul = false;
+        yield return null;
+    }
+
+    IEnumerator Die()
+    {
+        isAlive = false;
+        spriteRenderer.enabled = false;
+
+        yield return new WaitForSeconds(1.0f);
+        GameController.instance.deadMenu.SetActive(true);
+        yield return null;
     }
 
     public void AddXP(float val)
