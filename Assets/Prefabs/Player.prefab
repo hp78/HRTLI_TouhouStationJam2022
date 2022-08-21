@@ -1423,6 +1423,7 @@ MonoBehaviour:
   currMaxHealth: 0
   baseMaxHealth: 0
   speed: 500
+  bankiHeadPrefab: {fileID: 0}
   playerCoin: {fileID: 0}
   currLevel: 1
   currXP: 0

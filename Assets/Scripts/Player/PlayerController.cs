@@ -34,6 +34,7 @@ public class PlayerController : MonoBehaviour
     public float speed = 300f;
 
     [Space(5)]
+    public GameObject bankiHeadPrefab;
     public IntVal playerCoin;
 
     [Space(10)]
@@ -106,7 +107,7 @@ public class PlayerController : MonoBehaviour
             moveDir = moveDir.normalized;
         }
 
-        rb2d.velocity = (moveDir * Time.deltaTime * speed * (1 + bonusStatModifier.passiveSpd));
+        rb2d.velocity = (moveDir * speed * (1 + bonusStatModifier.passiveSpd));
 
         animator.SetFloat("Speed", moveDir.sqrMagnitude);
     }
@@ -188,6 +189,7 @@ public class PlayerController : MonoBehaviour
 
         yield return new WaitForSeconds(1.0f);
         GameController.instance.deadMenu.SetActive(true);
+
         yield return null;
     }
 
@@ -245,6 +247,7 @@ public class PlayerController : MonoBehaviour
 
     public void SpawnHead()
     {
-
+        GameObject go = Instantiate(bankiHeadPrefab, transform.position, Quaternion.identity);
+        go.GetComponent<FriendlyBanki>().Init(this);
     }
 }

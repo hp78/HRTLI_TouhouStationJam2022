@@ -347,9 +347,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 28f4ffff
-      m_LastClickedID: -3032
-      m_ExpandedIDs: 36fbffff
+      m_SelectedIDs: e0f2ffff
+      m_LastClickedID: -3360
+      m_ExpandedIDs: 1ef4ffff28f4ffff36fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -627,9 +627,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1120.036, y: 590.6713, z: 6.4222355}
+    m_Target: {x: 941.8833, y: 596.2711, z: 0.15275049}
     speed: 2
-    m_Value: {x: 1120.036, y: 590.6713, z: 6.4222355}
+    m_Value: {x: 941.8833, y: 596.2711, z: 0.15275049}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -680,9 +680,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 459.2301
+    m_Target: 610.15106
     speed: 2
-    m_Value: 459.2301
+    m_Value: 610.15106
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -987,22 +987,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Sprites/Items
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Sprites/Items
   m_LastFoldersGridSize: 16
   m_LastProjectPath: D:\Unity Projects\HRTLI_TouhouStationJam2022
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 60}
-    m_SelectedIDs: 76640000
-    m_LastClickedID: 25718
-    m_ExpandedIDs: 0000000046650000486500004a6500004c6500004e650000
+    m_SelectedIDs: 4e650000
+    m_LastClickedID: 25934
+    m_ExpandedIDs: 0000000046650000486500004a6500004c6500004e65000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1055,24 +1055,24 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 1abbffff
-    m_LastClickedInstanceID: -17638
+    m_SelectedInstanceIDs: e0f2ffff
+    m_LastClickedInstanceID: -3360
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c62300000e210000000000009a5b000086a80000625e0000c6620000
+    m_ExpandedInstanceIDs: c62300000e210000000000009a5b000086a80000625e0000c6620000727f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Banki
+      m_OriginalName: Banki
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 28704
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 14}
     m_CreateAssetUtility:
@@ -1144,4 +1144,4 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -17906
+  m_LastSelectedObjectID: 29048

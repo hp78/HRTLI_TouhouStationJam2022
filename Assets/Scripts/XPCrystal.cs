@@ -7,6 +7,7 @@ public class XPCrystal : MonoBehaviour
     public float xpAmount = 1f;
     public CircleCollider2D cCollider2d;
     //PlayerController _playerControl;
+    Transform targetTF;
 
     bool isMoving = false;
     float elapsedTime = 0f;
@@ -19,12 +20,12 @@ public class XPCrystal : MonoBehaviour
 
     private void OnEnable()
     {
-        EventManager.Subscribe("XPSucc", OnCollect);
+        EventManager.Subscribe("XPSucc", OnAutoCollect);
     }
 
     private void OnDisable()
     {
-        EventManager.UnSubscribe("XPSucc", OnCollect);
+        EventManager.UnSubscribe("XPSucc", OnAutoCollect);
     }
 
     // Update is called once per frame
@@ -36,8 +37,9 @@ public class XPCrystal : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player"))
+        if(collision.CompareTag("Player") || collision.CompareTag("BankiHead"))
         {
+            targetTF = collision.transform;
             OnCollect();
         }
     }
@@ -46,8 +48,7 @@ public class XPCrystal : MonoBehaviour
     {
         while(elapsedTime < collectTime)
         {
-            transform.position = Vector3.Lerp(transform.position, 
-                GameController.instance.playerController.transform.position, 
+            transform.position = Vector3.Lerp(transform.position, targetTF.position, 
                 elapsedTime * 0.075f * collectTime);
             yield return new WaitForEndOfFrame();
         }
@@ -56,6 +57,11 @@ public class XPCrystal : MonoBehaviour
         Destroy(gameObject);
     }
 
+    void OnAutoCollect()
+    {
+        targetTF = GameController.instance.playerController.transform;
+        OnCollect();
+    }
     void OnCollect()
     {
         cCollider2d.enabled = false;

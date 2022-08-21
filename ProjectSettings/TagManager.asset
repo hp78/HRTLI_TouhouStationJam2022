@@ -8,6 +8,7 @@ TagManager:
   - PlayerBullet
   - Enemy
   - DistanceCircle
+  - BankiHead
   layers:
   - Default
   - TransparentFX
