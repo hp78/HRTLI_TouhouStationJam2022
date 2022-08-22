@@ -5,6 +5,7 @@ using UnityEngine;
 public class KnifeEffect : ItemEffect
 {
     public GameObject knifeProjectilePrefab;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,5 +37,7 @@ public class KnifeEffect : ItemEffect
             obj.GetComponent<BaseProjectile>().SetStats(itemStatsAtLevel[currLevel]);
 
         }
+        audio.Play();
+
     }
 }

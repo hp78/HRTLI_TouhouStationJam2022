@@ -50,6 +50,11 @@ public class PlayerController : MonoBehaviour
     [Space(15)]
     public ItemEffect[] effects;
 
+    public AudioSource expSound;
+    public AudioSource lvlSound;
+    public AudioSource hitSound;
+    public AudioSource dieSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -182,6 +187,7 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator Invul()
     {
+        hitSound.Play();
         yield return new WaitForSeconds(0.1f);
         spriteRenderer.color = Color.red;
         yield return new WaitForSeconds(0.1f);
@@ -203,7 +209,7 @@ public class PlayerController : MonoBehaviour
     {
         isAlive = false;
         spriteRenderer.enabled = false;
-
+        dieSound.Play();
         yield return new WaitForSeconds(1.0f);
         GameController.instance.deadMenu.SetActive(true);
 
@@ -213,9 +219,9 @@ public class PlayerController : MonoBehaviour
     public void AddXP(float val)
     {
         currXP += val;
-
+        expSound.Play();
         // if level up
-        if(currXP > nextXP)
+        if (currXP > nextXP)
         {
             LevelUp();
         }
@@ -240,7 +246,7 @@ public class PlayerController : MonoBehaviour
         currXP -= nextXP;
         currLevel++;
         nextXP = currLevel * nextXPInterval;
-
+        lvlSound.Play();
         GameController.instance.ShowLevelUpMenu();
         GameController.instance.hudControl.UpdateLevel(currLevel);
     }

@@ -42,7 +42,9 @@ public class ChinaStarEffect : ItemEffect
             obj.GetComponent<BaseProjectile>().SetStats(itemStatsAtLevel[currLevel]);
             obj.GetComponent<StarProjectile>().negative = true;
 
+            audio.Play();
             yield return new WaitForSeconds(0.5f);
+
         }
 
         yield return 0;

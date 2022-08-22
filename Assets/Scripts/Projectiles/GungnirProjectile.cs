@@ -9,7 +9,7 @@ public class GungnirProjectile : BaseProjectile
     public TrailRenderer trail;
     public Animator anim;
     public SpriteRenderer shadow;
-
+    public AudioSource audio;
     // Start is called before the first frame update
     void Start()
     {
@@ -48,6 +48,7 @@ public class GungnirProjectile : BaseProjectile
             shadow.enabled = true;
             int rand = Random.Range(0, enemyPos.Count);
             this.transform.position = enemyPos[rand];
+            audio.Play();
         }
     }
 

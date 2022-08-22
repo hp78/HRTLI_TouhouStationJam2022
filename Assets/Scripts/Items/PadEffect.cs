@@ -31,7 +31,7 @@ public class PadEffect : ItemEffect
         {
             GameObject obj = Instantiate(padProjectilePrefab, this.transform.position, Quaternion.identity);
             obj.GetComponent<BaseProjectile>().SetStats(itemStatsAtLevel[currLevel]);
-
+            audio.Play();
         }
 
     }

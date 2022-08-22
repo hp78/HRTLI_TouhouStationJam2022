@@ -43,6 +43,7 @@ public class ItemEffect : MonoBehaviour
     public int currLevel = 0;
     public ItemStat[] itemStatsAtLevel;
 
+    public AudioSource audio;
 
     public bool TickTimer(float deltaTime)
     {

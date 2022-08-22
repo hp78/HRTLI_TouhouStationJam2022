@@ -23,6 +23,8 @@ public class LevelUpMenuController : MonoBehaviour
     //const int miscCount = 3;
     public Sprite[] miscSprites = new Sprite[3];
 
+    public AudioSource itemLVLsound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -187,5 +189,6 @@ public class LevelUpMenuController : MonoBehaviour
 
         gameObject.SetActive(false);
         Time.timeScale = 1;
+        itemLVLsound.Play();
     }
 }

@@ -69,7 +69,7 @@ MonoBehaviour:
   enemyStats:
     health: 20
     speed: 1.2
-    damage: 0
+    damage: 2
   expDrop: {fileID: 8490488489538625480, guid: 319886c1474b8c346bb4b95a9ebb640e, type: 3}
   expSucc: {fileID: 8490488489538625480, guid: c9c9ece95196e8c4ea6cb0dfa01d5795, type: 3}
   dropCount: 1

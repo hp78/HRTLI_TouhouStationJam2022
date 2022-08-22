@@ -37,6 +37,8 @@ public class ShroomEffect : ItemEffect
             GameObject obj = Instantiate(ShroomProjectilePrefab, this.transform.position, Quaternion.identity);
             obj.GetComponent<BaseProjectile>().SetStats(itemStatsAtLevel[currLevel]);
         }
+        audio.Play();
+
 
     }
 }

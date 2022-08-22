@@ -39,6 +39,7 @@ public class LaevaEffect : ItemEffect
             obj.GetComponent<LaeveProjectile>().fireOppo = true;
 
         }
+        audio.Play();
 
 
     }

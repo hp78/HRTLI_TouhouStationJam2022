@@ -36,5 +36,6 @@ public class LibraryCardEffect : ItemEffect
     {
         GameObject obj = Instantiate(CardProjectilePrefab, this.transform.position, targetArrow.rotation);
         obj.GetComponent<BaseProjectile>().SetStats(itemStatsAtLevel[currLevel]);
+        audio.Play();
     }
 }

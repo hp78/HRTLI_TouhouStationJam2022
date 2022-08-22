@@ -154,7 +154,7 @@ MonoBehaviour:
   enemyStats:
     health: 50
     speed: 1
-    damage: 0
+    damage: 5
   expDrop: {fileID: 5498998777650264789, guid: d7d1b4c378e67c940a82dc9ff786143e, type: 3}
   expSucc: {fileID: 8490488489538625480, guid: c9c9ece95196e8c4ea6cb0dfa01d5795, type: 3}
   dropCount: 1
