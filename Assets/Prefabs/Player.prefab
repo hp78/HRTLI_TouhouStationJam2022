@@ -970,7 +970,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0.25
     passiveHp: 0
-    itemDesc: 'Shoots 2 projectile to the front dealing 4 damage.
+    itemDesc: 'Shoots 2 projectile to the front dealing 8 damage.
 
       Increased
       fire rate,projectile speed and pierce.'
@@ -986,7 +986,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0.5
     passiveHp: 0
-    itemDesc: 'Shoots 3 projectile to the front dealing 6 damage.
+    itemDesc: 'Shoots 3 projectile to the front dealing 8 damage.
 
       Increased
       fire rate,projectile speed and pierce.'
@@ -1002,7 +1002,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0.75
     passiveHp: 0
-    itemDesc: 'Shoots 4 projectile to the front dealing 6 damage.
+    itemDesc: 'Shoots 4 projectile to the front dealing 8 damage.
 
       Increased
       fire rate,projectile speed and pierce.'
@@ -1018,7 +1018,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 1
     passiveHp: 0
-    itemDesc: 'Shoots 5 projectile to the front dealing 7.5 damage.
+    itemDesc: 'Shoots 5 projectile to the front dealing 8 damage.
 
       Increased
       fire rate,projectile speed and high pierce.'
@@ -1281,7 +1281,10 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 5
-    itemDesc: Deals 2.5 damage per second around player for a short period.
+    itemDesc: 'Deals 2.5 damage per second around player for a short period.
+
+      Big
+      area but long cooldown.'
     itemPassiveDesc: Increases max health by 5.
   - effectValue: 0.5
     effectCount: 1
@@ -1294,7 +1297,10 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 10
-    itemDesc: Deals 5 damage per second around player for a short period.
+    itemDesc: 'Deals 5 damage per second around player for a short period.
+
+      Big
+      area but long cooldown.'
     itemPassiveDesc: Increases max health by 10.
   - effectValue: 0.75
     effectCount: 1
@@ -1307,7 +1313,10 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 15
-    itemDesc: Deals 7.5 damage per second around player for a short period.
+    itemDesc: 'Deals 7.5 damage per second around player for a short period.
+
+      Big
+      area but long cooldown.'
     itemPassiveDesc: Increases max health by 15.
   - effectValue: 1
     effectCount: 0
@@ -1320,7 +1329,10 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 20
-    itemDesc: Deals 10 damage per second around player for a short period.
+    itemDesc: 'Deals 10 damage per second around player for a short period.
+
+      Big
+      area but long cooldown.'
     itemPassiveDesc: Increases max health by 20.
   - effectValue: 2
     effectCount: 0
@@ -1333,7 +1345,10 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 25
-    itemDesc: Deals 20 damage per second around player for a short period.
+    itemDesc: 'Deals 20 damage per second around player for a short period.
+
+      Big
+      area but long cooldown.'
     itemPassiveDesc: Increases max health by 25.
   audio: {fileID: 2168993413245273733}
   playerTf: {fileID: 4751523107610154259}
@@ -1510,7 +1525,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
-    itemDesc: Throw 1 damaging circle that deals 2.5 damage per second.
+    itemDesc: Throw 1 damaging circle that deals 5 damage per second.
     itemPassiveDesc: 
   - effectValue: 1
     effectCount: 1
@@ -1523,7 +1538,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
-    itemDesc: Throw 1 damaging circle that deals 5 damage per second.
+    itemDesc: Throw 1 damaging circle that deals 10 damage per second.
     itemPassiveDesc: 
   - effectValue: 1.25
     effectCount: 2
@@ -1536,7 +1551,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
-    itemDesc: Throw 2 damaging circle that deals 7.5 damage per second.
+    itemDesc: Throw 2 damaging circle that deals 12.5 damage per second.
     itemPassiveDesc: 
   - effectValue: 1.5
     effectCount: 2
@@ -1549,7 +1564,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
-    itemDesc: Throw 2 damaging circle that deals 10 damage per second.
+    itemDesc: Throw 2 damaging circle that deals 15 damage per second.
     itemPassiveDesc: 
   - effectValue: 1.5
     effectCount: 5
@@ -1562,7 +1577,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
-    itemDesc: Throw 5 damaging circle that deals 10 damage per second.
+    itemDesc: Throw 5 damaging circle that deals 15 damage per second.
     itemPassiveDesc: 
   audio: {fileID: 746567640998493025}
   playerTf: {fileID: 4751523107610154259}
@@ -2612,7 +2627,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
-    itemDesc: Swipe in front of you, dealing 5 damage.
+    itemDesc: Swipe in front of you, dealing 10 damage.
     itemPassiveDesc: 
   - effectValue: 12.5
     effectCount: 1
@@ -2625,7 +2640,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0.25
     passiveHp: 0
-    itemDesc: Swipe in front of you, dealing 7.5 damage.
+    itemDesc: Swipe in front of you, dealing 12.5 damage.
     itemPassiveDesc: Increases movement speed by 25%
   - effectValue: 15
     effectCount: 0
@@ -2638,7 +2653,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0.5
     passiveHp: 0
-    itemDesc: Swipe in front of you, dealing 10 damage.
+    itemDesc: Swipe in front of you, dealing 15 damage.
     itemPassiveDesc: Increases movement speed by 50%
   - effectValue: 15
     effectCount: 0
@@ -2651,7 +2666,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0.75
     passiveHp: 0
-    itemDesc: 'Swipe in front of you, dealing 10 damage.
+    itemDesc: 'Swipe in front of you, dealing 15 damage.
 
       Increases fire rate.'
     itemPassiveDesc: Increases movement speed by 75%
@@ -2666,7 +2681,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 1
     passiveHp: 0
-    itemDesc: 'Swipe in front of you, dealing 10 damage.
+    itemDesc: 'Swipe in front of you, dealing 15 damage.
 
       Increases fire rate
       greatly.'
@@ -2926,7 +2941,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
-    itemDesc: Shoots a horizontal beam in front dealing 40 damage.
+    itemDesc: Shoots a horizontal beam in front dealing 25 damage.
     itemPassiveDesc: 
   - effectValue: 30
     effectCount: 0
@@ -2939,7 +2954,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
-    itemDesc: Shoots a horizontal beam in front dealing 60 damage.
+    itemDesc: Shoots a horizontal beam in front dealing 30 damage.
     itemPassiveDesc: 
   - effectValue: 35
     effectCount: 0
@@ -2952,7 +2967,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
-    itemDesc: Shoots a horizontal beam in front dealing 80 damage.
+    itemDesc: Shoots a horizontal beam in front dealing 35 damage.
     itemPassiveDesc: 
   - effectValue: 40
     effectCount: 0
@@ -2965,7 +2980,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
-    itemDesc: 'Shoots a horizontal beam in front dealing 100 damage.
+    itemDesc: 'Shoots a horizontal beam in front dealing 40 damage.
 
       Fires
       one more on the opposite side.'
@@ -3175,7 +3190,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
-    itemDesc: Rain down 1 spear on an enemy, dealing 10 damage.
+    itemDesc: Rain down 1 spear on an enemy, dealing 5 damage.
     itemPassiveDesc: 20% Chance on hit to gain 2 health
   - effectValue: 5
     effectCount: 2
@@ -3188,7 +3203,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
-    itemDesc: Rain down 2 spear on an enemy, dealing 10 damage.
+    itemDesc: Rain down 2 spear on an enemy, dealing 5 damage.
     itemPassiveDesc: 20% Chance on hit to gain 4 health
   - effectValue: 5
     effectCount: 3
@@ -3201,7 +3216,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
-    itemDesc: Rain down 3 spear on an enemy, dealing 10 damage.
+    itemDesc: Rain down 3 spear on an enemy, dealing 5 damage.
     itemPassiveDesc: 20% Chance on hit to gain 6 health
   - effectValue: 5
     effectCount: 4
@@ -3214,7 +3229,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
-    itemDesc: Rain down 4 spear on an enemy, dealing 10 damage.
+    itemDesc: Rain down 4 spear on an enemy, dealing 5 damage.
     itemPassiveDesc: 20% Chance on hit to gain 8 health
   - effectValue: 5
     effectCount: 10
