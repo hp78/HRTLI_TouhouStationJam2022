@@ -37,7 +37,9 @@ public class EnemyController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playertarget = GameObject.FindGameObjectWithTag("Player").transform;
+        var temp = GameObject.FindGameObjectWithTag("Player");
+        if(temp)
+        playertarget = temp.transform;
 
     }
 
