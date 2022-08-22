@@ -7,7 +7,10 @@ using UnityEngine.UI;
 public class HUDController : MonoBehaviour
 {
     public TMP_Text levelText;
+
+    [Header("Player Stuff")]
     public Image expFillBar;
+    public Image hpBar;
 
     [Header("Item Slots")]
     public int[] itemSlotEffectIndex = new int[10];
@@ -28,9 +31,13 @@ public class HUDController : MonoBehaviour
         
     }
 
-    public void UpdateXPBar(float valPercent)
+    public void UpdateHPBar(float fillPercent)
     {
-        expFillBar.fillAmount = valPercent;
+        hpBar.fillAmount = fillPercent;
+    }
+    public void UpdateXPBar(float fillPercent)
+    {
+        expFillBar.fillAmount = fillPercent;
     }
 
     public void UpdateLevel(int currLevel)

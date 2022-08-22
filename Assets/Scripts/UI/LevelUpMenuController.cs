@@ -82,7 +82,7 @@ public class LevelUpMenuController : MonoBehaviour
             itemName[selectionIndex].text = "Coin";
             itemLvlLeftText[selectionIndex].text = "";
             itemLvl[selectionIndex].text = "";
-            descText[selectionIndex].text = "Gain 100 coins to be used in the shop";
+            descText[selectionIndex].text = "Gain 50 coins to be used in the shop";
             passiveText[selectionIndex].text = "";
             flavText[selectionIndex].text = "Bee-t-ko-in? What's that? A vegetable?";
         }
@@ -180,7 +180,7 @@ public class LevelUpMenuController : MonoBehaviour
         }
         else if (upgradeIndex == (_playerController.effects.Length+1))
         {
-            _playerController.playerCoin.val += 100;
+            _playerController.playerCoin.val += 50;
         }
         else if (upgradeIndex == (_playerController.effects.Length+2))
         {

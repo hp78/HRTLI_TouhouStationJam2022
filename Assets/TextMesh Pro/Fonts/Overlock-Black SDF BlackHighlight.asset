@@ -53,7 +53,7 @@ Material:
     - _ColorMask: 15
     - _CullMode: 0
     - _Diffuse: 0.5
-    - _FaceDilate: 0
+    - _FaceDilate: 0.5
     - _FaceUVSpeedX: 0
     - _FaceUVSpeedY: 0
     - _GlowInner: 0.05
@@ -67,12 +67,12 @@ Material:
     - _OutlineSoftness: 0
     - _OutlineUVSpeedX: 0
     - _OutlineUVSpeedY: 0
-    - _OutlineWidth: 0
+    - _OutlineWidth: 0.5
     - _PerspectiveFilter: 0.875
     - _Reflectivity: 10
-    - _ScaleRatioA: 0.8333333
-    - _ScaleRatioB: 0.6770833
-    - _ScaleRatioC: 0.6770833
+    - _ScaleRatioA: 0.7017544
+    - _ScaleRatioB: 0.26041666
+    - _ScaleRatioC: 0.26041666
     - _ScaleX: 1
     - _ScaleY: 1
     - _ShaderFlags: 0
@@ -99,7 +99,7 @@ Material:
     - _FaceColor: {r: 1, g: 1, b: 1, a: 1}
     - _GlowColor: {r: 0, g: 1, b: 0, a: 0.5}
     - _MaskCoord: {r: 0, g: 0, b: 32767, a: 32767}
-    - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}
+    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _ReflectFaceColor: {r: 0, g: 0, b: 0, a: 1}
     - _ReflectOutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
@@ -162,11 +162,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
-  m_Name: Overlock-Black SDF
+  m_Name: Overlock-Black SDF BlackHighlight
   m_EditorClassIdentifier: 
-  hashCode: 1856773534
+  hashCode: -958270487
   material: {fileID: -5083385132264337434}
-  materialHashCode: -1110402
+  materialHashCode: 1556156329
   m_Version: 1.1.0
   m_SourceFontFileGUID: 430dec6d87d0bf241a95f433b8e44440
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: 430dec6d87d0bf241a95f433b8e44440, type: 3}

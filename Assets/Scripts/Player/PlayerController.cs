@@ -60,6 +60,7 @@ public class PlayerController : MonoBehaviour
     {
         currMaxHealth = baseMaxHealth;
         currHealth = baseMaxHealth;
+        GameController.instance.hudControl.UpdateHPBar(1);
     }
 
     // Update is called once per frame
@@ -167,9 +168,11 @@ public class PlayerController : MonoBehaviour
         if (!isInvul)
         {
             currHealth -= damageTaken;
+            GameController.instance.hudControl.UpdateHPBar(currHealth/currMaxHealth);
 
-            if(currHealth < 0)
+            if (currHealth < 0)
             {
+                isInvul = true;
                 StartCoroutine(Die());
             }
             else
@@ -188,18 +191,32 @@ public class PlayerController : MonoBehaviour
     IEnumerator Invul()
     {
         hitSound.Play();
-        yield return new WaitForSeconds(0.1f);
-        spriteRenderer.color = Color.red;
-        yield return new WaitForSeconds(0.1f);
-        spriteRenderer.color = Color.black;
-        yield return new WaitForSeconds(0.1f);
-        spriteRenderer.color = Color.red;
-        yield return new WaitForSeconds(0.1f);
-        spriteRenderer.color = Color.black;
-        yield return new WaitForSeconds(0.1f);
-        spriteRenderer.color = Color.red;
-        yield return new WaitForSeconds(0.1f);
-        spriteRenderer.color = Color.white;
+        {
+            yield return new WaitForEndOfFrame();
+            spriteRenderer.color = Color.red;
+            yield return new WaitForEndOfFrame();
+            spriteRenderer.color = Color.black;
+            yield return new WaitForEndOfFrame();
+            spriteRenderer.color = Color.red;
+            yield return new WaitForEndOfFrame();
+            spriteRenderer.color = Color.black;
+            yield return new WaitForEndOfFrame();
+            spriteRenderer.color = Color.red;
+            yield return new WaitForEndOfFrame();
+            spriteRenderer.color = Color.white;
+            yield return new WaitForEndOfFrame();
+            spriteRenderer.color = Color.red;
+            yield return new WaitForEndOfFrame();
+            spriteRenderer.color = Color.black;
+            yield return new WaitForEndOfFrame();
+            spriteRenderer.color = Color.red;
+            yield return new WaitForEndOfFrame();
+            spriteRenderer.color = Color.black;
+            yield return new WaitForEndOfFrame();
+            spriteRenderer.color = Color.red;
+            yield return new WaitForEndOfFrame();
+            spriteRenderer.color = Color.white;
+        }
 
         isInvul = false;
         yield return null;
