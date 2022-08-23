@@ -9,7 +9,15 @@ MonoImporter:
   - spriteRenderer: {instanceID: 0}
   - playerFacingAnimator: {instanceID: 0}
   - playerFacing: {instanceID: 0}
+  - bankiHeadPrefab: {instanceID: 0}
   - playerCoin: {fileID: 11400000, guid: 0830bc2178bfcb74889b5ad083662455, type: 2}
+  - playerUpgrade: {fileID: 11400000, guid: a567bfb0f33f76d42ab80452fb58fc92, type: 2}
+  - expSound: {instanceID: 0}
+  - lvlSound: {instanceID: 0}
+  - hitSound: {instanceID: 0}
+  - dieSound: {instanceID: 0}
+  - healSound: {instanceID: 0}
+  - healparticles: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -37,6 +37,7 @@ public class PlayerController : MonoBehaviour
     public GameObject bankiHeadPrefab;
     public int bankiCounter = 0;
     public IntVal playerCoin;
+    public IntVal playerUpgrade;
 
     [Space(10)]
     public int currLevel = 1;
@@ -153,6 +154,11 @@ public class PlayerController : MonoBehaviour
         bonusStatModifier.passiveSpd = 0;
         bonusStatModifier.passiveHp = 0;
 
+        if (playerUpgrade.val >= 1) bonusStatModifier.passiveHp = 25f;
+        if (playerUpgrade.val >= 1) bonusStatModifier.passiveSpd = 0.1f;
+        if (playerUpgrade.val >= 1) bonusStatModifier.passiveDef = 0.1f;
+        if (playerUpgrade.val >= 1) bonusStatModifier.passiveAtk = 0.1f;
+
         //
         foreach (ItemEffect ie in effects)
         {
@@ -255,7 +261,7 @@ public class PlayerController : MonoBehaviour
         if(collision.collider.CompareTag("Enemy"))
         {
             float dmg = collision.gameObject.GetComponent<EnemyController>().enemyStats.damage;
-            float truedmg = dmg - bonusStatModifier.passiveDef;
+            float truedmg = dmg * (1-bonusStatModifier.passiveDef);
             if (truedmg <= 0.0f)
                 OnPlayerHit(1f);
             else
