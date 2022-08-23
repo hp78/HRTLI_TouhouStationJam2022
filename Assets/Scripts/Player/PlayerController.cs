@@ -54,6 +54,7 @@ public class PlayerController : MonoBehaviour
     public AudioSource lvlSound;
     public AudioSource hitSound;
     public AudioSource dieSound;
+    public AudioSource healSound;
 
     public ParticleSystem healparticles;
     // Start is called before the first frame update
@@ -286,6 +287,7 @@ public class PlayerController : MonoBehaviour
 
         // call heal fx
         healparticles.Play();
+        healSound.Play();
     }
 
     public void HealPlayerMax()
@@ -295,6 +297,8 @@ public class PlayerController : MonoBehaviour
 
         // call heal fx
         healparticles.Play();
+        healSound.Play();
+
 
     }
 
