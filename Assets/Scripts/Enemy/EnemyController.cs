@@ -54,10 +54,24 @@ public class EnemyController : MonoBehaviour
 
     void ChasePlayer()
     {
-        Vector2 direction = (playertarget.position - this.transform.position).normalized;
-        rigidbody2d.velocity = direction * enemyStats.speed;
+        Vector2 direction = (playertarget.position - this.transform.position);
+        Vector2 directionNormalized = direction.normalized;
 
-        if (direction != Vector2.zero)
+        if(direction.magnitude > 32)
+        {
+            rigidbody2d.velocity = directionNormalized * enemyStats.speed * 6;
+        }
+        else if (direction.magnitude > 16)
+        {
+            rigidbody2d.velocity = directionNormalized * enemyStats.speed * 1.5f;
+        }
+        else
+        {
+            rigidbody2d.velocity = directionNormalized * enemyStats.speed;
+        }
+        
+
+        if (directionNormalized != Vector2.zero)
         {
             spriteRenderer.flipX = (direction.x > 0);
         }
