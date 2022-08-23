@@ -6216,7 +6216,7 @@ MonoBehaviour:
     effectHitLife: 0
     effectLife: 1
     effectSpeed: 80
-    effectCooldown: 30
+    effectCooldown: 45
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
@@ -6232,7 +6232,7 @@ MonoBehaviour:
     effectHitLife: 0
     effectLife: 1
     effectSpeed: 80
-    effectCooldown: 30
+    effectCooldown: 45
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
@@ -6248,7 +6248,7 @@ MonoBehaviour:
     effectHitLife: 0
     effectLife: 1
     effectSpeed: 80
-    effectCooldown: 30
+    effectCooldown: 45
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
@@ -6264,7 +6264,7 @@ MonoBehaviour:
     effectHitLife: 0
     effectLife: 1
     effectSpeed: 80
-    effectCooldown: 30
+    effectCooldown: 45
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
@@ -6280,7 +6280,7 @@ MonoBehaviour:
     effectHitLife: 0
     effectLife: 1
     effectSpeed: 80
-    effectCooldown: 30
+    effectCooldown: 45
     effectChance: 0
     passiveAtk: 0
     passiveDef: 0
@@ -7390,7 +7390,7 @@ MonoBehaviour:
   bankiHeadPrefab: {fileID: 6114344851043820608, guid: a1dbd28de80c4ec458b0e593541da4e8, type: 3}
   bankiCounter: 0
   playerCoin: {fileID: 11400000, guid: 0830bc2178bfcb74889b5ad083662455, type: 2}
-  playerUpgrade: {fileID: 0}
+  playerUpgrade: {fileID: 11400000, guid: a567bfb0f33f76d42ab80452fb58fc92, type: 2}
   currLevel: 1
   currXP: 0
   nextXP: 10
@@ -7632,7 +7632,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 47a38498eb30d2548b6d75f70be6cc21, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.2
+  m_Volume: 0.175
   m_Pitch: 1
   Loop: 0
   Mute: 0
