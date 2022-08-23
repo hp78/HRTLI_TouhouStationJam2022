@@ -7981,7 +7981,7 @@ MonoBehaviour:
     effectHitLife: 0
     effectLife: 0.15
     effectSpeed: 50
-    effectCooldown: 5
+    effectCooldown: 8
     effectChance: 0
     passiveAtk: 0.1
     passiveDef: 0
@@ -7994,7 +7994,7 @@ MonoBehaviour:
     effectHitLife: 0
     effectLife: 0.15
     effectSpeed: 50
-    effectCooldown: 5
+    effectCooldown: 8
     effectChance: 0
     passiveAtk: 0.2
     passiveDef: 0
@@ -8007,7 +8007,7 @@ MonoBehaviour:
     effectHitLife: 0
     effectLife: 0.15
     effectSpeed: 50
-    effectCooldown: 5
+    effectCooldown: 8
     effectChance: 0
     passiveAtk: 0.3
     passiveDef: 0
@@ -8020,7 +8020,7 @@ MonoBehaviour:
     effectHitLife: 0
     effectLife: 0.15
     effectSpeed: 50
-    effectCooldown: 5
+    effectCooldown: 8
     effectChance: 0
     passiveAtk: 0.4
     passiveDef: 0
@@ -8033,7 +8033,7 @@ MonoBehaviour:
     effectHitLife: 0
     effectLife: 0.15
     effectSpeed: 50
-    effectCooldown: 5
+    effectCooldown: 8
     effectChance: 0
     passiveAtk: 0.5
     passiveDef: 0
