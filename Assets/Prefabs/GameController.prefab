@@ -166,7 +166,7 @@ MonoBehaviour:
   boss1: {fileID: 6067162178067063298, guid: c8b909e2db7f3cb42ba589d83e8c9c49, type: 3}
   boss2: {fileID: 4224277392293468291, guid: a24ffae2c6a245b419ba560dd61d3d3e, type: 3}
   boss3: {fileID: 2662430388291418467, guid: e4189c291b8951544a2b31981c8a2696, type: 3}
-  reaper: {fileID: 2662430388291418467, guid: e4189c291b8951544a2b31981c8a2696, type: 3}
+  reaper: {fileID: 1896092523515254329, guid: 59294e3369711ac4a96e41e147aed2f3, type: 3}
   timeElapsed: 0
   currSpawnTimer: 0
   spawnInterval: 1
