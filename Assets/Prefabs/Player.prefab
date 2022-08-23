@@ -6339,7 +6339,7 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: 
     itemPassiveDesc: 
-  - effectValue: 0.25
+  - effectValue: 0.3
     effectCount: 1
     effectHitLife: 0
     effectLife: 1
@@ -6355,7 +6355,7 @@ MonoBehaviour:
       Big
       area but long cooldown.'
     itemPassiveDesc: Increases max health by 5.
-  - effectValue: 0.5
+  - effectValue: 0.6
     effectCount: 1
     effectHitLife: 0
     effectLife: 1
@@ -6371,7 +6371,7 @@ MonoBehaviour:
       Big
       area but long cooldown.'
     itemPassiveDesc: Increases max health by 10.
-  - effectValue: 0.75
+  - effectValue: 0.9
     effectCount: 1
     effectHitLife: 0
     effectLife: 1
@@ -6387,7 +6387,7 @@ MonoBehaviour:
       Big
       area but long cooldown.'
     itemPassiveDesc: Increases max health by 15.
-  - effectValue: 1
+  - effectValue: 1.2
     effectCount: 0
     effectHitLife: 0
     effectLife: 1
@@ -6584,7 +6584,7 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: 
     itemPassiveDesc: 
-  - effectValue: 0.5
+  - effectValue: 0.45
     effectCount: 1
     effectHitLife: 0
     effectLife: 5
@@ -6597,7 +6597,7 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: Throw 1 damaging circle that deals 5 damage per second.
     itemPassiveDesc: 
-  - effectValue: 1
+  - effectValue: 0.9
     effectCount: 1
     effectHitLife: 0
     effectLife: 5
