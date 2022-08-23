@@ -161,6 +161,8 @@ public class PlayerController : MonoBehaviour
         }
 
         currMaxHealth = baseMaxHealth + bonusStatModifier.passiveHp;
+
+        GameController.instance.hudControl.UpdateHPBar(currHealth / currMaxHealth);
     }
 
     void OnPlayerHit(float damageTaken)
@@ -191,30 +193,31 @@ public class PlayerController : MonoBehaviour
     IEnumerator Invul()
     {
         hitSound.Play();
+        float elapsed = 0f;
         {
-            yield return new WaitForEndOfFrame();
+            yield return new WaitForSeconds(0.04f);
             spriteRenderer.color = Color.red;
-            yield return new WaitForEndOfFrame();
+            yield return new WaitForSeconds(0.04f);
             spriteRenderer.color = Color.black;
-            yield return new WaitForEndOfFrame();
+            yield return new WaitForSeconds(0.04f);
             spriteRenderer.color = Color.red;
-            yield return new WaitForEndOfFrame();
+            yield return new WaitForSeconds(0.04f);
             spriteRenderer.color = Color.black;
-            yield return new WaitForEndOfFrame();
+            yield return new WaitForSeconds(0.04f);
             spriteRenderer.color = Color.red;
-            yield return new WaitForEndOfFrame();
+            yield return new WaitForSeconds(0.04f);
             spriteRenderer.color = Color.white;
-            yield return new WaitForEndOfFrame();
+            yield return new WaitForSeconds(0.04f);
             spriteRenderer.color = Color.red;
-            yield return new WaitForEndOfFrame();
+            yield return new WaitForSeconds(0.04f);
             spriteRenderer.color = Color.black;
-            yield return new WaitForEndOfFrame();
+            yield return new WaitForSeconds(0.04f);
             spriteRenderer.color = Color.red;
-            yield return new WaitForEndOfFrame();
+            yield return new WaitForSeconds(0.04f);
             spriteRenderer.color = Color.black;
-            yield return new WaitForEndOfFrame();
+            yield return new WaitForSeconds(0.04f);
             spriteRenderer.color = Color.red;
-            yield return new WaitForEndOfFrame();
+            yield return new WaitForSeconds(0.04f);
             spriteRenderer.color = Color.white;
         }
 
@@ -278,11 +281,17 @@ public class PlayerController : MonoBehaviour
     public void HealPlayer(float val)
     {
         currHealth = Mathf.Clamp(currHealth + val, 0, currMaxHealth);
+        GameController.instance.hudControl.UpdateHPBar(currHealth/currMaxHealth);
+
+        // call heal fx
     }
 
     public void HealPlayerMax()
     {
         currHealth = currMaxHealth;
+        GameController.instance.hudControl.UpdateHPBar(1);
+
+        // call heal fx
     }
 
     public void SpawnHead()
@@ -292,4 +301,9 @@ public class PlayerController : MonoBehaviour
         ++bankiCounter;
         GameController.instance.hudControl.bankiCount.text = "" + (bankiCounter + 1);
     }
+
+    public void AddCoin(int val)
+    {
+        playerCoin.val += val;
+    }    
 }
