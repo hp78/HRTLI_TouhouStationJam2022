@@ -191,30 +191,31 @@ public class PlayerController : MonoBehaviour
     IEnumerator Invul()
     {
         hitSound.Play();
+        float elapsed = 0f;
         {
-            yield return new WaitForEndOfFrame();
+            yield return new WaitForSeconds(0.04f);
             spriteRenderer.color = Color.red;
-            yield return new WaitForEndOfFrame();
+            yield return new WaitForSeconds(0.04f);
             spriteRenderer.color = Color.black;
-            yield return new WaitForEndOfFrame();
+            yield return new WaitForSeconds(0.04f);
             spriteRenderer.color = Color.red;
-            yield return new WaitForEndOfFrame();
+            yield return new WaitForSeconds(0.04f);
             spriteRenderer.color = Color.black;
-            yield return new WaitForEndOfFrame();
+            yield return new WaitForSeconds(0.04f);
             spriteRenderer.color = Color.red;
-            yield return new WaitForEndOfFrame();
+            yield return new WaitForSeconds(0.04f);
             spriteRenderer.color = Color.white;
-            yield return new WaitForEndOfFrame();
+            yield return new WaitForSeconds(0.04f);
             spriteRenderer.color = Color.red;
-            yield return new WaitForEndOfFrame();
+            yield return new WaitForSeconds(0.04f);
             spriteRenderer.color = Color.black;
-            yield return new WaitForEndOfFrame();
+            yield return new WaitForSeconds(0.04f);
             spriteRenderer.color = Color.red;
-            yield return new WaitForEndOfFrame();
+            yield return new WaitForSeconds(0.04f);
             spriteRenderer.color = Color.black;
-            yield return new WaitForEndOfFrame();
+            yield return new WaitForSeconds(0.04f);
             spriteRenderer.color = Color.red;
-            yield return new WaitForEndOfFrame();
+            yield return new WaitForSeconds(0.04f);
             spriteRenderer.color = Color.white;
         }
 
@@ -292,4 +293,9 @@ public class PlayerController : MonoBehaviour
         ++bankiCounter;
         GameController.instance.hudControl.bankiCount.text = "" + (bankiCounter + 1);
     }
+
+    public void AddCoin(int val)
+    {
+        playerCoin.val += val;
+    }    
 }
