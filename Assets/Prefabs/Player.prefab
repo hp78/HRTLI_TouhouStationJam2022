@@ -7390,7 +7390,7 @@ MonoBehaviour:
   bankiHeadPrefab: {fileID: 6114344851043820608, guid: a1dbd28de80c4ec458b0e593541da4e8, type: 3}
   bankiCounter: 0
   playerCoin: {fileID: 11400000, guid: 0830bc2178bfcb74889b5ad083662455, type: 2}
-  playerUpgrade: {fileID: 0}
+  playerUpgrade: {fileID: 11400000, guid: a567bfb0f33f76d42ab80452fb58fc92, type: 2}
   currLevel: 1
   currXP: 0
   nextXP: 10
