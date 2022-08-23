@@ -161,6 +161,8 @@ public class PlayerController : MonoBehaviour
         }
 
         currMaxHealth = baseMaxHealth + bonusStatModifier.passiveHp;
+
+        GameController.instance.hudControl.UpdateHPBar(currHealth / currMaxHealth);
     }
 
     void OnPlayerHit(float damageTaken)
@@ -279,11 +281,17 @@ public class PlayerController : MonoBehaviour
     public void HealPlayer(float val)
     {
         currHealth = Mathf.Clamp(currHealth + val, 0, currMaxHealth);
+        GameController.instance.hudControl.UpdateHPBar(currHealth/currMaxHealth);
+
+        // call heal fx
     }
 
     public void HealPlayerMax()
     {
         currHealth = currMaxHealth;
+        GameController.instance.hudControl.UpdateHPBar(1);
+
+        // call heal fx
     }
 
     public void SpawnHead()
