@@ -68,7 +68,8 @@ public class PlayerController : MonoBehaviour
 
         currMaxHealth = baseMaxHealth;
         currHealth = baseMaxHealth;
-        GameController.instance.hudControl.UpdateHPBar(1);
+
+        //GameController.instance.hudControl.UpdateHPBar(1);
     }
 
     // Update is called once per frame
