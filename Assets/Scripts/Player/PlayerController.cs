@@ -36,8 +36,9 @@ public class PlayerController : MonoBehaviour
     [Space(5)]
     public GameObject bankiHeadPrefab;
     public int bankiCounter = 0;
-    public IntVal playerCoin;
-    public IntVal playerUpgrade;
+
+    int currCoin = 0;
+    int currUpgrade = 0;
 
     [Space(10)]
     public int currLevel = 1;
@@ -61,6 +62,9 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        currCoin = PlayerPrefs.GetInt("Coin");
+        currUpgrade = PlayerPrefs.GetInt("Upgrade");
+
         currMaxHealth = baseMaxHealth;
         currHealth = baseMaxHealth;
         GameController.instance.hudControl.UpdateHPBar(1);
@@ -154,10 +158,10 @@ public class PlayerController : MonoBehaviour
         bonusStatModifier.passiveSpd = 0;
         bonusStatModifier.passiveHp = 0;
 
-        if (playerUpgrade.val >= 1) bonusStatModifier.passiveHp = 25f;
-        if (playerUpgrade.val >= 2) bonusStatModifier.passiveSpd = 0.1f;
-        if (playerUpgrade.val >= 3) bonusStatModifier.passiveDef = 0.1f;
-        if (playerUpgrade.val >= 4) bonusStatModifier.passiveAtk = 0.1f;
+        if (currUpgrade >= 1) bonusStatModifier.passiveHp = 25f;
+        if (currUpgrade >= 2) bonusStatModifier.passiveSpd = 0.1f;
+        if (currUpgrade >= 3) bonusStatModifier.passiveDef = 0.1f;
+        if (currUpgrade >= 4) bonusStatModifier.passiveAtk = 0.1f;
 
         //
         foreach (ItemEffect ie in effects)
@@ -318,6 +322,7 @@ public class PlayerController : MonoBehaviour
 
     public void AddCoin(int val)
     {
-        playerCoin.val += val;
+        currCoin += val;
+        PlayerPrefs.SetInt("Coin", currCoin);
     }    
 }

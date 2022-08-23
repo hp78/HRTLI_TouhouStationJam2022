@@ -10,8 +10,8 @@ using TMPro;
 public class ShopController : MonoBehaviour
 {
     public Image fumoImage;
-    public IntVal playerCoin;
-    public IntVal currUpgrade;
+    //public IntVal playerCoin;
+    //public IntVal currUpgrade;
     public TMP_Text coinTxt;
     public TMP_Text upgradeCost;
 
@@ -24,6 +24,8 @@ public class ShopController : MonoBehaviour
     public int[] upgradeCosts;
     public Sprite[] fumoSprites;
 
+    int currCoin = 0;
+    int currUpgrade = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -31,34 +33,40 @@ public class ShopController : MonoBehaviour
         UpdatePlayerCoin();
         UpdateFumoImage();
         UpdateTexts();
+
+        currCoin = PlayerPrefs.GetInt("Coin");
+        currUpgrade = PlayerPrefs.GetInt("Upgrade");
     }
 
     void UpdateTexts()
     {
-        nextUpgradeText.text = partNames[currUpgrade.val];
-        upgradeDescText.text = upgradeDesc[currUpgrade.val];
-        upgradeCost.text = "" +upgradeCosts[currUpgrade.val];
+        nextUpgradeText.text = partNames[currUpgrade];
+        upgradeDescText.text = upgradeDesc[currUpgrade];
+        upgradeCost.text = "" +upgradeCosts[currUpgrade];
     }
     void UpdatePlayerCoin()
     {
-        coinTxt.text = "" + playerCoin.val;
+        coinTxt.text = "" + currCoin;
     }
 
     public void ButtonUpgrade()
     {
-        if(playerCoin.val >= upgradeCosts[currUpgrade.val] && currUpgrade.val < 4)
+        if(currCoin >= upgradeCosts[currUpgrade] && currUpgrade < 4)
         {
-            playerCoin.val -= upgradeCosts[currUpgrade.val];
-            currUpgrade.val += 1;
+            currCoin -= upgradeCosts[currUpgrade];
+            currUpgrade += 1;
             UpdateTexts();
             UpdateFumoImage();
-            coinTxt.text = "" + playerCoin.val;
+            coinTxt.text = "" + currCoin;
+
+            PlayerPrefs.SetInt("Coin", currCoin);
+            PlayerPrefs.SetInt("Upgrade", currUpgrade);
         }
     }
 
     void UpdateFumoImage()
     {
-        fumoImage.sprite = fumoSprites[currUpgrade.val];
+        fumoImage.sprite = fumoSprites[currUpgrade];
     }
     public void ButtonMainMenu()
     {

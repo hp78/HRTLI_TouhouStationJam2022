@@ -3,7 +3,14 @@ guid: c8769237ffb0b9b48a4afa804e13f69c
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - fumoImage: {instanceID: 0}
+  - playerCoin: {fileID: 11400000, guid: 0830bc2178bfcb74889b5ad083662455, type: 2}
+  - currUpgrade: {fileID: 11400000, guid: a567bfb0f33f76d42ab80452fb58fc92, type: 2}
+  - coinTxt: {instanceID: 0}
+  - upgradeCost: {instanceID: 0}
+  - nextUpgradeText: {instanceID: 0}
+  - upgradeDescText: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
