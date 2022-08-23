@@ -155,9 +155,9 @@ public class PlayerController : MonoBehaviour
         bonusStatModifier.passiveHp = 0;
 
         if (playerUpgrade.val >= 1) bonusStatModifier.passiveHp = 25f;
-        if (playerUpgrade.val >= 1) bonusStatModifier.passiveSpd = 0.1f;
-        if (playerUpgrade.val >= 1) bonusStatModifier.passiveDef = 0.1f;
-        if (playerUpgrade.val >= 1) bonusStatModifier.passiveAtk = 0.1f;
+        if (playerUpgrade.val >= 2) bonusStatModifier.passiveSpd = 0.1f;
+        if (playerUpgrade.val >= 3) bonusStatModifier.passiveDef = 0.1f;
+        if (playerUpgrade.val >= 4) bonusStatModifier.passiveAtk = 0.1f;
 
         //
         foreach (ItemEffect ie in effects)
