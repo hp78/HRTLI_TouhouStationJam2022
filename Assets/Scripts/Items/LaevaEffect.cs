@@ -31,11 +31,11 @@ public class LaevaEffect : ItemEffect
     {
 
           GameObject obj = Instantiate(LaevaProjectilePrefab, this.transform.position, Quaternion.identity);
-          obj.GetComponent<BaseProjectile>().SetStats(itemStatsAtLevel[currLevel]);
+          obj.GetComponent<BaseProjectile>().SetStats(itemStatsAtLevel[currLevel], player.bonusStatModifier.passiveAtk);
         if (currLevel == 5)
         {
             obj = Instantiate(LaevaProjectilePrefab, this.transform.position, Quaternion.identity);
-            obj.GetComponent<BaseProjectile>().SetStats(itemStatsAtLevel[currLevel]);
+            obj.GetComponent<BaseProjectile>().SetStats(itemStatsAtLevel[currLevel], player.bonusStatModifier.passiveAtk);
             obj.GetComponent<LaeveProjectile>().fireOppo = true;
 
         }

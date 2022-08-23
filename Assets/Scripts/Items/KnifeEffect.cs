@@ -34,7 +34,7 @@ public class KnifeEffect : ItemEffect
        for(int amt = 0; amt < itemStatsAtLevel[currLevel].effectCount; ++amt)
         {
             GameObject obj = Instantiate(knifeProjectilePrefab, this.transform.position, Quaternion.identity);
-            obj.GetComponent<BaseProjectile>().SetStats(itemStatsAtLevel[currLevel]);
+            obj.GetComponent<BaseProjectile>().SetStats(itemStatsAtLevel[currLevel], player.bonusStatModifier.passiveAtk);
 
         }
         audio.Play();

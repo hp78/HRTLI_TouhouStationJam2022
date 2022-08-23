@@ -5964,6 +5964,7 @@ MonoBehaviour:
       fire rate,projectile speed and high pierce.'
     itemPassiveDesc: Increases movement speed by 100%
   audio: {fileID: 6992435456248798376}
+  player: {fileID: 4751523107610154256}
   knifeProjectilePrefab: {fileID: 208155274731519886, guid: 476053d59e719de4a95f313f2bdb191e, type: 3}
 --- !u!82 &6992435456248798376
 AudioSource:
@@ -6291,6 +6292,7 @@ MonoBehaviour:
       area but long cooldown.'
     itemPassiveDesc: Increases max health by 25.
   audio: {fileID: 2168993413245273733}
+  player: {fileID: 4751523107610154256}
   playerTf: {fileID: 4751523107610154259}
   BookProjectilePrefab: {fileID: 2857349555026318264, guid: fa0e53732fa4bbb43af4e0becee7e5d1, type: 3}
 --- !u!82 &2168993413245273733
@@ -6520,6 +6522,7 @@ MonoBehaviour:
     itemDesc: Throw 5 damaging circle that deals 15 damage per second.
     itemPassiveDesc: 
   audio: {fileID: 746567640998493025}
+  player: {fileID: 4751523107610154256}
   playerTf: {fileID: 4751523107610154259}
   ShroomProjectilePrefab: {fileID: 7712340179314774028, guid: 27aec4af3ca9bce4cbc4177659c73463, type: 3}
 --- !u!82 &746567640998493025
@@ -6833,6 +6836,7 @@ MonoBehaviour:
     itemDesc: 50% Chance on hit to repel back enemies.
     itemPassiveDesc: Increases max health by 25.
   audio: {fileID: 6602165922656088602}
+  player: {fileID: 4751523107610154256}
   playerTf: {fileID: 0}
   padProjectilePrefab: {fileID: 193563677279889981, guid: 7dd6d55b0acf72b489aab19e321b8a4a, type: 3}
 --- !u!82 &6602165922656088602
@@ -7132,6 +7136,7 @@ MonoBehaviour:
       Increased spawn rate greatly and high pierce.'
     itemPassiveDesc: Increases block 10 damage from enemies.
   audio: {fileID: 5884239985326863299}
+  player: {fileID: 4751523107610154256}
   playerTf: {fileID: 4751523107610154259}
   StarProjectilePrefab: {fileID: 3555816526015937264, guid: c23ce9b72da344d47bce9dbef7303731, type: 3}
 --- !u!82 &5884239985326863299
@@ -7610,6 +7615,7 @@ MonoBehaviour:
       greatly.'
     itemPassiveDesc: Increases movement speed by 100%
   audio: {fileID: 4529913876421165466}
+  player: {fileID: 4751523107610154256}
   playerTf: {fileID: 0}
   CardProjectilePrefab: {fileID: 2708215233966847339, guid: 062feecffee18f94a99296c3733a8000, type: 3}
   targetArrow: {fileID: 4751523107256472019}
@@ -7841,6 +7847,19 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: 
     itemPassiveDesc: 
+  - effectValue: 15
+    effectCount: 1
+    effectHitLife: 0
+    effectLife: 0.15
+    effectSpeed: 50
+    effectCooldown: 5
+    effectChance: 0
+    passiveAtk: 0.1
+    passiveDef: 0
+    passiveSpd: 0
+    passiveHp: 0
+    itemDesc: Shoots a horizontal beam in front dealing 15 damage.
+    itemPassiveDesc: Increase all weapon damage by 10%
   - effectValue: 20
     effectCount: 1
     effectHitLife: 0
@@ -7848,25 +7867,25 @@ MonoBehaviour:
     effectSpeed: 50
     effectCooldown: 5
     effectChance: 0
-    passiveAtk: 0
+    passiveAtk: 0.2
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
     itemDesc: Shoots a horizontal beam in front dealing 20 damage.
-    itemPassiveDesc: 
+    itemPassiveDesc: Increase all weapon damage by 20%
   - effectValue: 25
-    effectCount: 1
+    effectCount: 0
     effectHitLife: 0
     effectLife: 0.15
     effectSpeed: 50
     effectCooldown: 5
     effectChance: 0
-    passiveAtk: 0
+    passiveAtk: 0.3
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
     itemDesc: Shoots a horizontal beam in front dealing 25 damage.
-    itemPassiveDesc: 
+    itemPassiveDesc: Increase all weapon damage by 30%
   - effectValue: 30
     effectCount: 0
     effectHitLife: 0
@@ -7874,12 +7893,12 @@ MonoBehaviour:
     effectSpeed: 50
     effectCooldown: 5
     effectChance: 0
-    passiveAtk: 0
+    passiveAtk: 0.4
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
     itemDesc: Shoots a horizontal beam in front dealing 30 damage.
-    itemPassiveDesc: 
+    itemPassiveDesc: Increase all weapon damage by 40%
   - effectValue: 35
     effectCount: 0
     effectHitLife: 0
@@ -7887,29 +7906,17 @@ MonoBehaviour:
     effectSpeed: 50
     effectCooldown: 5
     effectChance: 0
-    passiveAtk: 0
+    passiveAtk: 0.5
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
-    itemDesc: Shoots a horizontal beam in front dealing 35 damage.
-    itemPassiveDesc: 
-  - effectValue: 40
-    effectCount: 0
-    effectHitLife: 0
-    effectLife: 0.15
-    effectSpeed: 50
-    effectCooldown: 5
-    effectChance: 0
-    passiveAtk: 0
-    passiveDef: 0
-    passiveSpd: 0
-    passiveHp: 0
-    itemDesc: 'Shoots a horizontal beam in front dealing 40 damage.
+    itemDesc: 'Shoots a horizontal beam in front dealing 35 damage.
 
       Fires
       one more on the opposite side.'
-    itemPassiveDesc: 
+    itemPassiveDesc: Increase all weapon damage by 50%
   audio: {fileID: 1436582917663170990}
+  player: {fileID: 4751523107610154256}
   LaevaProjectilePrefab: {fileID: 3112475980303405692, guid: 75fe3c2be25e1b24599888193aa60101, type: 3}
 --- !u!82 &1436582917663170990
 AudioSource:
@@ -8169,8 +8176,8 @@ MonoBehaviour:
     itemDesc: Rain down 10 spear on an enemy, dealing 5 damage.
     itemPassiveDesc: 20% Chance on hit to gain 10 health
   audio: {fileID: 1128082978166162356}
-  GungnirProjectilePrefab: {fileID: 6762410172342543651, guid: 70775c65367e0ff44ad5be0ee91e26f4, type: 3}
   player: {fileID: 4751523107610154256}
+  GungnirProjectilePrefab: {fileID: 6762410172342543651, guid: 70775c65367e0ff44ad5be0ee91e26f4, type: 3}
 --- !u!82 &1128082978166162356
 AudioSource:
   m_ObjectHideFlags: 0

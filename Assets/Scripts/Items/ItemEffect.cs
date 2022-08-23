@@ -45,6 +45,8 @@ public class ItemEffect : MonoBehaviour
 
     public AudioSource audio;
 
+    public PlayerController player;
+
     public bool TickTimer(float deltaTime)
     {
         if(isOffensiveSkill)

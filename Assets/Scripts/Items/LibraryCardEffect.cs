@@ -35,7 +35,7 @@ public class LibraryCardEffect : ItemEffect
     void FireCard()
     {
         GameObject obj = Instantiate(CardProjectilePrefab, this.transform.position, targetArrow.rotation);
-        obj.GetComponent<BaseProjectile>().SetStats(itemStatsAtLevel[currLevel]);
+        obj.GetComponent<BaseProjectile>().SetStats(itemStatsAtLevel[currLevel], player.bonusStatModifier.passiveAtk);
         audio.Play();
     }
 }

@@ -6,7 +6,6 @@ public class GungnirEffect : ItemEffect
 {
 
     public GameObject GungnirProjectilePrefab;
-    public PlayerController player;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,7 +39,7 @@ public class GungnirEffect : ItemEffect
         for (int i = 0; i < itemStatsAtLevel[currLevel].effectCount; ++i)
         {
             GameObject obj = Instantiate(GungnirProjectilePrefab, this.transform.position, Quaternion.identity);
-            obj.GetComponent<BaseProjectile>().SetStats(itemStatsAtLevel[currLevel]);
+            obj.GetComponent<BaseProjectile>().SetStats(itemStatsAtLevel[currLevel], player.bonusStatModifier.passiveAtk);
             yield return new WaitForSeconds(0.3f);
         }
         yield return 0;
