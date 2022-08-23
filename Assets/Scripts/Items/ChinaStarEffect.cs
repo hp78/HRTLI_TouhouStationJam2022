@@ -37,9 +37,9 @@ public class ChinaStarEffect : ItemEffect
         for (int i = 0; i < itemStatsAtLevel[currLevel].effectCount; ++i)
         {
             GameObject obj = Instantiate(StarProjectilePrefab, this.transform.position+ new Vector3(Random.Range(-2f, 2f), Random.Range(-2f, 2f), this.transform.position.z), Quaternion.identity);
-            obj.GetComponent<BaseProjectile>().SetStats(itemStatsAtLevel[currLevel]);
+            obj.GetComponent<BaseProjectile>().SetStats(itemStatsAtLevel[currLevel], player.bonusStatModifier.passiveAtk);
             obj = Instantiate(StarProjectilePrefab, this.transform.position + new Vector3(Random.Range(-2f, 2f), Random.Range(-2f, 2f), this.transform.position.z), Quaternion.identity);
-            obj.GetComponent<BaseProjectile>().SetStats(itemStatsAtLevel[currLevel]);
+            obj.GetComponent<BaseProjectile>().SetStats(itemStatsAtLevel[currLevel],player.bonusStatModifier.passiveAtk);
             obj.GetComponent<StarProjectile>().negative = true;
 
             audio.Play();

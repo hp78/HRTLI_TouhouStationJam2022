@@ -121,7 +121,7 @@ MonoBehaviour:
   playertarget: {fileID: 0}
   isDead: 0
   enemyStats:
-    health: 250
+    health: 500
     speed: 1.5
     damage: 12.5
   coinDrop: {fileID: 8292156922972181817, guid: 96fa349e57478f445842ca77a1ffc432, type: 3}

@@ -30,9 +30,9 @@ public class BaseProjectile : MonoBehaviour
         }
     }
 
-    public void SetStats(ItemEffect.ItemStat itemStat)
+    public void SetStats(ItemEffect.ItemStat itemStat, float bonusAtkMod)
     {
-        dmg = itemStat.effectValue;
+        dmg = itemStat.effectValue * (1f + bonusAtkMod);
         hp = itemStat.effectHitLife;
         speed = itemStat.effectSpeed;
         lifeDuration = itemStat.effectLife;

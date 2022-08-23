@@ -32,7 +32,7 @@ public class BookEffect : ItemEffect
     void FireBook()
     {
         GameObject obj = Instantiate(BookProjectilePrefab, this.transform.position, Quaternion.identity);
-        obj.GetComponent<BaseProjectile>().SetStats(itemStatsAtLevel[currLevel]);
+        obj.GetComponent<BaseProjectile>().SetStats(itemStatsAtLevel[currLevel], player.bonusStatModifier.passiveAtk);
         audio.Play();
     }
 }
