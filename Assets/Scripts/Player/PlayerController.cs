@@ -57,6 +57,7 @@ public class PlayerController : MonoBehaviour
     public AudioSource hitSound;
     public AudioSource dieSound;
     public AudioSource healSound;
+    public AudioSource coinSound;
 
     public ParticleSystem healparticles;
     // Start is called before the first frame update
@@ -324,5 +325,6 @@ public class PlayerController : MonoBehaviour
     {
         currCoin += val;
         PlayerPrefs.SetInt("Coin", currCoin);
+        coinSound.Play();
     }    
 }
