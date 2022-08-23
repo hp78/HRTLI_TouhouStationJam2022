@@ -9,6 +9,8 @@ public class LevelUpMenuController : MonoBehaviour
 {
     public PlayerController _playerController;
 
+
+    [Space(5)]
     public Button[] selectionBtns;
     public Image[] itemPic;
     public TMP_Text[] itemName;
@@ -23,6 +25,7 @@ public class LevelUpMenuController : MonoBehaviour
     //const int miscCount = 3;
     public Sprite[] miscSprites = new Sprite[3];
 
+    [Space(12)]
     public AudioSource itemLVLsound;
 
     // Start is called before the first frame update
