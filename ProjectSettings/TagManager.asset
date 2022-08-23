@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - DistanceCircle
   - BankiHead
+  - Music
   layers:
   - Default
   - TransparentFX

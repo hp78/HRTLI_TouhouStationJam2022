@@ -7061,14 +7061,14 @@ MonoBehaviour:
     effectCooldown: 15
     effectChance: 0
     passiveAtk: 0
-    passiveDef: 2
+    passiveDef: 0.05
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 'Spawns 2 spinning projectiles that orbit the player dealing 2 damage
       per hit.
 
 '
-    itemPassiveDesc: Increases block 2 damage from enemies.
+    itemPassiveDesc: Reduce incoming damage by 5%
   - effectValue: 3
     effectCount: 1
     effectHitLife: 10
@@ -7077,7 +7077,7 @@ MonoBehaviour:
     effectCooldown: 14
     effectChance: 0
     passiveAtk: 0
-    passiveDef: 4
+    passiveDef: 0.1
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 'Spawns 2 spinning projectiles that orbit the player dealing 3 damage
@@ -7086,7 +7086,7 @@ MonoBehaviour:
       Increased spawn rate.
 
 '
-    itemPassiveDesc: Increases block 4 damage from enemies.
+    itemPassiveDesc: Reduce incoming damage by 10%
   - effectValue: 4
     effectCount: 2
     effectHitLife: 15
@@ -7095,14 +7095,14 @@ MonoBehaviour:
     effectCooldown: 13
     effectChance: 0
     passiveAtk: 0
-    passiveDef: 6
+    passiveDef: 0.15
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 'Spawns 4 spinning projectiles that orbit the player dealing 4 damage
       per hit.
 
       Increased spawn rate and pierce.'
-    itemPassiveDesc: Increases block 6 damage from enemies.
+    itemPassiveDesc: Reduce incoming damage by 15%
   - effectValue: 5
     effectCount: 2
     effectHitLife: 15
@@ -7111,14 +7111,14 @@ MonoBehaviour:
     effectCooldown: 11.5
     effectChance: 0
     passiveAtk: 0
-    passiveDef: 8
+    passiveDef: 0.2
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 'Spawns 4 spinning projectiles that orbit the player dealing 5 damage
       per hit.
 
       Increased spawn rate and pierce.'
-    itemPassiveDesc: Increases block 8 damage from enemies.
+    itemPassiveDesc: Reduce incoming damage by 20%
   - effectValue: 5
     effectCount: 3
     effectHitLife: 50
@@ -7127,14 +7127,14 @@ MonoBehaviour:
     effectCooldown: 10
     effectChance: 0
     passiveAtk: 0
-    passiveDef: 10
+    passiveDef: 0.25
     passiveSpd: 0
     passiveHp: 0
     itemDesc: 'Spawns 6 spinning projectiles that orbit the player dealing 5 damage
       per hit.
 
       Increased spawn rate greatly and high pierce.'
-    itemPassiveDesc: Increases block 10 damage from enemies.
+    itemPassiveDesc: Reduce incoming damage by 25%
   audio: {fileID: 5884239985326863299}
   player: {fileID: 4751523107610154256}
   playerTf: {fileID: 4751523107610154259}
@@ -7390,6 +7390,7 @@ MonoBehaviour:
   bankiHeadPrefab: {fileID: 6114344851043820608, guid: a1dbd28de80c4ec458b0e593541da4e8, type: 3}
   bankiCounter: 0
   playerCoin: {fileID: 11400000, guid: 0830bc2178bfcb74889b5ad083662455, type: 2}
+  playerUpgrade: {fileID: 0}
   currLevel: 1
   currXP: 0
   nextXP: 10
