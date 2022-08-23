@@ -7514,7 +7514,7 @@ MonoBehaviour:
   currHealth: 0
   currMaxHealth: 0
   baseMaxHealth: 25
-  speed: 2
+  speed: 1.25
   bankiHeadPrefab: {fileID: 6114344851043820608, guid: a1dbd28de80c4ec458b0e593541da4e8, type: 3}
   bankiCounter: 0
   currLevel: 1

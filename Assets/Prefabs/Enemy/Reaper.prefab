@@ -152,7 +152,7 @@ MonoBehaviour:
   isDead: 0
   enemyStats:
     health: 1000
-    speed: 4
+    speed: 3
     damage: 50
   coinDrop: {fileID: 8292156922972181817, guid: 96fa349e57478f445842ca77a1ffc432, type: 3}
   expDrop: {fileID: 6343292593987978452, guid: b1c258796f7f7834f89e4ddaaf1a9383, type: 3}
