@@ -115,6 +115,10 @@ public class LevelUpMenuController : MonoBehaviour
                     hasFound = true;
                 }
             }
+            else
+            {
+                hasFound = true;
+            }
         }
         return itemIndex;
     }
