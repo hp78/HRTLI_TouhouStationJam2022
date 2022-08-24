@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &214710468 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1781918815, guid: f41ec8171fb97bd4795243f74bdf0fe0, type: 3}
+  m_PrefabInstance: {fileID: 1229809667}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &236561616
 GameObject:
   m_ObjectHideFlags: 0
@@ -173,7 +178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 214710468}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &236561619
@@ -450,6 +455,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 90008504, guid: f41ec8171fb97bd4795243f74bdf0fe0, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.b
+      value: 0.532
+      objectReference: {fileID: 0}
+    - target: {fileID: 1781918817, guid: f41ec8171fb97bd4795243f74bdf0fe0, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.b
+      value: 0.532
+      objectReference: {fileID: 0}
     - target: {fileID: 1024190876591970392, guid: f41ec8171fb97bd4795243f74bdf0fe0, type: 3}
       propertyPath: m_Name
       value: Shop
