@@ -30,12 +30,13 @@ public class ShopController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        currCoin = PlayerPrefs.GetInt("Coin");
+        currUpgrade = PlayerPrefs.GetInt("Upgrade");
+
+
         UpdatePlayerCoin();
         UpdateFumoImage();
         UpdateTexts();
-
-        currCoin = PlayerPrefs.GetInt("Coin");
-        currUpgrade = PlayerPrefs.GetInt("Upgrade");
     }
 
     void UpdateTexts()
