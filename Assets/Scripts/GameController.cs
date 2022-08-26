@@ -27,6 +27,7 @@ public class GameController : MonoBehaviour
     void Update()
     {
         timeElapsed += Time.deltaTime * Time.timeScale;
+        hudControl.elapsedTime.text = string.Format("{00:00}:{1:00}", + (int)timeElapsed / 60 , + (((int)timeElapsed) % 60));
 
         UpdatePauseKey();
 

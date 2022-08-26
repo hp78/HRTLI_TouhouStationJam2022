@@ -18,6 +18,7 @@ public class HUDController : MonoBehaviour
     public Image[] itemImages;
     public TMP_Text[] itemLevels;
     public TMP_Text bankiCount;
+    public TMP_Text elapsedTime;
 
     // Start is called before the first frame update
     void Start()
