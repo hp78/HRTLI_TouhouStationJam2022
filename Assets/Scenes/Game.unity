@@ -19906,6 +19906,10 @@ PrefabInstance:
       propertyPath: m_Volume
       value: 0.15
       objectReference: {fileID: 0}
+    - target: {fileID: 1128082978166162356, guid: 1d0d60100105e624da23a5ae9680f3bf, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1242223653812111617, guid: 1d0d60100105e624da23a5ae9680f3bf, type: 3}
       propertyPath: currLevel
       value: 0
@@ -19913,6 +19917,14 @@ PrefabInstance:
     - target: {fileID: 1242223653812111617, guid: 1d0d60100105e624da23a5ae9680f3bf, type: 3}
       propertyPath: itemFlavorText
       value: The yukkuris might want to start running...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2148162143795906543, guid: 1d0d60100105e624da23a5ae9680f3bf, type: 3}
+      propertyPath: m_Radius
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2148162143795906543, guid: 1d0d60100105e624da23a5ae9680f3bf, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4529913876421165466, guid: 1d0d60100105e624da23a5ae9680f3bf, type: 3}
       propertyPath: m_Volume
@@ -19934,9 +19946,21 @@ PrefabInstance:
       propertyPath: itemFlavorText
       value: J A A A O O O O O ~ ! !
       objectReference: {fileID: 0}
+    - target: {fileID: 4751523107610154256, guid: 1d0d60100105e624da23a5ae9680f3bf, type: 3}
+      propertyPath: speed
+      value: 1.875
+      objectReference: {fileID: 0}
     - target: {fileID: 4751523107610154259, guid: 1d0d60100105e624da23a5ae9680f3bf, type: 3}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4751523107610154259, guid: 1d0d60100105e624da23a5ae9680f3bf, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 4751523107610154259, guid: 1d0d60100105e624da23a5ae9680f3bf, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 4751523107610154259, guid: 1d0d60100105e624da23a5ae9680f3bf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20001,6 +20025,22 @@ PrefabInstance:
     - target: {fileID: 5428438206830460306, guid: 1d0d60100105e624da23a5ae9680f3bf, type: 3}
       propertyPath: itemStatsAtLevel.Array.data[5].effectChance
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5428438206830460306, guid: 1d0d60100105e624da23a5ae9680f3bf, type: 3}
+      propertyPath: itemStatsAtLevel.Array.data[2].itemPassiveDesc
+      value: 20% Chance to recover 4 health on receiving damage
+      objectReference: {fileID: 0}
+    - target: {fileID: 5428438206830460306, guid: 1d0d60100105e624da23a5ae9680f3bf, type: 3}
+      propertyPath: itemStatsAtLevel.Array.data[3].itemPassiveDesc
+      value: 20% Chance to recover 6 health on receiving damage
+      objectReference: {fileID: 0}
+    - target: {fileID: 5428438206830460306, guid: 1d0d60100105e624da23a5ae9680f3bf, type: 3}
+      propertyPath: itemStatsAtLevel.Array.data[4].itemPassiveDesc
+      value: 20% Chance to recover 8 health on receiving damage
+      objectReference: {fileID: 0}
+    - target: {fileID: 5428438206830460306, guid: 1d0d60100105e624da23a5ae9680f3bf, type: 3}
+      propertyPath: itemStatsAtLevel.Array.data[5].itemPassiveDesc
+      value: 20% Chance to recover 10 health on receiving damage
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d0d60100105e624da23a5ae9680f3bf, type: 3}

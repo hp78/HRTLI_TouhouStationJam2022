@@ -236,8 +236,48 @@ public class EnemySpawner : MonoBehaviour
                 Instantiate(mobTier5, spawnPos[spawnRobin].position, Quaternion.identity);
             spawnTimerMultiplier = 4.0f;
         }
+        else if (timeElapsed < (21 * 60))
+        {
+            if (spawnRobin % 3 == 0)
+                Instantiate(mobTier6, spawnPos[spawnRobin].position, Quaternion.identity);
+            else if (spawnRobin % 3 == 1)
+                Instantiate(mobTier7, spawnPos[spawnRobin].position, Quaternion.identity);
+            else
+                Instantiate(mobTier5, spawnPos[spawnRobin].position, Quaternion.identity);
+            spawnTimerMultiplier = 10.0f;
+        }
+        else if (timeElapsed < (21.25 * 60))
+        {
+            spawnTimerMultiplier = 1.0f;
+        }
+        else if (timeElapsed < (22.0 * 60))
+        {
+            spawnTimerMultiplier = 1.0f;
+            Instantiate(reaper, spawnPos[spawnRobin].position, Quaternion.identity);
+        }
+        else if (timeElapsed < (22.5 * 60))
+        {
+            spawnTimerMultiplier = 2.0f;
+            Instantiate(reaper, spawnPos[spawnRobin].position, Quaternion.identity);
+        }
+        else if (timeElapsed < (23.0 * 60))
+        {
+            spawnTimerMultiplier = 3.0f;
+            Instantiate(reaper, spawnPos[spawnRobin].position, Quaternion.identity);
+        }
+        else if (timeElapsed < (23.5 * 60))
+        {
+            spawnTimerMultiplier = 4.0f;
+            Instantiate(reaper, spawnPos[spawnRobin].position, Quaternion.identity);
+        }
+        else if (timeElapsed < (24.0 * 60))
+        {
+            spawnTimerMultiplier = 5.0f;
+            Instantiate(reaper, spawnPos[spawnRobin].position, Quaternion.identity);
+        }
         else
         {
+            spawnTimerMultiplier = 10.0f;
             Instantiate(reaper, spawnPos[spawnRobin].position, Quaternion.identity);
         }
 

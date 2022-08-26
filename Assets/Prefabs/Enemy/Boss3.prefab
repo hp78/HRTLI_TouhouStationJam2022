@@ -252,7 +252,7 @@ Transform:
   m_GameObject: {fileID: 2662430388291418467}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.404, y: 1.964, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2662430387145286572}
@@ -291,7 +291,7 @@ MonoBehaviour:
   isDead: 0
   enemyStats:
     health: 1000
-    speed: 1.35
+    speed: 2.1
     damage: 20
   coinDrop: {fileID: 8292156922972181817, guid: 96fa349e57478f445842ca77a1ffc432, type: 3}
   expDrop: {fileID: 6343292593987978452, guid: b1c258796f7f7834f89e4ddaaf1a9383, type: 3}
