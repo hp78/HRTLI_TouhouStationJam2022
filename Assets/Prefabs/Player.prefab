@@ -8239,7 +8239,7 @@ MonoBehaviour:
     passiveHp: 0
     itemDesc: 
     itemPassiveDesc: 
-  - effectValue: 5
+  - effectValue: 7.5
     effectCount: 1
     effectHitLife: 0
     effectLife: 0
@@ -8250,9 +8250,9 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
-    itemDesc: Rain down 1 spear on an enemy, dealing 5 damage.
+    itemDesc: Rain down 1 spear on an enemy, dealing 7.5 damage.
     itemPassiveDesc: 20% Chance on hit to gain 2 health
-  - effectValue: 5
+  - effectValue: 7.5
     effectCount: 2
     effectHitLife: 0
     effectLife: 0
@@ -8263,9 +8263,9 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
-    itemDesc: Rain down 2 spear on an enemy, dealing 5 damage.
+    itemDesc: Rain down 2 spear on an enemy, dealing 7.5 damage.
     itemPassiveDesc: 20% Chance on hit to gain 4 health
-  - effectValue: 5
+  - effectValue: 7.5
     effectCount: 3
     effectHitLife: 0
     effectLife: 0
@@ -8276,9 +8276,9 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
-    itemDesc: Rain down 3 spear on an enemy, dealing 5 damage.
+    itemDesc: Rain down 3 spear on an enemy, dealing 7.5 damage.
     itemPassiveDesc: 20% Chance on hit to gain 6 health
-  - effectValue: 5
+  - effectValue: 7.5
     effectCount: 4
     effectHitLife: 0
     effectLife: 0
@@ -8289,9 +8289,9 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
-    itemDesc: Rain down 4 spear on an enemy, dealing 5 damage.
+    itemDesc: Rain down 4 spear on an enemy, dealing 7.5 damage.
     itemPassiveDesc: 20% Chance on hit to gain 8 health
-  - effectValue: 5
+  - effectValue: 7.5
     effectCount: 10
     effectHitLife: 0
     effectLife: 0
@@ -8302,7 +8302,7 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
-    itemDesc: Rain down 10 spear on an enemy, dealing 5 damage.
+    itemDesc: Rain down 10 spear on an enemy, dealing 7.5 damage.
     itemPassiveDesc: 20% Chance on hit to gain 10 health
   audio: {fileID: 1128082978166162356}
   player: {fileID: 4751523107610154256}
