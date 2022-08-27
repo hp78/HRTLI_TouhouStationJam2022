@@ -154,6 +154,7 @@ MonoBehaviour:
     health: 350
     speed: 1
     damage: 15
+  borgerDrop: {fileID: 3339737556633310461, guid: a519673a10704c344a9780a20a043419, type: 3}
   coinDrop: {fileID: 8292156922972181817, guid: 96fa349e57478f445842ca77a1ffc432, type: 3}
   expDrop: {fileID: 5498998777650264789, guid: d7d1b4c378e67c940a82dc9ff786143e, type: 3}
   expSucc: {fileID: 8490488489538625480, guid: c9c9ece95196e8c4ea6cb0dfa01d5795, type: 3}

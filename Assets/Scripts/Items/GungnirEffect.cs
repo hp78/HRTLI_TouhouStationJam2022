@@ -19,10 +19,7 @@ public class GungnirEffect : ItemEffect
     }
     public override void TimedEffect()
     {
-        Debug.Log("GungnirCard Attack");
         StartCoroutine(FireGungnir());
-
-
     }
 
     public override void PlayerHitEffect()

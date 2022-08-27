@@ -22,7 +22,6 @@ public class ChinaStarEffect : ItemEffect
 
     public override void TimedEffect()
     {
-        Debug.Log("China Attack");
         StartCoroutine(FireStar());
 
     }

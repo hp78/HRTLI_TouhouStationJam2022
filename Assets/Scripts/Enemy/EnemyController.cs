@@ -24,6 +24,7 @@ public class EnemyController : MonoBehaviour
 
     public EnemyStats enemyStats;
 
+    public GameObject borgerDrop;
     public GameObject coinDrop;
     public GameObject expDrop;
     public GameObject expSucc;
@@ -108,7 +109,14 @@ public class EnemyController : MonoBehaviour
 
         float rand = Random.Range(0f, 100f);
 
-        if(rand <=3.33f)
+        if (rand <= 0.25f)
+        {
+            Instantiate(borgerDrop, new Vector3(this.transform.position.x + Random.Range(-transform.localScale.x / 2f, transform.localScale.x / 2f),
+                                this.transform.position.y + Random.Range(-transform.localScale.x / 2f, transform.localScale.x / 2f),
+                                    this.transform.position.z), Quaternion.identity);
+        }
+
+        if (rand <=3f)
         {
             Instantiate(coinDrop, new Vector3(this.transform.position.x + Random.Range(-transform.localScale.x / 2f, transform.localScale.x / 2f),
                                 this.transform.position.y + Random.Range(-transform.localScale.x / 2f, transform.localScale.x / 2f),

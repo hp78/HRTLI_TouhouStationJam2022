@@ -19,7 +19,6 @@ public class LaevaEffect : ItemEffect
     }
     public override void TimedEffect()
     {
-        Debug.Log("Knife Attack");
         FireLaeva();
     }
 

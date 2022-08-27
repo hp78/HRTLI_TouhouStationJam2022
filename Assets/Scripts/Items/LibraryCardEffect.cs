@@ -22,7 +22,6 @@ public class LibraryCardEffect : ItemEffect
 
     public override void TimedEffect()
     {
-        Debug.Log("LibraryCard Attack");
         FireCard();
 
     }

@@ -20,7 +20,6 @@ public class PadEffect : ItemEffect
 
     public override void TimedEffect()
     {
-        Debug.Log("Pad Attack");
         FirePad();
     }
 

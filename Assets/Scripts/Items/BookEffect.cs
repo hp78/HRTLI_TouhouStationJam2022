@@ -21,7 +21,6 @@ public class BookEffect : ItemEffect
 
     public override void TimedEffect()
     {
-        Debug.Log("Book Attack");
         FireBook();
     }
 

@@ -5998,7 +5998,7 @@ MonoBehaviour:
   itemPic: {fileID: 21300000, guid: 14c3e60f06b6ca94a9ae5562c726ab2c, type: 3}
   isOffensiveSkill: 1
   currTimer: 0
-  itemFlavorText: A weapon made for straight thrusts... not slashes
+  itemFlavorText: For throwing, not eating!
   currLevel: 1
   itemStatsAtLevel:
   - effectValue: 0
@@ -6025,7 +6025,9 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
-    itemDesc: Shoots 1 projectile to the front dealing 8 damage.
+    itemDesc: 'Shoots 1 projectile forward
+
+      8DMG'
     itemPassiveDesc: 
   - effectValue: 8
     effectCount: 2
@@ -6038,11 +6040,9 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0.1
     passiveHp: 0
-    itemDesc: 'Shoots 2 projectile to the front dealing 8 damage.
-
-      Increased
-      fire rate,projectile speed and pierce.'
-    itemPassiveDesc: Increases movement speed by 10%
+    itemDesc: "Shoots 2 projectile forward \n8DMG   -Cooldown   +Projectile-Speed  
+      Pierce:1"
+    itemPassiveDesc: MOVE SPD  +10%
   - effectValue: 8
     effectCount: 3
     effectHitLife: 3
@@ -6054,11 +6054,9 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0.2
     passiveHp: 0
-    itemDesc: 'Shoots 3 projectile to the front dealing 8 damage.
-
-      Increased
-      fire rate,projectile speed and pierce.'
-    itemPassiveDesc: Increases movement speed by 20%
+    itemDesc: "Shoots 3 projectile forward \n8DMG   -Cooldown   +Projectile-Speed  
+      Pierce:2"
+    itemPassiveDesc: MOVE SPD  +20%
   - effectValue: 8
     effectCount: 4
     effectHitLife: 4
@@ -6070,11 +6068,9 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0.3
     passiveHp: 0
-    itemDesc: 'Shoots 4 projectile to the front dealing 8 damage.
-
-      Increased
-      fire rate,projectile speed and pierce.'
-    itemPassiveDesc: Increases movement speed by 30%
+    itemDesc: "Shoots 4 projectile forward \n8DMG   -Cooldown   +Projectile-Speed  
+      Pierce:3"
+    itemPassiveDesc: MOVE SPD  +30%
   - effectValue: 8
     effectCount: 5
     effectHitLife: 10
@@ -6086,11 +6082,9 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0.4
     passiveHp: 0
-    itemDesc: 'Shoots 5 projectile to the front dealing 8 damage.
-
-      Increased
-      fire rate,projectile speed and high pierce.'
-    itemPassiveDesc: Increases movement speed by 40%
+    itemDesc: "Shoots 5 projectile forward \n8DMG   -Cooldown   +Projectile-Speed  
+      Pierce:4"
+    itemPassiveDesc: MOVE SPD  +40%
   audio: {fileID: 6992435456248798376}
   player: {fileID: 4751523107610154256}
   knifeProjectilePrefab: {fileID: 208155274731519886, guid: 476053d59e719de4a95f313f2bdb191e, type: 3}
@@ -6350,11 +6344,12 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 5
-    itemDesc: 'Deals 2.5 damage per second around player for a short period.
+    itemDesc: 'Does a screen-wide attack
 
-      Big
-      area but long cooldown.'
-    itemPassiveDesc: Increases max health by 5.
+      Long-Cooldown
+
+      6DMG/s'
+    itemPassiveDesc: MAX HP +5
   - effectValue: 0.6
     effectCount: 1
     effectHitLife: 0
@@ -6366,11 +6361,12 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 10
-    itemDesc: 'Deals 5 damage per second around player for a short period.
+    itemDesc: 'Does a screen-wide attack
 
-      Big
-      area but long cooldown.'
-    itemPassiveDesc: Increases max health by 10.
+      Long-Cooldown
+
+      12DMG/s'
+    itemPassiveDesc: MAX HP +10
   - effectValue: 0.9
     effectCount: 1
     effectHitLife: 0
@@ -6382,11 +6378,12 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 15
-    itemDesc: 'Deals 7.5 damage per second around player for a short period.
+    itemDesc: 'Does a screen-wide attack
 
-      Big
-      area but long cooldown.'
-    itemPassiveDesc: Increases max health by 15.
+      Long-Cooldown
+
+      18DMG/s'
+    itemPassiveDesc: MAX HP +15
   - effectValue: 1.2
     effectCount: 0
     effectHitLife: 0
@@ -6398,11 +6395,14 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 20
-    itemDesc: 'Deals 10 damage per second around player for a short period.
+    itemDesc: 'Does a screen-wide attack
 
-      Big
-      area but long cooldown.'
-    itemPassiveDesc: Increases max health by 20.
+      Long-Cooldown
+
+      24DMG/s
+
+'
+    itemPassiveDesc: MAX HP +20
   - effectValue: 2
     effectCount: 0
     effectHitLife: 0
@@ -6414,11 +6414,12 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 25
-    itemDesc: 'Deals 20 damage per second around player for a short period.
+    itemDesc: 'Does a screen-wide attack
 
-      Big
-      area but long cooldown.'
-    itemPassiveDesc: Increases max health by 25.
+      Long-Cooldown
+
+      40DMG/s'
+    itemPassiveDesc: MAX HP +25
   audio: {fileID: 2168993413245273733}
   player: {fileID: 4751523107610154256}
   playerTf: {fileID: 4751523107610154259}
@@ -6595,8 +6596,10 @@ MonoBehaviour:
     passiveDef: 0.01
     passiveSpd: 0.01
     passiveHp: 1
-    itemDesc: Throw 1 damaging circle that deals 5 damage per second.
-    itemPassiveDesc: Increase all stats by 1%
+    itemDesc: 'Throws 1 shroom that forms a small AOE
+
+      5DMG/s'
+    itemPassiveDesc: ALL STATS +1%
   - effectValue: 0.9
     effectCount: 1
     effectHitLife: 0
@@ -6608,8 +6611,10 @@ MonoBehaviour:
     passiveDef: 0.02
     passiveSpd: 0.02
     passiveHp: 2
-    itemDesc: Throw 1 damaging circle that deals 10 damage per second.
-    itemPassiveDesc: Increase all stats by 2%.
+    itemDesc: 'Throws 1 shroom that forms a small AOE
+
+      10DMG/s'
+    itemPassiveDesc: ALL STATS +2%.
   - effectValue: 1.25
     effectCount: 2
     effectHitLife: 0
@@ -6621,10 +6626,12 @@ MonoBehaviour:
     passiveDef: 0.03
     passiveSpd: 0.03
     passiveHp: 3
-    itemDesc: Throw 2 damaging circle that deals 12.5 damage per second.
-    itemPassiveDesc: Increase all stats by 3%.
+    itemDesc: 'Throws 2 shroom2 that forms a small AOE
+
+      13DMG/s'
+    itemPassiveDesc: ALL STATS +3%.
   - effectValue: 1.5
-    effectCount: 2
+    effectCount: 3
     effectHitLife: 0
     effectLife: 5
     effectSpeed: 5
@@ -6634,8 +6641,10 @@ MonoBehaviour:
     passiveDef: 0.04
     passiveSpd: 0.04
     passiveHp: 4
-    itemDesc: Throw 2 damaging circle that deals 15 damage per second.
-    itemPassiveDesc: Increase all stats by 4%.
+    itemDesc: 'Throws 3 shrooms that forms a small AOE
+
+      15DMG/s'
+    itemPassiveDesc: ALL STATS +4%.
   - effectValue: 1.5
     effectCount: 5
     effectHitLife: 0
@@ -6647,8 +6656,10 @@ MonoBehaviour:
     passiveDef: 0.05
     passiveSpd: 0.05
     passiveHp: 5
-    itemDesc: Throw 5 damaging circle that deals 15 damage per second.
-    itemPassiveDesc: Increase all stats by 5%.
+    itemDesc: 'Throws 5 shrooms that forms a small AOE
+
+      15DMG/s'
+    itemPassiveDesc: ALL STATS +5%.
   audio: {fileID: 746567640998493025}
   player: {fileID: 4751523107610154256}
   playerTf: {fileID: 4751523107610154259}
@@ -6882,7 +6893,7 @@ MonoBehaviour:
   itemPic: {fileID: 21300000, guid: 13cb2d25732fc4a49866df5a3134d4e8, type: 3}
   isOffensiveSkill: 1
   currTimer: 0
-  itemFlavorText: '"Seriously?! Pad jokes in 2022?"'
+  itemFlavorText: '"Seriously?! Pad jokes in 2022????"'
   currLevel: 0
   itemStatsAtLevel:
   - effectValue: 0
@@ -6909,8 +6920,8 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 5
-    itemDesc: 25% Chance on hit to repel back enemies.
-    itemPassiveDesc: Increases max health by 5.
+    itemDesc: 25% Chance on hit to repel enemies
+    itemPassiveDesc: MAX HP +5
   - effectValue: 0
     effectCount: 0
     effectHitLife: 0
@@ -6922,8 +6933,8 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 10
-    itemDesc: 30% Chance on hit to repel back enemies.
-    itemPassiveDesc: Increases max health by 10.
+    itemDesc: 30% Chance on hit to repel enemies
+    itemPassiveDesc: MAX HP +10.
   - effectValue: 0
     effectCount: 0
     effectHitLife: 0
@@ -6935,8 +6946,8 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 15
-    itemDesc: 35% Chance on hit to repel back enemies.
-    itemPassiveDesc: Increases max health by 15.
+    itemDesc: 35% Chance on hit to repel enemies
+    itemPassiveDesc: MAX HP +15.
   - effectValue: 0
     effectCount: 0
     effectHitLife: 0
@@ -6948,8 +6959,8 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 20
-    itemDesc: 40% Chance on hit to repel back enemies.
-    itemPassiveDesc: Increases max health by 20.
+    itemDesc: 40% Chance on hit to repel enemies
+    itemPassiveDesc: MAX HP +20.
   - effectValue: 0
     effectCount: 0
     effectHitLife: 0
@@ -6961,8 +6972,8 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 25
-    itemDesc: 50% Chance on hit to repel back enemies.
-    itemPassiveDesc: Increases max health by 25.
+    itemDesc: 50% Chance on hit to repel enemies
+    itemPassiveDesc: MAX HP +25.
   audio: {fileID: 6602165922656088602}
   player: {fileID: 4751523107610154256}
   playerTf: {fileID: 0}
@@ -7165,7 +7176,7 @@ MonoBehaviour:
   itemPic: {fileID: 21300000, guid: 7ee251a5f73d8db43ba06aff0e9c98bb, type: 3}
   isOffensiveSkill: 1
   currTimer: 0
-  itemFlavorText: J A A A O O O O O
+  itemFlavorText: J A A A O O O O O ~ ! !
   currLevel: 0
   itemStatsAtLevel:
   - effectValue: 0
@@ -7192,11 +7203,10 @@ MonoBehaviour:
     passiveDef: 0.05
     passiveSpd: 0
     passiveHp: 0
-    itemDesc: 'Spawns 2 spinning projectiles that orbit the player dealing 2 damage
-      per hit.
+    itemDesc: 'Throws 2 stars to orbit the player
 
-'
-    itemPassiveDesc: Reduce incoming damage by 5%
+      2x2DMG'
+    itemPassiveDesc: Damage Received  -5%
   - effectValue: 3
     effectCount: 1
     effectHitLife: 10
@@ -7208,13 +7218,10 @@ MonoBehaviour:
     passiveDef: 0.1
     passiveSpd: 0
     passiveHp: 0
-    itemDesc: 'Spawns 2 spinning projectiles that orbit the player dealing 3 damage
-      per hit.
+    itemDesc: 'Throws 2 stars to orbit the player
 
-      Increased spawn rate.
-
-'
-    itemPassiveDesc: Reduce incoming damage by 10%
+      2x3DMG   -Cooldown'
+    itemPassiveDesc: Damage Received  -10%
   - effectValue: 4
     effectCount: 2
     effectHitLife: 15
@@ -7226,11 +7233,10 @@ MonoBehaviour:
     passiveDef: 0.15
     passiveSpd: 0
     passiveHp: 0
-    itemDesc: 'Spawns 4 spinning projectiles that orbit the player dealing 4 damage
-      per hit.
+    itemDesc: 'Throws 4 stars to orbit the player
 
-      Increased spawn rate and pierce.'
-    itemPassiveDesc: Reduce incoming damage by 15%
+      4x4DMG   -Cooldown '
+    itemPassiveDesc: Damage Received  -15%
   - effectValue: 5
     effectCount: 2
     effectHitLife: 15
@@ -7242,11 +7248,10 @@ MonoBehaviour:
     passiveDef: 0.2
     passiveSpd: 0
     passiveHp: 0
-    itemDesc: 'Spawns 4 spinning projectiles that orbit the player dealing 5 damage
-      per hit.
+    itemDesc: 'Throws 4 stars to orbit the player
 
-      Increased spawn rate and pierce.'
-    itemPassiveDesc: Reduce incoming damage by 20%
+      4x5DMG   -Cooldown '
+    itemPassiveDesc: Damage Received  -20%
   - effectValue: 5
     effectCount: 3
     effectHitLife: 50
@@ -7258,11 +7263,10 @@ MonoBehaviour:
     passiveDef: 0.25
     passiveSpd: 0
     passiveHp: 0
-    itemDesc: 'Spawns 6 spinning projectiles that orbit the player dealing 5 damage
-      per hit.
+    itemDesc: 'Throws 6 stars to orbit the player
 
-      Increased spawn rate greatly and high pierce.'
-    itemPassiveDesc: Reduce incoming damage by 25%
+      6x5DMG   -Cooldown '
+    itemPassiveDesc: Damage Received  -25%
   audio: {fileID: 5884239985326863299}
   player: {fileID: 4751523107610154256}
   playerTf: {fileID: 4751523107610154259}
@@ -7477,7 +7481,7 @@ Transform:
   m_GameObject: {fileID: 4751523107610154271}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.926, y: -0.068, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4751523106673649662}
@@ -7511,10 +7515,10 @@ MonoBehaviour:
   isAlive: 1
   isInvul: 0
   invulDura: 0
-  currHealth: 0
+  currHealth: 25
   currMaxHealth: 0
   baseMaxHealth: 25
-  speed: 1.25
+  speed: 1.875
   bankiHeadPrefab: {fileID: 6114344851043820608, guid: a1dbd28de80c4ec458b0e593541da4e8, type: 3}
   bankiCounter: 0
   currLevel: 1
@@ -7606,7 +7610,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.2}
   serializedVersion: 2
-  m_Radius: 0.9
+  m_Radius: 1
 --- !u!1 &4751523107677182866
 GameObject:
   m_ObjectHideFlags: 0
@@ -7656,7 +7660,7 @@ MonoBehaviour:
   itemPic: {fileID: 21300000, guid: 15392f58f9696e14d9dcf8032062c19f, type: 3}
   isOffensiveSkill: 1
   currTimer: 1
-  itemFlavorText: '"This isn''t a public library."   -Patchouli'
+  itemFlavorText: '"This isn''t a public library."  -Patchouli'
   currLevel: 0
   itemStatsAtLevel:
   - effectValue: 0
@@ -7683,7 +7687,9 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
-    itemDesc: Swipe in front of you, dealing 10 damage.
+    itemDesc: 'Swipe in front of you
+
+      10DMG'
     itemPassiveDesc: 
   - effectValue: 12.5
     effectCount: 1
@@ -7696,8 +7702,10 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0.1
     passiveHp: 0
-    itemDesc: Swipe in front of you, dealing 12.5 damage.
-    itemPassiveDesc: Increases movement speed by 10%
+    itemDesc: 'Swipe in front of you
+
+      12.5DMG'
+    itemPassiveDesc: MOVE SPD +10%
   - effectValue: 15
     effectCount: 0
     effectHitLife: 0
@@ -7709,8 +7717,10 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0.2
     passiveHp: 0
-    itemDesc: Swipe in front of you, dealing 15 damage.
-    itemPassiveDesc: Increases movement speed by 20%
+    itemDesc: 'Swipe in front of you
+
+      15DMG'
+    itemPassiveDesc: MOVE SPD +20%
   - effectValue: 15
     effectCount: 0
     effectHitLife: 0
@@ -7722,10 +7732,12 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0.3
     passiveHp: 0
-    itemDesc: 'Swipe in front of you, dealing 15 damage.
+    itemDesc: 'Swipe in front of you
 
-      Increases fire rate.'
-    itemPassiveDesc: Increases movement speed by 30%
+      15DMG
+
+      -Cooldown'
+    itemPassiveDesc: MOVE SPD +30%
   - effectValue: 15
     effectCount: 0
     effectHitLife: 0
@@ -7737,11 +7749,12 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0.4
     passiveHp: 0
-    itemDesc: 'Swipe in front of you, dealing 15 damage.
+    itemDesc: 'Swipe in front of you
 
-      Increases fire rate
-      greatly.'
-    itemPassiveDesc: Increases movement speed by 40%
+      15DMG
+
+      -Cooldown'
+    itemPassiveDesc: MOVE SPD +40%
   audio: {fileID: 4529913876421165466}
   player: {fileID: 4751523107610154256}
   playerTf: {fileID: 0}
@@ -7759,7 +7772,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 47a38498eb30d2548b6d75f70be6cc21, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.175
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -7960,7 +7973,7 @@ MonoBehaviour:
   itemPic: {fileID: 21300000, guid: 0fb2506aaeda2b746b2acffe75fac1af, type: 3}
   isOffensiveSkill: 1
   currTimer: 0
-  itemFlavorText: Uhh... run
+  itemFlavorText: The yukkuris might want to start running...
   currLevel: 0
   itemStatsAtLevel:
   - effectValue: 0
@@ -7987,8 +8000,8 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
-    itemDesc: Shoots a horizontal beam in front dealing 15 damage.
-    itemPassiveDesc: Increase all weapon damage by 10%
+    itemDesc: Shoots a horizontal beam in front for 15DMG
+    itemPassiveDesc: DMG +10%
   - effectValue: 20
     effectCount: 1
     effectHitLife: 0
@@ -8000,8 +8013,8 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
-    itemDesc: Shoots a horizontal beam in front dealing 20 damage.
-    itemPassiveDesc: Increase all weapon damage by 20%
+    itemDesc: Shoots a horizontal beam in front for 20DMG
+    itemPassiveDesc: DMG +20%
   - effectValue: 25
     effectCount: 0
     effectHitLife: 0
@@ -8013,9 +8026,9 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
-    itemDesc: Shoots a horizontal beam in front dealing 25 damage.
-    itemPassiveDesc: Increase all weapon damage by 30%
-  - effectValue: 30
+    itemDesc: Shoots a horizontal beam in front for 25DMG
+    itemPassiveDesc: DMG +30%
+  - effectValue: 35
     effectCount: 0
     effectHitLife: 0
     effectLife: 0.15
@@ -8026,8 +8039,8 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
-    itemDesc: Shoots a horizontal beam in front dealing 30 damage.
-    itemPassiveDesc: Increase all weapon damage by 40%
+    itemDesc: Shoots a horizontal beam in front for 35DMG
+    itemPassiveDesc: DMG +40%
   - effectValue: 35
     effectCount: 0
     effectHitLife: 0
@@ -8039,11 +8052,8 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
-    itemDesc: 'Shoots a horizontal beam in front dealing 35 damage.
-
-      Fires
-      one more on the opposite side.'
-    itemPassiveDesc: Increase all weapon damage by 50%
+    itemDesc: Shoots a horizontal beam in BOTH DIRECTIONS for 35DMG
+    itemPassiveDesc: DMG +50%
   audio: {fileID: 1436582917663170990}
   player: {fileID: 4751523107610154256}
   LaevaProjectilePrefab: {fileID: 3112475980303405692, guid: 75fe3c2be25e1b24599888193aa60101, type: 3}
@@ -8223,7 +8233,7 @@ MonoBehaviour:
   itemPic: {fileID: 21300000, guid: 1ed8d4866e2170345b2e6ca0ad11a2b1, type: 3}
   isOffensiveSkill: 1
   currTimer: 0
-  itemFlavorText: Can't believe she just leaves this lying around
+  itemFlavorText: She just leaves these lying around?!
   currLevel: 0
   itemStatsAtLevel:
   - effectValue: 0
@@ -8263,8 +8273,10 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
-    itemDesc: Rain down 2 spear on an enemy, dealing 7.5 damage.
-    itemPassiveDesc: 20% Chance on hit to gain 4 health
+    itemDesc: 'Rain down 2 spears on enemies
+
+      2x7.5DMG'
+    itemPassiveDesc: 20% Chance to recover 4HP on receiving damage
   - effectValue: 7.5
     effectCount: 3
     effectHitLife: 0
@@ -8276,10 +8288,12 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
-    itemDesc: Rain down 3 spear on an enemy, dealing 7.5 damage.
-    itemPassiveDesc: 20% Chance on hit to gain 6 health
+    itemDesc: 'Rain down 3 spears on enemies
+
+      3x7.5DMG'
+    itemPassiveDesc: 20% Chance to recover 6HP on receiving damage
   - effectValue: 7.5
-    effectCount: 4
+    effectCount: 5
     effectHitLife: 0
     effectLife: 0
     effectSpeed: 0
@@ -8289,9 +8303,11 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
-    itemDesc: Rain down 4 spear on an enemy, dealing 7.5 damage.
-    itemPassiveDesc: 20% Chance on hit to gain 8 health
-  - effectValue: 7.5
+    itemDesc: 'Rain down 5 spears on enemies
+
+      5x7.5DMG'
+    itemPassiveDesc: 20% Chance to recover 8HP on receiving damage
+  - effectValue: 5
     effectCount: 10
     effectHitLife: 0
     effectLife: 0
@@ -8302,8 +8318,10 @@ MonoBehaviour:
     passiveDef: 0
     passiveSpd: 0
     passiveHp: 0
-    itemDesc: Rain down 10 spear on an enemy, dealing 7.5 damage.
-    itemPassiveDesc: 20% Chance on hit to gain 10 health
+    itemDesc: 'Rain down 10 spears on enemies
+
+      10x7.5DMG'
+    itemPassiveDesc: 20% Chance to recover 10HP on receiving damage
   audio: {fileID: 1128082978166162356}
   player: {fileID: 4751523107610154256}
   GungnirProjectilePrefab: {fileID: 6762410172342543651, guid: 70775c65367e0ff44ad5be0ee91e26f4, type: 3}
@@ -8314,12 +8332,12 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8802339349490485190}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 2c711df59e75ffc45837ae266bc6e0a1, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.1
+  m_Volume: 0.15
   m_Pitch: 1
   Loop: 0
   Mute: 0

@@ -2348,7 +2348,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Shoots a projectile to the front dealing X damage every Y seconds.
+  m_text: 'Spawns 6 spinning projectiles that orbit the player dealing 5 damage per
+    hit.
+
+    Increased spawn rate greatly and high pierce.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 75449d0ec0635d94daf2ce4ddf3c1af8, type: 2}
   m_sharedMaterial: {fileID: -8022890448501318181, guid: 75449d0ec0635d94daf2ce4ddf3c1af8, type: 2}

@@ -130,21 +130,25 @@ public class PlayerController : MonoBehaviour
 
     void UpdateItemEffects()
     {
-        foreach(ItemEffect ie in effects)
+        if(isAlive)
         {
-            if (ie.TickTimer(Time.deltaTime))
+            foreach (ItemEffect ie in effects)
             {
-                ie.TimedEffect();
-
-                for(int i = 0; i < bankiCounter; ++i)
+                if (ie.TickTimer(Time.deltaTime))
                 {
-                    if(Random.Range(0f,100f) < 5f)
+                    ie.TimedEffect();
+
+                    for (int i = 0; i < bankiCounter; ++i)
                     {
-                        StartCoroutine(SupportBanki(i, ie));
+                        if (Random.Range(0f, 100f) < 5f)
+                        {
+                            StartCoroutine(SupportBanki(i, ie));
+                        }
                     }
                 }
             }
         }
+
     }
 
     IEnumerator SupportBanki(int bCount, ItemEffect ie)
@@ -181,6 +185,7 @@ public class PlayerController : MonoBehaviour
 
     void OnPlayerHit(float damageTaken)
     {
+        if (!isAlive) return;
         if (!isInvul)
         {
             currHealth -= damageTaken;
@@ -276,8 +281,8 @@ public class PlayerController : MonoBehaviour
         {
             float dmg = collision.gameObject.GetComponent<EnemyController>().enemyStats.damage;
             float truedmg = dmg * (1-bonusStatModifier.passiveDef);
-            if (truedmg <= 0.0f)
-                OnPlayerHit(1f);
+            if (truedmg <= 0.1f)
+                OnPlayerHit(0.1f);
             else
                 OnPlayerHit(truedmg);
         }

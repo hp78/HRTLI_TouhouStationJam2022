@@ -9,6 +9,7 @@ MonoImporter:
   - rigidbody2d: {instanceID: 0}
   - col: {instanceID: 0}
   - playertarget: {instanceID: 0}
+  - borgerDrop: {fileID: 3339737556633310461, guid: a519673a10704c344a9780a20a043419, type: 3}
   - coinDrop: {fileID: 8292156922972181817, guid: 96fa349e57478f445842ca77a1ffc432, type: 3}
   - expDrop: {instanceID: 0}
   - expSucc: {instanceID: 0}

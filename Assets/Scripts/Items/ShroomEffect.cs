@@ -21,7 +21,6 @@ public class ShroomEffect : ItemEffect
 
     public override void TimedEffect()
     {
-        Debug.Log("Shroom Attack");
         FireShroom();
     }
 
