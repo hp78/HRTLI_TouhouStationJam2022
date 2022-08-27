@@ -101,7 +101,7 @@ public class PlayerController : MonoBehaviour
             moveDir += Vector2.up;
         }
 
-        if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
         {
             moveDir += Vector2.down;
         }
@@ -281,7 +281,7 @@ public class PlayerController : MonoBehaviour
         {
             float dmg = collision.gameObject.GetComponent<EnemyController>().enemyStats.damage;
             float truedmg = dmg * (1-bonusStatModifier.passiveDef);
-            if (truedmg <= 0.1f)
+            if (truedmg < 0.1f)
                 OnPlayerHit(0.1f);
             else
                 OnPlayerHit(truedmg);
