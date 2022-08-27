@@ -246,7 +246,7 @@ public class EnemySpawner : MonoBehaviour
                 Instantiate(mobTier5, spawnPos[spawnRobin].position, Quaternion.identity);
             spawnTimerMultiplier = 10.0f;
         }
-        else if (timeElapsed < (21.25 * 60))
+        else if (timeElapsed < (21.5 * 60))
         {
             spawnTimerMultiplier = 1.0f;
         }
@@ -306,7 +306,7 @@ public class EnemySpawner : MonoBehaviour
             currBoss = 3;
         }
 
-        if (currBoss == 3 && timeElapsed > (20 * 60))
+        if (currBoss == 3 && timeElapsed > (21.1 * 60))
         {
             for(int i = 0; i < 8; ++i)
                 Instantiate(reaper, spawnPos[i].position, Quaternion.identity);

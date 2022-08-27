@@ -14,6 +14,9 @@ public class GameController : MonoBehaviour
     public LevelUpMenuController lvlUpMenu;
     public GameObject deadMenu;
 
+    bool isPaused = false;
+    bool isLevelingup = false;
+
     [Space(5)]
     public float timeElapsed;
 
@@ -31,26 +34,41 @@ public class GameController : MonoBehaviour
 
         UpdatePauseKey();
 
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            ShowLevelUpMenu();
-        }
+        //if (Input.GetKeyDown(KeyCode.P))
+        //{
+        //    ShowLevelUpMenu();
+        //}
     }
 
     void UpdatePauseKey()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        //
+        if(Input.GetKeyDown(KeyCode.Escape) && !isLevelingup)
         {
-            if(Time.timeScale == 1)
-            {
-                pauseMenu.gameObject.SetActive(true);
-                Time.timeScale = 0f;
-            }
-            else
-            {
-                pauseMenu.gameObject.SetActive(false);
-                Time.timeScale = 1f;
-            }
+            isPaused = !isPaused;
+            TogglePause(isPaused);
+        }
+    }
+
+    public void Unpause()
+    {
+        isPaused = false;
+        TogglePause(isPaused);
+    }
+
+    void TogglePause(bool isOn)
+    {
+        pauseMenu.gameObject.SetActive(isOn);
+        
+        //
+        if (!isOn && !isLevelingup)
+        {
+            Time.timeScale = 1f;
+        }
+        else
+        {
+            pauseMenu.SetToFirstButton();
+            Time.timeScale = 0f;
         }
     }
 
@@ -59,5 +77,18 @@ public class GameController : MonoBehaviour
         Time.timeScale = 0f;
         lvlUpMenu.gameObject.SetActive(true);
         lvlUpMenu.RefreshItems();
+        lvlUpMenu.SetSelectedButton();
+        isLevelingup = true;
+    }
+
+    public void CloseLevelUpMenu()
+    {
+        isLevelingup = false;
+        lvlUpMenu.gameObject.SetActive(false);
+
+        if (!isPaused && !isLevelingup)
+        {
+            Time.timeScale = 1f;
+        }
     }
 }

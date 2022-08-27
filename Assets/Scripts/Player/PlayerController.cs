@@ -186,6 +186,12 @@ public class PlayerController : MonoBehaviour
             currHealth -= damageTaken;
             GameController.instance.hudControl.UpdateHPBar(currHealth/currMaxHealth);
 
+            // chance to heal out of fatal
+            foreach (ItemEffect ie in effects)
+            {
+                ie.PlayerHitEffect();
+            }
+
             if (currHealth < 0)
             {
                 isInvul = true;
@@ -197,17 +203,19 @@ public class PlayerController : MonoBehaviour
                 StartCoroutine(Invul());
             }
         }
-
-        foreach(ItemEffect ie in effects)
+        else
         {
-            ie.PlayerHitEffect();
+            foreach (ItemEffect ie in effects)
+            {
+                ie.PlayerHitEffect();
+            }
         }
     }
 
     IEnumerator Invul()
     {
         hitSound.Play();
-        float elapsed = 0f;
+        //float elapsed = 0f;
         {
             yield return new WaitForSeconds(0.04f);
             spriteRenderer.color = Color.red;

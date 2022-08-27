@@ -2598,6 +2598,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88b4b714b04cff446b5515cc62ff4e63, type: 3}
+--- !u!114 &296674666 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 644521190, guid: c691c95ab43d7234586d43ca27a14487, type: 3}
+  m_PrefabInstance: {fileID: 4582583101609959837}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &302424162 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3262160530825531635, guid: 1d0d60100105e624da23a5ae9680f3bf, type: 3}
@@ -14419,6 +14430,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88b4b714b04cff446b5515cc62ff4e63, type: 3}
+--- !u!114 &1635863995 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4582583102847463829, guid: c691c95ab43d7234586d43ca27a14487, type: 3}
+  m_PrefabInstance: {fileID: 4582583101609959837}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a8d60e91aeaa9e42aa5c75a35650197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1641542273
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19716,6 +19738,14 @@ PrefabInstance:
       propertyPath: spawnPos.Array.data[7]
       value: 
       objectReference: {fileID: 302424162}
+    - target: {fileID: 2864097547101601559, guid: c691c95ab43d7234586d43ca27a14487, type: 3}
+      propertyPath: _eventSystem
+      value: 
+      objectReference: {fileID: 296674666}
+    - target: {fileID: 2864097547101601559, guid: c691c95ab43d7234586d43ca27a14487, type: 3}
+      propertyPath: _eventManager
+      value: 
+      objectReference: {fileID: 1635863995}
     - target: {fileID: 2864097547101601559, guid: c691c95ab43d7234586d43ca27a14487, type: 3}
       propertyPath: _playerController
       value: 

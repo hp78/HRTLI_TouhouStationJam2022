@@ -8,7 +8,7 @@ using UnityEngine.EventSystems;
 public class LevelUpMenuController : MonoBehaviour
 {
     public PlayerController _playerController;
-
+    public EventSystem _eventSystem;
 
     [Space(5)]
     public Button[] selectionBtns;
@@ -39,6 +39,17 @@ public class LevelUpMenuController : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void OnEnable()
+    {
+        
+    }
+
+    public void SetSelectedButton()
+    {
+        _eventSystem.SetSelectedGameObject(selectionBtns[0].gameObject);
+        selectionBtns[0].Select();
     }
 
     public void RefreshItems()
@@ -194,8 +205,10 @@ public class LevelUpMenuController : MonoBehaviour
             _playerController.SpawnHead();
         }
 
-        gameObject.SetActive(false);
-        Time.timeScale = 1;
+        //gameObject.SetActive(false);
+        //Time.timeScale = 1;
+        GameController.instance.CloseLevelUpMenu();
+
         itemLVLsound.Play();
     }
 }
