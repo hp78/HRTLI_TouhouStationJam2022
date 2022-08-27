@@ -19738,6 +19738,14 @@ PrefabInstance:
       propertyPath: spawnPos.Array.data[7]
       value: 
       objectReference: {fileID: 302424162}
+    - target: {fileID: 1459923204205833637, guid: c691c95ab43d7234586d43ca27a14487, type: 3}
+      propertyPath: eventSystem
+      value: 
+      objectReference: {fileID: 296674666}
+    - target: {fileID: 2224146336776627390, guid: c691c95ab43d7234586d43ca27a14487, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2864097547101601559, guid: c691c95ab43d7234586d43ca27a14487, type: 3}
       propertyPath: _eventSystem
       value: 
@@ -19858,6 +19866,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7732140617695924097, guid: c691c95ab43d7234586d43ca27a14487, type: 3}
+      propertyPath: eventSystem
+      value: 
+      objectReference: {fileID: 296674666}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c691c95ab43d7234586d43ca27a14487, type: 3}
 --- !u!1001 &4593712261060803604
